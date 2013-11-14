@@ -1,0 +1,441 @@
+MissionPackage
+{
+	name = Kercury, Kemini, Kapollo
+	description = Placeholder.
+	ownOrder = true
+	
+	Mission
+	{
+		name = Kercury I
+		description = Launch, no orbit, in atmo, landing
+		reward = 30000
+		category = MANNED, AVIATION
+		repeatable = true
+		packageOrder = 1
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 1
+			minAltitude = 10000
+			maxAltitude = 60000
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kercury II
+		description = Launch, no orbit, in space, landing
+		reward = 50000
+		category = MANNED, AVIATION
+		requiresMission = Kercury I
+		repeatable = true
+		packageOrder = 2
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 1
+			minAltitude = 70000
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kercury III
+		description = Launch, orbit, landing
+		reward = 60000
+		category = MANNED, ORBIT
+		requiresMission = Kercury II
+		repeatable = true
+		packageOrder = 3
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 1
+			minPeA = 70000
+			maxPeA = 100000
+			minApA = 70000
+			maxApA = 100000
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kercury IV
+		description = Multiple orbits, landing
+		reward = 60000
+		category = MANNED, ORBIT
+		requiresMission = Kercury III
+		repeatable = true
+		packageOrder = 4
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		SubMissionGoal
+		{
+			OrbitGoal
+			{
+				body = Kerbin
+				crewCount = 1
+				minPeA = 120000
+				maxPeA = 150000
+				minApA = 120000
+				maxApA = 150000
+			}
+			
+			PartGoal
+            {
+                partName = longAntenna
+                partCount = 1
+            }	
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kemini I
+		description = Orbit, EVA, landing
+		reward = 65000
+		category = MANNED, ORBIT
+		repeatable = true
+		packageOrder = 5
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+			{
+				body = Kerbin
+				crewCount = 1
+				minPeA = 80000
+				maxPeA = 85000
+				minApA = 80000
+				maxApA = 85000
+			}
+		
+		EVAGoal
+		{
+		}
+		
+		SubMissionGoal
+		{
+			optional = true
+			reward = 35000
+			
+			EVAGoal
+			{
+			}
+		
+			OrbitGoal
+			{
+				throttleDown = false
+				body = Kerbin
+				minAltitude = 86000
+			}
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kemini II
+		description = Orbit, week in space, batteries, landing
+		reward = 65000
+		category = MANNED, ORBIT
+		requiresMission = Kemini I
+		repeatable = true
+		packageOrder = 6
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 1
+			minPeA = 240000
+			maxPeA = 300000
+			minApA = 240000
+			maxApA = 300000
+		}
+		
+		EVAGoal
+		{
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+
+	Mission
+	{
+		name = Kemini III
+		description = Unmanned vessel launch, include crew space and landing mechanisms, docking port, orbit
+		reward = 60000
+		category = PROBE, ORBIT
+		requiresMission = Kemini II
+		repeatable = true
+		packageOrder = 7
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+			crewCount = 0
+		}
+		
+		SubMissionGoal
+		{
+			PartGoal
+			{
+				partName = mk1pod
+				partCount = 1
+			}
+			
+			PartGoal
+			{
+				partName = dockingPort3
+				partCount = 1
+			}
+			
+			PartGoal
+			{
+				partName = parachuteSingle
+				partCount = 1
+			}
+			
+			OrbitGoal
+			{
+				body = Kerbin
+				minPeA = 80000
+				maxPeA = 100000
+				minApA = 80000
+				maxApA = 100000
+			}
+		}
+	}
+	
+	Mission
+	{
+		name = Kemini IV
+		description = Orbit, rendezvous, dock with unmanned ship, raise both to higher orbit, undock, land
+		reward = 80000
+		category = MANNED, DOCKING
+		requiresMission = Kemini III
+		repeatable = true
+		packageOrder = 8
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		SubMissionGoal
+		{
+			OrbitGoal
+			{
+				body = Kerbin
+				crewCount = 1
+				minPeA = 80000
+				maxPeA = 100000
+				minApA = 80000
+				maxApA = 100000
+			}
+			
+			DockingGoal
+			{
+			}
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			minPeA = 120000
+			maxPeA = 140000
+			minApA = 120000
+			maxApA = 140000
+		}
+		
+		UnDockingGoal
+		{
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kemini V
+		description = Orbit, rendezvous, dock with unmanned ship, EVA to unmanned ship, undock, land
+		reward = 80000
+		category = MANNED, DOCKING
+		requiresMission = Kemini IV
+		repeatable = true
+		packageOrder = 9
+		
+		SubMissionGoal
+		{
+			LaunchGoal
+			{
+				launchZone = Kerbin
+			}
+		
+			PartGoal
+			{
+				partName = parachuteSingle
+				partCount = 0
+			}
+		}
+		
+		SubMissionGoal
+		{
+			OrbitGoal
+			{
+				body = Kerbin
+				crewCount = 1
+				minPeA = 120000
+				maxPeA = 140000
+				minApA = 120000
+				maxApA = 140000
+			}
+			
+			DockingGoal
+			{
+			}
+		}
+		
+		EVAGoal
+		{
+		}
+		
+		UnDockingGoal
+		{
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kemini VI
+		description = Extremely high orbit, land
+		reward = 100000
+		category = MANNED, ORBIT
+		requiresMission = Kemini V
+		repeatable = true
+		packageOrder = 10
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 1
+			minPeA = 2500000
+			maxPeA = 3000000
+			minApA = 2500000
+			maxApA = 3000000
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kemini VII
+		description = Orbit, rendezvous, dock with newly unmanned ship, land both
+		reward = 110000
+		category = MANNED, DOCKING
+		requiresMission = Kemini VI
+		repeatable = true
+		packageOrder = 11
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		SubMissionGoal
+		{
+			OrbitGoal
+			{
+				body = Kerbin
+				crewCount = 1
+				minPeA = 120000
+				maxPeA = 140000
+				minApA = 120000
+				maxApA = 140000
+			}
+			
+			DockingGoal
+			{
+			}
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+}
