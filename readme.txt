@@ -1,4 +1,5 @@
-Bootstraps - Mission Controller, Mission Package Series
+Project: Bootstraps - Mission Controller, Mission Package Series
+Author: Anthony Pendleton (apendleton AT gmail DOT com)
 
 -------------------------------------------------------
 
