@@ -1,3 +1,7 @@
+Bootstraps - Mission Controller, Mission Package Series
+
+-------------------------------------------------------
+
 This is a project to create a series of mission packages for the Mission Controller Extended (MC) mod in conjunction with Kerbal Space Program (KSP). The goal is to provide a pathway for new players to learn the game in a fashion similar to how real life space programs developed. Much of the inspiration for this project came from the NASA and Soviet programs, condensing things where I felt necessary and providing a clean flow.
 
 The initial scope is two-fold - programs within Kerbal's sphere of influence (Kerbal SOI.mpkg) and interplanetary programs (Interplanetary.mpkg). Including a high level overview of the programs within each package below:
