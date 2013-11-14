@@ -6,23 +6,23 @@ This is a project to create a series of mission packages for the Mission Control
 
 The initial scope is two-fold - programs within Kerbal's sphere of influence (Kerbal SOI.mpkg) and interplanetary programs (Interplanetary.mpkg). Including a high level overview of the programs within each package below:
 
-Kerbal SOI
+Kerbal SOI, 34 missions
 
--Kercury (Basic launching, orbiting and landing)
--Kemini (Orbiting, EVA, rendezvous and docking)
--Kastor (Unmanned Mun orbiting, landing and returning)
--Kollux (Unmanned Minmus orbiting, landing and returning)
--Kapollo (Manned Mun orbiting, landing and returning)
--Kartemis (Manned Minmus orbiting, landing and returning)
+-Kercury, 4 missions (Basic launching, orbiting and landing)
+-Kemini, 7 missions (Orbiting, EVA, rendezvous and docking)
+-Kastor, 4 missions (Unmanned Mun orbiting, landing and returning)
+-Kollux, 4 missions (Unmanned Minmus orbiting, landing and returning)
+-Kapollo, 8 missions (Manned Mun orbiting, landing and returning)
+-Kartemis, 7 missions (Manned Minmus orbiting, landing and returning)
 
-Interplanetary
+Interplanetary, 34 missions
 
--Kares (Unmanned and manned Duna orbiting, landing and returning)
--Kaphrodite (Unmanned and manned Eve orbiting, landing and returning)
--Kera (Unmanned and manned Jool orbiting, landing and returning)
--Kermes (Unmanned and manned Dres orbiting, landing and returning)
--Kephaestus (Unmanned and manned Moho orbiting, landing and returning)
--Kades (Unmanned and manned Eeloo orbiting, landing and returning)
+-Kares, 6 missions (Unmanned and manned Duna orbiting, landing and returning)
+-Kaphrodite, 6 missions (Unmanned and manned Eve orbiting, landing and returning)
+-Kera, 4 missions (Unmanned and manned Jool orbiting, landing and returning)
+-Kermes, 6 missions (Unmanned and manned Dres orbiting, landing and returning)
+-Kephaestus, 6 missions (Unmanned and manned Moho orbiting, landing and returning)
+-Kades, 6 missions (Unmanned and manned Eeloo orbiting, landing and returning)
 
 
 
