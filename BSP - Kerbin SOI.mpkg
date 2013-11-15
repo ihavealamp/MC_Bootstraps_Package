@@ -233,7 +233,6 @@ MissionPackage
 		{
 			description = Successfully launch from the KSC. 
 			launchZone = Kerbin
-			crewCount = 0
 		}
 		
 		SubMissionGoal
@@ -259,6 +258,7 @@ MissionPackage
 			OrbitGoal
 			{
 				body = Kerbin
+				crewCount = 0
 				minPeA = 80000
 				maxPeA = 100000
 				minApA = 80000
@@ -847,17 +847,20 @@ MissionPackage
 			maxApA = 2000000
 		}
 		
-		OrbitGoal
+		SubMissionGoal
 		{
-			body = Kerbin
-			minPeA = 2000000
-			maxPeA = 2500000
-			minApA = 2000000
-			maxApA = 2500000
-		}
-		
-		DockingGoal
-		{
+			OrbitGoal
+			{
+				body = Kerbin
+				minPeA = 2000000
+				maxPeA = 2500000
+				minApA = 2000000
+				maxApA = 2500000
+			}
+			
+			DockingGoal
+			{
+			}
 		}
 		
 		LandingGoal
