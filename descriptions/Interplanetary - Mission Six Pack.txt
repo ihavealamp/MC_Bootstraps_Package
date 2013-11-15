@@ -1,0 +1,20 @@
+Launch an unmanned probe from the KSC, achieve a stable orbit, transfer to Eeloo, and crash into its surface. Observe atmospheric effects while on impact trajectory to determine atmosphere height for aerobraking/aerocapture in future missions.
+||
+Launch an unmanned probe from the KSC, achieve a stable orbit, transfer to Eeloo, and crash into its surface.
+
+
+Launch an unmanned probe from the KSC, achieve a stable orbit, transfer to Eeloo, and perform an aerobraking maneuver into a stable Eeloo orbit. Optional goal of performing an aerocapture maneuver instead, achieving a low-eccentricity orbit. Don't be a Cheater McCheaterson and use fuel to accomplish the optional goal.
+||
+Launch an unmanned probe from the KSC, achieve a stable Kerbin orbit, transfer to Eeloo, and achieve a stable Eeloo orbit.
+
+
+Launch an unmanned probe from the KSC, achieve a stable Kerbin orbit, transfer to Eeloo, achieve a stable Eeloo orbit, transfer back to Kerbin, and safely land.
+
+
+Launch an unmanned probe from the KSC, achieve a stable Kerbin orbit, transfer to Eeloo and achieve a stable orbit, safely land on Eeloo, launch and re-establish a stable orbit, transfer back to Kerbin, and safely land. Optional goal of undocking a small science vessel to remain on the surface of Eeloo.
+
+
+Launch from the KSC with three crew in a CSM/LM design vessel, achieve a stable Kerbin orbit, transfer to Eeloo and achieve a stable orbit, undock the CSM from the LM, land the CSM on the surface of Eeloo, complete an EVA to collect material samples, launch from the surface to rendezvous with the LM, dock both vessels together, transfer back to Kerbin, and safely land. Optional goal of undocking a small science vessel to remain on the surface of Eeloo.
+
+
+Launch from the KSC with three crew, achieve a stable Kerbin orbit, transfer to Eeloo and achieve a stable orbit, land on the surface of Eeloo, complete an EVA to collect material samples, launch from the surface and re-establish a stable Eeloo orbit, transfer back to Kerbin, and safely land. Optional goal of undocking a small science vessel to remain on the surface of Eeloo.
