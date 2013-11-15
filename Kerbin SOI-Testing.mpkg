@@ -1,0 +1,1698 @@
+MissionPackage
+{
+	name = Kercury, Kemini, Kastor, Kollux, Kapollo, Kartemis
+	description = Placeholder.
+	ownOrder = true
+	
+	Mission
+	{
+		name = Kercury I
+		description = Launch, no orbit, in atmo, landing
+		reward = 30000
+		category = MANNED, AVIATION
+		repeatable = true
+		packageOrder = 1
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 1
+			minAltitude = 10000
+			maxAltitude = 60000
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kercury II
+		description = Launch, no orbit, in space, landing
+		reward = 50000
+		category = MANNED, AVIATION
+		#requiresMission = Kercury I
+		repeatable = true
+		packageOrder = 2
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 1
+			minAltitude = 70000
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kercury III
+		description = Launch, orbit, landing
+		reward = 60000
+		category = MANNED, ORBIT
+		#requiresMission = Kercury II
+		repeatable = true
+		packageOrder = 3
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 1
+			minPeA = 70000
+			maxPeA = 100000
+			minApA = 70000
+			maxApA = 100000
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kercury IV
+		description = Orbit, comms part, landing
+		reward = 60000
+		category = MANNED, ORBIT
+		#requiresMission = Kercury III
+		repeatable = true
+		packageOrder = 4
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		SubMissionGoal
+		{
+			OrbitGoal
+			{
+				body = Kerbin
+				crewCount = 1
+				minPeA = 120000
+				maxPeA = 150000
+				minApA = 120000
+				maxApA = 150000
+			}
+			
+			PartGoal
+            {
+                partName = longAntenna
+                partCount = 1
+            }	
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kemini I
+		description = Orbit, EVA, landing
+		reward = 65000
+		category = MANNED, ORBIT
+		repeatable = true
+		packageOrder = 5
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+			{
+				body = Kerbin
+				crewCount = 1
+				minPeA = 80000
+				maxPeA = 85000
+				minApA = 80000
+				maxApA = 85000
+			}
+		
+		EVAGoal
+		{
+		}
+		
+		SubMissionGoal
+		{
+			optional = true
+			reward = 35000
+			
+			EVAGoal
+			{
+			}
+		
+			OrbitGoal
+			{
+				throttleDown = false
+				body = Kerbin
+				minAltitude = 86000
+			}
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kemini II
+		description = Orbit, higher orbit, EVA, landing
+		reward = 65000
+		category = MANNED, ORBIT
+		#requiresMission = Kemini I
+		repeatable = true
+		packageOrder = 6
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 1
+			minPeA = 400000
+			maxPeA = 500000
+			minApA = 400000
+			maxApA = 500000
+		}
+		
+		EVAGoal
+		{
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+
+	Mission
+	{
+		name = Kemini III
+		description = Unmanned vessel launch, include crew space and landing mechanisms, docking port, orbit
+		reward = 60000
+		category = PROBE, ORBIT
+		#requiresMission = Kemini II
+		repeatable = true
+		packageOrder = 7
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+			crewCount = 0
+		}
+		
+		SubMissionGoal
+		{
+			PartGoal
+			{
+				partName = mk1pod
+				partCount = 1
+			}
+			
+			PartGoal
+			{
+				partName = dockingPort3
+				partCount = 1
+			}
+			
+			PartGoal
+			{
+				partName = parachuteSingle
+				partCount = 1
+			}
+			
+			OrbitGoal
+			{
+				body = Kerbin
+				minPeA = 80000
+				maxPeA = 100000
+				minApA = 80000
+				maxApA = 100000
+			}
+		}
+	}
+	
+	Mission
+	{
+		name = Kemini IV
+		description = Orbit, rendezvous, dock with unmanned ship, raise both to higher orbit, undock, land
+		reward = 80000
+		category = MANNED, DOCKING
+		#requiresMission = Kemini III
+		repeatable = true
+		packageOrder = 8
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		SubMissionGoal
+		{
+			OrbitGoal
+			{
+				body = Kerbin
+				crewCount = 1
+				minPeA = 80000
+				maxPeA = 100000
+				minApA = 80000
+				maxApA = 100000
+			}
+			
+			DockingGoal
+			{
+			}
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			minPeA = 120000
+			maxPeA = 140000
+			minApA = 120000
+			maxApA = 140000
+		}
+		
+		UnDockingGoal
+		{
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kemini V
+		description = Orbit, rendezvous, dock with unmanned ship, EVA to unmanned ship, undock, land
+		reward = 80000
+		category = MANNED, DOCKING
+		#requiresMission = Kemini IV
+		repeatable = true
+		packageOrder = 9
+		
+		SubMissionGoal
+		{
+			LaunchGoal
+			{
+				launchZone = Kerbin
+			}
+		
+			PartGoal
+			{
+				partName = parachuteSingle
+				partCount = 0
+			}
+		}
+		
+		SubMissionGoal
+		{
+			OrbitGoal
+			{
+				body = Kerbin
+				crewCount = 1
+				minPeA = 120000
+				maxPeA = 140000
+				minApA = 120000
+				maxApA = 140000
+			}
+			
+			DockingGoal
+			{
+			}
+		}
+		
+		EVAGoal
+		{
+		}
+		
+		UnDockingGoal
+		{
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kemini VI
+		description = Extremely high orbit, land
+		reward = 100000
+		category = MANNED, ORBIT
+		#requiresMission = Kemini V
+		repeatable = true
+		packageOrder = 10
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 1
+			minPeA = 2500000
+			maxPeA = 3000000
+			minApA = 2500000
+			maxApA = 3000000
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kemini VII
+		description = Orbit, rendezvous, dock with newly unmanned ship, land both
+		reward = 110000
+		category = MANNED, DOCKING
+		#requiresMission = Kemini VI
+		repeatable = true
+		packageOrder = 11
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		SubMissionGoal
+		{
+			OrbitGoal
+			{
+				body = Kerbin
+				crewCount = 1
+				minPeA = 120000
+				maxPeA = 140000
+				minApA = 120000
+				maxApA = 140000
+			}
+			
+			DockingGoal
+			{
+			}
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kastor I
+		description = Probe launch, transfer to Mun, crash
+		reward = 100000
+		category = PROBE, IMPACT
+		repeatable = true
+		packageOrder = 12
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 0
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		CrashGoal
+		{
+			body = Mun
+		}
+	}
+	
+	Mission
+	{
+		name = Kastor II
+		description = Probe launch, transfer to Mun, orbit
+		reward = 120000
+		category = PROBE, ORBIT
+		#requiresMission = Kastor I
+		repeatable = true
+		packageOrder = 13
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 0
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Mun
+			minPeA = 30000
+			maxPeA = 60000
+			minApA = 30000
+			maxApA = 60000
+		}
+	}
+	
+	Mission
+	{
+		name = Kastor III
+		description = Probe launch, transfer to Mun, orbit, transfer to Kerbin, land
+		reward = 150000
+		category = PROBE, ORBIT
+		#requiresMission = Kastor II
+		repeatable = true
+		packageOrder = 14
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 0
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Mun
+			minPeA = 30000
+			maxPeA = 60000
+			minApA = 30000
+			maxApA = 60000
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kastor IV
+		description = Probe launch, transfer to Mun, orbit, land, launch, orbit, transfer to Kerbin, land
+		reward = 180000
+		category = PROBE, LANDING
+		#requiresMission = Kastor III
+		repeatable = true
+		packageOrder = 15
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 0
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Mun
+			minPeA = 30000
+			maxPeA = 60000
+			minApA = 30000
+			maxApA = 60000
+		}
+		
+		LandingGoal
+		{
+			body = Mun
+		}
+		
+		UnDockingGoal
+		{
+			optional = true
+			reward = 60000
+		}
+		
+		OrbitGoal
+		{
+			body = Mun
+			minPeA = 30000
+			maxPeA = 60000
+			minApA = 30000
+			maxApA = 60000
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kollux I
+		description = Probe launch, transfer to Minmus, crash
+		reward = 100000
+		category = PROBE, IMPACT
+		repeatable = true
+		packageOrder = 16
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 0
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		CrashGoal
+		{
+			body = Minmus
+		}
+	}
+	
+	Mission
+	{
+		name = Kollux II
+		description = Probe launch, transfer to Minmus, orbit
+		reward = 120000
+		category = PROBE, ORBIT
+		#requiresMission = Kollux I
+		repeatable = true
+		packageOrder = 17
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 0
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Minmus
+			minPeA = 30000
+			maxPeA = 60000
+			minApA = 30000
+			maxApA = 60000
+		}
+	}
+	
+	Mission
+	{
+		name = Kollux III
+		description = Probe launch, transfer to Minmus, orbit, transfer to Kerbin, land
+		reward = 150000
+		category = PROBE, ORBIT
+		#requiresMission = Kollux II
+		repeatable = true
+		packageOrder = 18
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 0
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Minmus
+			minPeA = 30000
+			maxPeA = 60000
+			minApA = 30000
+			maxApA = 60000
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kollux IV
+		description = Probe launch, transfer to Minmus, orbit, land, launch, orbit, transfer to Kerbin, land
+		reward = 180000
+		category = PROBE, LANDING
+		#requiresMission = Kollux III
+		repeatable = true
+		packageOrder = 19
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 0
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Minmus
+			minPeA = 30000
+			maxPeA = 60000
+			minApA = 30000
+			maxApA = 60000
+		}
+		
+		LandingGoal
+		{
+			body = Minmus
+		}
+		
+		UnDockingGoal
+		{
+			optional = true
+			reward = 60000
+		}
+		
+		OrbitGoal
+		{
+			body = Minmus
+			minPeA = 30000
+			maxPeA = 60000
+			minApA = 30000
+			maxApA = 60000
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kapollo I
+		description = Orbit, three crew module, EVA, land
+		reward = 80000
+		category = MANNED, ORBIT
+		repeatable = true
+		packageOrder = 20
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 3
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		EVAGoal
+		{
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kapollo II
+		description = Extremely high orbit, undock, EVA, adjust orbit, rendezvous, dock, land both
+		reward = 110000
+		category = MANNED, DOCKING
+		#requiresMission = Kapollo I
+		repeatable = true
+		packageOrder = 21
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 3
+			minPeA = 2000000
+			maxPeA = 2500000
+			minApA = 2000000
+			maxApA = 2500000
+		}
+		
+		EVAGoal
+		{
+		}
+		
+		UnDockingGoal
+		{
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 2
+			minPeA = 1500000
+			maxPeA = 2000000
+			minApA = 1500000
+			maxApA = 2000000
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			minPeA = 2000000
+			maxPeA = 2500000
+			minApA = 2000000
+			maxApA = 2500000
+		}
+		
+		DockingGoal
+		{
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+			crewCount = 3
+		}
+	}
+	
+	Mission
+	{
+		name = Kapollo III
+		description = Free return transfer to Mun and back
+		reward = 80000
+		category = MANNED, ORBIT
+		#requiresMission = Kapollo II
+		repeatable = true
+		packageOrder = 22
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 3
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		ResourceGoal
+		{
+			optional = true
+			reward = 30000
+			name = LiquidFuel
+			maxAmount = 0
+		}
+		
+		OrbitGoal
+		{
+			body = Mun
+			minPeA = 10000
+			maxPeA = 200000
+			maxApA = 0
+		}
+		
+		SubMissionGoal
+		{
+			optional = true
+			reward = 20000
+			
+			OrbitGoal
+			{
+				body = Mun
+				minPeA = 10000
+				maxPeA = 200000
+				maxApA = 0
+			}
+			
+			ResourceGoal
+			{
+				name = LiquidFuel
+				maxAmount = 0
+			}
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kapollo IV
+		description = Transfer to Mun, high orbit, transfer to Kerbin, land
+		reward = 100000
+		category = MANNED, ORBIT
+		#requiresMission = Kapollo III
+		repeatable = true
+		packageOrder = 23
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 3
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Mun
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kapollo V
+		description = Transfer to Mun, orbit, transfer to Kerbin, orbit, land
+		reward = 110000
+		category = MANNED, ORBIT
+		#requiresMission = Kapollo IV
+		repeatable = true
+		packageOrder = 24
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 3
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Mun
+			minPeA = 30000
+			maxPeA = 60000
+			minApA = 30000
+			maxApA = 60000
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kapollo VI
+		description = Transfer to Mun, high orbit, undock, low orbit, EVA, rendezvous, dock, transfer to Kerbin, land
+		reward = 120000
+		category = MANNED, DOCKING
+		#requiresMission = Kapollo V
+		repeatable = true
+		packageOrder = 25
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 3
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Mun
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		EVAGoal
+		{
+		}
+		
+		UnDockingGoal
+		{
+		}
+		
+		OrbitGoal
+		{
+			body = Mun
+			crewCount = 2
+			minPeA = 10000
+			maxPeA = 20000
+			minApA = 10000
+			maxApA = 20000
+		}
+		
+		EVAGoal
+		{
+		}
+		
+		SubMissionGoal
+		{
+			OrbitGoal
+			{
+				body = Mun
+				minPeA = 80000
+				maxPeA = 120000
+				minApA = 80000
+				maxApA = 120000
+			}
+			
+			DockingGoal
+			{
+			}
+		}
+		
+		EVAGoal
+		{
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+			crewCount = 3
+		}
+	}
+	
+	Mission
+	{
+		name = Kapollo VII
+		description = Transfer to Mun, low orbit, undock, land, EVA, launch, rendezvous, dock, transfer to Kerbin, land
+		reward = 200000
+		category = MANNED, LANDING
+		#requiresMission = Kapollo VI
+		repeatable = true
+		packageOrder = 26
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 3
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Mun
+			minPeA = 10000
+			maxPeA = 20000
+			minApA = 10000
+			maxApA = 20000
+		}
+		
+		EVAGoal
+		{
+		}
+		
+		UnDockingGoal
+		{
+		}
+		
+		LandingGoal
+		{
+			body = Mun
+			crewCount = 2
+		}
+		
+		UnDockingGoal
+		{
+			optional = true
+			reward = 60000
+		}
+		
+		EVAGoal
+		{
+		}
+		
+		SubMissionGoal
+		{
+			OrbitGoal
+			{
+				body = Mun
+				minPeA = 10000
+				maxPeA = 20000
+				minApA = 10000
+				maxApA = 20000
+			}
+			
+			DockingGoal
+			{
+			}
+		}
+		
+		EVAGoal
+		{
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+			crewCount = 3
+		}
+	}
+	
+	Mission
+	{
+		name = Kapollo VIII
+		description = Transfer to Mun, low orbit, land, EVA, launch, orbit, transfer to Kerbin, land
+		reward = 200000
+		category = MANNED, LANDING
+		#requiresMission = Kapollo VII
+		repeatable = true
+		packageOrder = 27
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 3
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Mun
+			minPeA = 10000
+			maxPeA = 20000
+			minApA = 10000
+			maxApA = 20000
+		}
+		
+		LandingGoal
+		{
+			body = Mun
+			crewCount = 3
+		}
+		
+		UnDockingGoal
+		{
+			optional = true
+			reward = 60000
+		}
+		
+		EVAGoal
+		{
+		}
+		
+		OrbitGoal
+		{
+			body = Mun
+			minPeA = 10000
+			maxPeA = 20000
+			minApA = 10000
+			maxApA = 20000
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+			crewCount = 3
+		}
+	}
+	
+	Mission
+	{
+		name = Kartemis I
+		description = Free return transfer to Minmus and back
+		reward = 100000
+		category = MANNED, ORBIT
+		repeatable = true
+		packageOrder = 28
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 3
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		ResourceGoal
+		{
+			optional = true
+			reward = 30000
+			name = LiquidFuel
+			maxAmount = 0
+		}
+		
+		OrbitGoal
+		{
+			body = Minmus
+			minPeA = 10000
+			maxPeA = 200000
+			maxApA = 0
+		}
+		
+		SubMissionGoal
+		{
+			optional = true
+			reward = 20000
+			
+			OrbitGoal
+			{
+				body = Minmus
+				minPeA = 10000
+				maxPeA = 200000
+				maxApA = 0
+			}
+			
+			ResourceGoal
+			{
+				name = LiquidFuel
+				maxAmount = 0
+			}
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kartemis II
+		description = Transfer to Minmus, high orbit, transfer to Kerbin, land
+		reward = 110000
+		category = MANNED, ORBIT
+		#requiresMission = Kartemis I
+		repeatable = true
+		packageOrder = 29
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 3
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Minmus
+			minPeA = 50000
+			maxPeA = 80000
+			minApA = 50000
+			maxApA = 80000
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kartemis III
+		description = Transfer to Minmus, orbit, transfer to Kerbin, orbit, land
+		reward = 120000
+		category = MANNED, ORBIT
+		#requiresMission = Kartemis II
+		repeatable = true
+		packageOrder = 30
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 3
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Minmus
+			minPeA = 30000
+			maxPeA = 60000
+			minApA = 30000
+			maxApA = 60000
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kartemis IV
+		description = Transfer to Minmus, low orbit, kill horizontal, re-establish low orbit, transfer to Kerbin, land
+		reward = 140000
+		category = MANNED, ORBIT
+		#requiresMission = Kartemis III
+		repeatable = true
+		packageOrder = 31
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 3
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Minmus
+			minPeA = 12000
+			maxPeA = 20000
+			minApA = 12000
+			maxApA = 20000
+		}
+		
+		OrbitGoal
+		{
+			optional = true
+			reward = 30000
+			body = Minmus
+			maxAltitude = 7000
+			minAltitude = 6000
+			maxSpeedOverGround = 5
+			maxVerticalSpeed = 5
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kartemis V
+		description = Transfer to Minmus, high orbit, undock, low orbit, EVA, rendezvous, dock, transfer to Kerbin, land
+		reward = 120000
+		category = MANNED, DOCKING
+		#requiresMission = Kartemis IV
+		repeatable = true
+		packageOrder = 32
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 3
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Minmus
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		EVAGoal
+		{
+		}
+		
+		UnDockingGoal
+		{
+		}
+		
+		OrbitGoal
+		{
+			body = Minmus
+			crewCount = 2
+			minPeA = 10000
+			maxPeA = 20000
+			minApA = 10000
+			maxApA = 20000
+		}
+		
+		EVAGoal
+		{
+		}
+		
+		SubMissionGoal
+		{
+			OrbitGoal
+			{
+				body = Minmus
+				minPeA = 80000
+				maxPeA = 120000
+				minApA = 80000
+				maxApA = 120000
+			}
+			
+			DockingGoal
+			{
+			}
+		}
+		
+		EVAGoal
+		{
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+			crewCount = 3
+		}
+	}
+	
+	Mission
+	{
+		name = Kartemis VI
+		description = Transfer to Minmus, low orbit, undock, land, EVA, launch, rendezvous, dock, transfer to Kerbin, land
+		reward = 200000
+		category = MANNED, LANDING
+		#requiresMission = Kartemis V
+		repeatable = true
+		packageOrder = 33
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 3
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Minmus
+			minPeA = 10000
+			maxPeA = 20000
+			minApA = 10000
+			maxApA = 20000
+		}
+		
+		EVAGoal
+		{
+		}
+		
+		UnDockingGoal
+		{
+		}
+		
+		LandingGoal
+		{
+			body = Minmus
+			crewCount = 2
+		}
+		
+		UnDockingGoal
+		{
+			optional = true
+			reward = 60000
+		}
+		
+		EVAGoal
+		{
+		}
+		
+		SubMissionGoal
+		{
+			OrbitGoal
+			{
+				body = Minmus
+				minPeA = 10000
+				maxPeA = 20000
+				minApA = 10000
+				maxApA = 20000
+			}
+			
+			DockingGoal
+			{
+			}
+		}
+		
+		EVAGoal
+		{
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+			crewCount = 3
+		}
+	}
+	
+	Mission
+	{
+		name = Kartemis VII
+		description = Transfer to Minmus, low orbit, land, EVA, launch, orbit, transfer to Kerbin, land
+		reward = 200000
+		category = MANNED, LANDING
+		#requiresMission = Kartemis V
+		repeatable = true
+		packageOrder = 34
+		
+		LaunchGoal
+		{
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 3
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Minmus
+			minPeA = 10000
+			maxPeA = 20000
+			minApA = 10000
+			maxApA = 20000
+		}
+		
+		LandingGoal
+		{
+			body = Minmus
+			crewCount = 3
+		}
+		
+		UnDockingGoal
+		{
+			optional = true
+			reward = 60000
+		}
+		
+		EVAGoal
+		{
+		}
+		
+		OrbitGoal
+		{
+			body = Minmus
+			minPeA = 10000
+			maxPeA = 20000
+			minApA = 10000
+			maxApA = 20000
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+			crewCount = 3
+		}
+	}
+}
