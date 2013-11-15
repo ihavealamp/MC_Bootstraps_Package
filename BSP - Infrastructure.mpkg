@@ -1,0 +1,8 @@
+MissionPackage
+{
+	name = Bootstraps - Infrastructure Mission Package
+	description = This mission package focuses on programs involving the setup of station support infrastrutre both in orbit around planetary bodies and on their surface. The target audience is experienced players who have completed the Interplanetary mission package or have the requisite skills to do so.
+	ownOrder = true
+	
+	Mission
+	{
