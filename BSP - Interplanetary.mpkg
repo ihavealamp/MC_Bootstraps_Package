@@ -7,7 +7,7 @@ MissionPackage
 	Mission
 	{
 		name = Kares I
-		description = Probe launch, transfer to Duna, crash, determine atmo range for proper orbit and aerobraking
+		description = Launch an unmanned probe from the KSC, achieve a stable orbit, transfer to Duna, and crash into its surface. Observe atmospheric effects while on impact trajectory to determine atmosphere height for aerobraking/aerocapture in future missions.
 		reward = 200000
 		category = PROBE, IMPACT
 		repeatable = true
@@ -37,7 +37,7 @@ MissionPackage
 	Mission
 	{
 		name = Kares II
-		description = Probe launch, transfer to Duna, aerobrake or aerocapture, orbit
+		description = Launch an unmanned probe from the KSC, achieve a stable orbit, transfer to Duna, and perform an aerobraking maneuver into a stable Duna orbit. Optional goal of performing an aerocapture maneuver instead, achieving a low-eccentricity orbit. Don't be a Cheater McCheaterson and use fuel to accomplish the optional goal.
 		reward = 250000
 		category = PROBE, ORBIT
 		requiresMission = Kares I
@@ -89,7 +89,7 @@ MissionPackage
 	Mission
 	{
 		name = Kares III
-		description = Probe launch, transfer to Duna, orbit, transfer to Kerbin, land
+		description = Launch an unmanned probe from the KSC, achieve a stable Kerbin orbit, transfer to Duna, achieve a stable Duna orbit, transfer back to Kerbin, and safely land.
 		reward = 300000
 		category = PROBE, ORBIT
 		requiresMission = Kares II
@@ -129,7 +129,7 @@ MissionPackage
 	Mission
 	{
 		name = Kares IV
-		description = Probe launch, transfer to Duna, orbit, land, launch, orbit, transfer to Kerbin, land
+		description = Launch an unmanned probe from the KSC, achieve a stable Kerbin orbit, transfer to Duna and achieve a stable orbit, safely land on Duna, launch and re-establish a stable orbit, transfer back to Kerbin, and safely land. Optional goal of undocking a small science vessel to remain on the surface of Duna.
 		reward = 350000
 		category = PROBE, LANDING
 		requiresMission = Kares III
@@ -189,7 +189,7 @@ MissionPackage
 	Mission
 	{
 		name = Kares V
-		description = Transfer to Duna, orbit, CM-LM req, land, EVA, launch, orbit, transfer to Kerbin, land
+		description = Launch from the KSC with three crew in a CSM/LM design vessel, achieve a stable Kerbin orbit, transfer to Duna and achieve a stable orbit, undock the CSM from the LM, land the CSM on the surface of Duna, complete an EVA to collect material samples, launch from the surface to rendezvous with the LM, dock both vessels together, transfer back to Kerbin, and safely land. Optional goal of undocking a small science vessel to remain on the surface of Duna.
 		reward = 500000
 		category = MANNED, LANDING
 		requiresMission = Kares IV
@@ -218,10 +218,6 @@ MissionPackage
 			maxPeA = 100000
 			minApA = 50000
 			maxApA = 100000
-		}
-		
-		EVAGoal
-		{
 		}
 		
 		UnDockingGoal
@@ -260,10 +256,6 @@ MissionPackage
 			}
 		}
 		
-		EVAGoal
-		{
-		}
-		
 		LandingGoal
 		{
 			body = Kerbin
@@ -274,7 +266,7 @@ MissionPackage
 	Mission
 	{
 		name = Kares VI
-		description = Transfer to Duna, orbit, land, EVA, launch, orbit, transfer to Kerbin, land
+		description = Launch from the KSC with three crew, achieve a stable Kerbin orbit, transfer to Duna and achieve a stable orbit, land on the surface of Duna, complete an EVA to collect material samples, launch from the surface and re-establish a stable Duna orbit, transfer back to Kerbin, and safely land. Optional goal of undocking a small science vessel to remain on the surface of Duna.
 		reward = 600000
 		category = MANNED, LANDING
 		requiresMission = Kares IV
@@ -340,7 +332,7 @@ MissionPackage
 	Mission
 	{
 		name = Kaphrodite I
-		description = Probe launch, transfer to Eve, crash, determine atmo range for proper orbit and aerobraking
+		description = Launch an unmanned probe from the KSC, achieve a stable orbit, transfer to Eve, and crash into its surface. Observe atmospheric effects while on impact trajectory to determine atmosphere height for aerobraking/aerocapture in future missions.
 		reward = 200000
 		category = PROBE, IMPACT
 		repeatable = true
@@ -370,7 +362,7 @@ MissionPackage
 	Mission
 	{
 		name = Kaphrodite II
-		description = Probe launch, transfer to Eve, aerobrake or aerocapture, orbit
+		description = Launch an unmanned probe from the KSC, achieve a stable orbit, transfer to Eve, and perform an aerobraking maneuver into a stable Eve orbit. Optional goal of performing an aerocapture maneuver instead, achieving a low-eccentricity orbit. Don't be a Cheater McCheaterson and use fuel to accomplish the optional goal.
 		reward = 250000
 		category = PROBE, ORBIT
 		requiresMission = Kaphrodite I
@@ -422,7 +414,7 @@ MissionPackage
 	Mission
 	{
 		name = Kaphrodite III
-		description = Probe launch, transfer to Eve, orbit, transfer to Kerbin, land
+		description = Launch an unmanned probe from the KSC, achieve a stable Kerbin orbit, transfer to Eve, achieve a stable Eve orbit, transfer back to Kerbin, and safely land.
 		reward = 300000
 		category = PROBE, ORBIT
 		requiresMission = Kaphrodite II
@@ -462,7 +454,7 @@ MissionPackage
 	Mission
 	{
 		name = Kaphrodite IV
-		description = Probe launch, transfer to Eve, orbit, land, launch, orbit, transfer to Kerbin, land
+		description = Launch an unmanned probe from the KSC, achieve a stable Kerbin orbit, transfer to Eve and achieve a stable orbit, safely land on Eve, launch and re-establish a stable orbit, transfer back to Kerbin, and safely land. Optional goal of undocking a small science vessel to remain on the surface of Eve.
 		reward = 350000
 		category = PROBE, LANDING
 		requiresMission = Kaphrodite III
@@ -522,7 +514,7 @@ MissionPackage
 	Mission
 	{
 		name = Kaphrodite V
-		description = Transfer to Eve, orbit, CM-LM req, land, EVA, launch, orbit, transfer to Kerbin, land
+		description = Launch from the KSC with three crew in a CSM/LM design vessel, achieve a stable Kerbin orbit, transfer to Eve and achieve a stable orbit, undock the CSM from the LM, land the CSM on the surface of Eve, complete an EVA to collect material samples, launch from the surface to rendezvous with the LM, dock both vessels together, transfer back to Kerbin, and safely land. Optional goal of undocking a small science vessel to remain on the surface of Eve.
 		reward = 750000
 		category = MANNED, LANDING
 		requiresMission = Kaphrodite IV
@@ -551,10 +543,6 @@ MissionPackage
 			maxPeA = 200000
 			minApA = 97000
 			maxApA = 200000
-		}
-		
-		EVAGoal
-		{
 		}
 		
 		UnDockingGoal
@@ -593,10 +581,6 @@ MissionPackage
 			}
 		}
 		
-		EVAGoal
-		{
-		}
-		
 		LandingGoal
 		{
 			body = Kerbin
@@ -607,7 +591,7 @@ MissionPackage
 	Mission
 	{
 		name = Kaphrodite VI
-		description = Transfer to Eve, orbit, land, EVA, launch, orbit, transfer to Kerbin, land
+		description = Launch from the KSC with three crew, achieve a stable Kerbin orbit, transfer to Eve and achieve a stable orbit, land on the surface of Eve, complete an EVA to collect material samples, launch from the surface and re-establish a stable Eve orbit, transfer back to Kerbin, and safely land. Optional goal of undocking a small science vessel to remain on the surface of Eve.
 		reward = 850000
 		category = MANNED, LANDING
 		requiresMission = Kaphrodite IV
@@ -673,7 +657,7 @@ MissionPackage
 	Mission
 	{
 		name = Kera I
-		description = Probe launch, transfer to Jool, crash, determine atmo range for proper orbit and aerobraking
+		description = Launch an unmanned probe from the KSC, achieve a stable orbit, transfer to Jool, and crash into its surface. Observe atmospheric effects while on impact trajectory to determine atmosphere height for aerobraking/aerocapture in future missions.
 		reward = 200000
 		category = PROBE, IMPACT
 		repeatable = true
@@ -703,7 +687,7 @@ MissionPackage
 	Mission
 	{
 		name = Kera II
-		description = Probe launch, transfer to Jool, aerobrake or aerocapture, orbit
+		description = Launch an unmanned probe from the KSC, achieve a stable orbit, transfer to Jool, and perform an aerobraking maneuver into a stable Jool orbit. Optional goal of performing an aerocapture maneuver instead, achieving a low-eccentricity orbit. Don't be a Cheater McCheaterson and use fuel to accomplish the optional goal.
 		reward = 250000
 		category = PROBE, ORBIT
 		requiresMission = Kera I
@@ -755,7 +739,7 @@ MissionPackage
 	Mission
 	{
 		name = Kera III
-		description = Probe launch, transfer to Jool, orbit, land
+		description = Launch an unmanned probe from the KSC, achieve a stable Kerbin orbit, transfer to Jool, achieve a stable Jool orbit, and safely land.
 		reward = 300000
 		category = PROBE, LANDING
 		requiresMission = Kera II
@@ -795,7 +779,7 @@ MissionPackage
 	Mission
 	{
 		name = Kera IV
-		description = Probe launch, transfer to Jool, orbit, transfer to Kerbin, land
+		description = Launch an unmanned probe from the KSC, achieve a stable Kerbin orbit, transfer to Jool, achieve a stable Jool orbit, transfer back to Kerbin, and safely land.
 		reward = 400000
 		category = PROBE, ORBIT
 		requiresMission = Kera III
@@ -835,7 +819,7 @@ MissionPackage
 	Mission
 	{
 		name = Kermes I
-		description = Probe launch, transfer to Dres, crash, determine atmo range for proper orbit and aerobraking
+		description = Launch an unmanned probe from the KSC, achieve a stable orbit, transfer to Dres, and crash into its surface.
 		reward = 300000
 		category = PROBE, IMPACT
 		repeatable = true
@@ -865,7 +849,7 @@ MissionPackage
 	Mission
 	{
 		name = Kermes II
-		description = Probe launch, transfer to Dres, orbit
+		description = Launch an unmanned probe from the KSC, achieve a stable Kerbin orbit, transfer to Dres, and achieve a stable Dres orbit.
 		reward = 350000
 		category = PROBE, ORBIT
 		requiresMission = Kermes I
@@ -900,7 +884,7 @@ MissionPackage
 	Mission
 	{
 		name = Kermes III
-		description = Probe launch, transfer to Dres, orbit, transfer to Kerbin, land
+		description = Launch an unmanned probe from the KSC, achieve a stable Kerbin orbit, transfer to Dres, achieve a stable Dres orbit, transfer back to Kerbin, and safely land.
 		reward = 450000
 		category = PROBE, ORBIT
 		requiresMission = Kermes II
@@ -940,7 +924,7 @@ MissionPackage
 	Mission
 	{
 		name = Kermes IV
-		description = Probe launch, transfer to Dres, orbit, land, launch, orbit, transfer to Kerbin, land
+		description = Launch an unmanned probe from the KSC, achieve a stable Kerbin orbit, transfer to Dres and achieve a stable orbit, safely land on Dres, launch and re-establish a stable orbit, transfer back to Kerbin, and safely land. Optional goal of undocking a small science vessel to remain on the surface of Dres.
 		reward = 500000
 		category = PROBE, LANDING
 		requiresMission = Kermes III
@@ -1000,7 +984,7 @@ MissionPackage
 	Mission
 	{
 		name = Kermes V
-		description = Transfer to Dres, orbit, CM-LM req, land, EVA, launch, orbit, transfer to Kerbin, land
+		description = Launch from the KSC with three crew in a CSM/LM design vessel, achieve a stable Kerbin orbit, transfer to Dres and achieve a stable orbit, undock the CSM from the LM, land the CSM on the surface of Dres, complete an EVA to collect material samples, launch from the surface to rendezvous with the LM, dock both vessels together, transfer back to Kerbin, and safely land. Optional goal of undocking a small science vessel to remain on the surface of Dres.
 		reward = 800000
 		category = MANNED, LANDING
 		requiresMission = Kermes IV
@@ -1029,10 +1013,6 @@ MissionPackage
 			maxPeA = 60000
 			minApA = 30000
 			maxApA = 60000
-		}
-		
-		EVAGoal
-		{
 		}
 		
 		UnDockingGoal
@@ -1071,10 +1051,6 @@ MissionPackage
 			}
 		}
 		
-		EVAGoal
-		{
-		}
-		
 		LandingGoal
 		{
 			body = Kerbin
@@ -1085,7 +1061,7 @@ MissionPackage
 	Mission
 	{
 		name = Kermes VI
-		description = Transfer to Dres, orbit, land, EVA, launch, orbit, transfer to Kerbin, land
+		description = Launch from the KSC with three crew, achieve a stable Kerbin orbit, transfer to Dres and achieve a stable orbit, land on the surface of Dres, complete an EVA to collect material samples, launch from the surface and re-establish a stable Dres orbit, transfer back to Kerbin, and safely land. Optional goal of undocking a small science vessel to remain on the surface of Dres.
 		reward = 900000
 		category = MANNED, LANDING
 		requiresMission = Kermes IV
@@ -1151,7 +1127,7 @@ MissionPackage
 	Mission
 	{
 		name = Kephaestus I
-		description = Probe launch, transfer to Moho, crash, determine atmo range for proper orbit and aerobraking
+		description = Launch an unmanned probe from the KSC, achieve a stable orbit, transfer to Moho, and crash into its surface.
 		reward = 300000
 		category = PROBE, IMPACT
 		repeatable = true
@@ -1181,7 +1157,7 @@ MissionPackage
 	Mission
 	{
 		name = Kephaestus II
-		description = Probe launch, transfer to Moho, orbit
+		description = Launch an unmanned probe from the KSC, achieve a stable Kerbin orbit, transfer to Moho, and achieve a stable Moho orbit.
 		reward = 350000
 		category = PROBE, ORBIT
 		requiresMission = Kephaestus I
@@ -1216,7 +1192,7 @@ MissionPackage
 	Mission
 	{
 		name = Kephaestus III
-		description = Probe launch, transfer to Moho, orbit, transfer to Kerbin, land
+		description = Launch an unmanned probe from the KSC, achieve a stable Kerbin orbit, transfer to Moho, achieve a stable Moho orbit, transfer back to Kerbin, and safely land.
 		reward = 450000
 		category = PROBE, ORBIT
 		requiresMission = Kephaestus II
@@ -1256,7 +1232,7 @@ MissionPackage
 	Mission
 	{
 		name = Kephaestus IV
-		description = Probe launch, transfer to Moho, orbit, land, launch, orbit, transfer to Kerbin, land
+		description = Launch an unmanned probe from the KSC, achieve a stable Kerbin orbit, transfer to Moho and achieve a stable orbit, safely land on Moho, launch and re-establish a stable orbit, transfer back to Kerbin, and safely land. Optional goal of undocking a small science vessel to remain on the surface of Moho.
 		reward = 500000
 		category = PROBE, LANDING
 		requiresMission = Kephaestus III
@@ -1316,7 +1292,7 @@ MissionPackage
 	Mission
 	{
 		name = Kephaestus V
-		description = Transfer to Moho, orbit, CM-LM req, land, EVA, launch, orbit, transfer to Kerbin, land
+		description = Launch from the KSC with three crew in a CSM/LM design vessel, achieve a stable Kerbin orbit, transfer to Moho and achieve a stable orbit, undock the CSM from the LM, land the CSM on the surface of Moho, complete an EVA to collect material samples, launch from the surface to rendezvous with the LM, dock both vessels together, transfer back to Kerbin, and safely land. Optional goal of undocking a small science vessel to remain on the surface of Moho.
 		reward = 800000
 		category = MANNED, LANDING
 		requiresMission = Kephaestus IV
@@ -1345,10 +1321,6 @@ MissionPackage
 			maxPeA = 60000
 			minApA = 30000
 			maxApA = 60000
-		}
-		
-		EVAGoal
-		{
 		}
 		
 		UnDockingGoal
@@ -1387,10 +1359,6 @@ MissionPackage
 			}
 		}
 		
-		EVAGoal
-		{
-		}
-		
 		LandingGoal
 		{
 			body = Kerbin
@@ -1401,7 +1369,7 @@ MissionPackage
 	Mission
 	{
 		name = Kephaestus VI
-		description = Transfer to Moho, orbit, land, EVA, launch, orbit, transfer to Kerbin, land
+		description = Launch from the KSC with three crew, achieve a stable Kerbin orbit, transfer to Moho and achieve a stable orbit, land on the surface of Moho, complete an EVA to collect material samples, launch from the surface and re-establish a stable Moho orbit, transfer back to Kerbin, and safely land. Optional goal of undocking a small science vessel to remain on the surface of Moho.
 		reward = 900000
 		category = MANNED, LANDING
 		requiresMission = Kephaestus IV
@@ -1467,7 +1435,7 @@ MissionPackage
 	Mission
 	{
 		name = Kades I
-		description = Probe launch, transfer to Eeloo, crash, determine atmo range for proper orbit and aerobraking
+		description = Launch an unmanned probe from the KSC, achieve a stable orbit, transfer to Eeloo, and crash into its surface.
 		reward = 350000
 		category = PROBE, IMPACT
 		repeatable = true
@@ -1497,7 +1465,7 @@ MissionPackage
 	Mission
 	{
 		name = Kades II
-		description = Probe launch, transfer to Eeloo, orbit
+		description = Launch an unmanned probe from the KSC, achieve a stable Kerbin orbit, transfer to Eeloo, and achieve a stable Eeloo orbit.
 		reward = 400000
 		category = PROBE, ORBIT
 		requiresMission = Kades I
@@ -1532,7 +1500,7 @@ MissionPackage
 	Mission
 	{
 		name = Kades III
-		description = Probe launch, transfer to Eeloo, orbit, transfer to Kerbin, land
+		description = Launch an unmanned probe from the KSC, achieve a stable Kerbin orbit, transfer to Eeloo, achieve a stable Eeloo orbit, transfer back to Kerbin, and safely land.
 		reward = 500000
 		category = PROBE, ORBIT
 		requiresMission = Kades II
@@ -1572,7 +1540,7 @@ MissionPackage
 	Mission
 	{
 		name = Kades IV
-		description = Probe launch, transfer to Eeloo, orbit, land, launch, orbit, transfer to Kerbin, land
+		description = Launch an unmanned probe from the KSC, achieve a stable Kerbin orbit, transfer to Eeloo and achieve a stable orbit, safely land on Eeloo, launch and re-establish a stable orbit, transfer back to Kerbin, and safely land. Optional goal of undocking a small science vessel to remain on the surface of Eeloo.
 		reward = 600000
 		category = PROBE, LANDING
 		requiresMission = Kades III
@@ -1632,7 +1600,7 @@ MissionPackage
 	Mission
 	{
 		name = Kades V
-		description = Transfer to Eeloo, orbit, CM-LM req, land, EVA, launch, orbit, transfer to Kerbin, land
+		description = Launch from the KSC with three crew in a CSM/LM design vessel, achieve a stable Kerbin orbit, transfer to Eeloo and achieve a stable orbit, undock the CSM from the LM, land the CSM on the surface of Eeloo, complete an EVA to collect material samples, launch from the surface to rendezvous with the LM, dock both vessels together, transfer back to Kerbin, and safely land. Optional goal of undocking a small science vessel to remain on the surface of Eeloo.
 		reward = 900000
 		category = MANNED, LANDING
 		requiresMission = Kades IV
@@ -1661,10 +1629,6 @@ MissionPackage
 			maxPeA = 60000
 			minApA = 30000
 			maxApA = 60000
-		}
-		
-		EVAGoal
-		{
 		}
 		
 		UnDockingGoal
@@ -1703,10 +1667,6 @@ MissionPackage
 			}
 		}
 		
-		EVAGoal
-		{
-		}
-		
 		LandingGoal
 		{
 			body = Kerbin
@@ -1717,7 +1677,7 @@ MissionPackage
 	Mission
 	{
 		name = Kades VI
-		description = Transfer to Eeloo, orbit, land, EVA, launch, orbit, transfer to Kerbin, land
+		description = Launch from the KSC with three crew, achieve a stable Kerbin orbit, transfer to Eeloo and achieve a stable orbit, land on the surface of Eeloo, complete an EVA to collect material samples, launch from the surface and re-establish a stable Eeloo orbit, transfer back to Kerbin, and safely land. Optional goal of undocking a small science vessel to remain on the surface of Eeloo.
 		reward = 1000000
 		category = MANNED, LANDING
 		requiresMission = Kades IV
