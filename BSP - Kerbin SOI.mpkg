@@ -14,7 +14,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Successfully launch from the KSC. 
+			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -45,12 +45,13 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Successfully launch from the KSC. 
+			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
 		OrbitGoal
 		{
+			description = Reach an altitude over 70 kilometers.
 			body = Kerbin
 			crewCount = 1
 			minAltitude = 70000
@@ -73,7 +74,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Successfully launch from the KSC. 
+			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -96,7 +97,7 @@ MissionPackage
 	Mission
 	{
 		name = Kercury IV
-		description = Launch from the KSC equipped with comms hardware, achieve a stable orbit, and safely land. 
+		description = Launch from the KSC equipped with communications hardware, achieve a stable orbit, and safely land. 
 		reward = 60000
 		category = MANNED, ORBIT
 		requiresMission = Kercury III
@@ -104,12 +105,14 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Successfully launch from the KSC. 
+			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
 		SubMissionGoal
 		{
+			description = Establish a stable orbit and extend the communications antenna.
+			
 			OrbitGoal
 			{
 				body = Kerbin
@@ -143,7 +146,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Successfully launch from the KSC. 
+			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -163,6 +166,7 @@ MissionPackage
 		
 		SubMissionGoal
 		{
+			description = Use EVA pack thrusters to ascend to an altitude of at least 86 kilometers before re-boarding the vessel.
 			optional = true
 			reward = 35000
 			
@@ -195,7 +199,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Successfully launch from the KSC. 
+			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -222,7 +226,7 @@ MissionPackage
 	Mission
 	{
 		name = Kemini III
-		description = Launch an unmanned vessel from the KSC - capable of transporting a single crew and landing safely - and establish a stable orbit.
+		description = Launch an unmanned vessel from the KSC - capable of transporting a single crew and landing safely - and establish a stable orbit. \n\nImportant: Also ensure that the vessel is equipped with a Command Pod Mk 1, Clamp-o-Tron Jr. Docking Port, and a Mk-16 Parachute for use in later missions.
 		reward = 60000
 		category = PROBE, ORBIT
 		requiresMission = Kemini II
@@ -231,12 +235,14 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Successfully launch from the KSC. 
+			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
 		SubMissionGoal
 		{
+			description = Establish a stable orbit, ensuring that the vessel is equipped with a Command Pod Mk 1, Clamp-o-Tron Jr. Docking Port, and a Mk-16 Parachute.
+			
 			PartGoal
 			{
 				partName = mk1pod
@@ -278,12 +284,14 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Successfully launch from the KSC. 
+			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
 		SubMissionGoal
 		{
+			description = Establish a stable orbit, rendezvous with the Kemini III vessel, and secure a solid docking connection.
+			
 			OrbitGoal
 			{
 				body = Kerbin
@@ -321,7 +329,7 @@ MissionPackage
 	Mission
 	{
 		name = Kemini V
-		description = Launch from the KSC with a vessel incapable of landing safely, rendezvous with the Kemini III unmanned vessel, dock, complete an EVA and transfer to the Kemini III vessel, undock, and safely land.
+		description = Launch from the KSC with a vessel incapable of landing safely, rendezvous with the Kemini III unmanned vessel, dock, complete an EVA and transfer to the Kemini III vessel, undock, and safely land.\n\nImportant: Also ensure that the vessel is not equipped with any parachutes - this is taken into account during the course of the mission, do not be concerned.
 		reward = 80000
 		category = MANNED, DOCKING
 		requiresMission = Kemini IV
@@ -329,9 +337,10 @@ MissionPackage
 		
 		SubMissionGoal
 		{
+			description = Launch from the surface, ensuring that the vessel does not have any parachutes attached.
+			
 			LaunchGoal
 			{
-				description = Successfully launch from the KSC. 
 				launchZone = Kerbin
 			}
 		
@@ -361,6 +370,7 @@ MissionPackage
 		
 		EVAGoal
 		{
+			description = Complete an EVA and transfer the crew member to the attached vessel equipped with landing hardware.
 		}
 		
 		UnDockingGoal
@@ -384,7 +394,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Successfully launch from the KSC. 
+			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -415,12 +425,14 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Successfully launch from the KSC. 
+			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
 		SubMissionGoal
 		{
+			description = Establish a stable orbit, rendezvous with the Kemini V vessel, and secure a solid docking connection.
+			
 			OrbitGoal
 			{
 				body = Kerbin
@@ -452,7 +464,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Successfully launch from the KSC. 
+			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -483,7 +495,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Successfully launch from the KSC. 
+			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -518,7 +530,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Successfully launch from the KSC. 
+			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -559,7 +571,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Successfully launch from the KSC. 
+			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -618,7 +630,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Successfully launch from the KSC. 
+			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -649,7 +661,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Successfully launch from the KSC. 
+			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -684,7 +696,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Successfully launch from the KSC. 
+			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -725,7 +737,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Successfully launch from the KSC. 
+			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -784,7 +796,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Successfully launch from the KSC. 
+			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -819,7 +831,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Successfully launch from the KSC. 
+			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -849,6 +861,8 @@ MissionPackage
 		
 		SubMissionGoal
 		{
+			description = Establish a stable orbit, rendezvous with the LM, and secure a solid docking connection.
+			
 			OrbitGoal
 			{
 				body = Kerbin
@@ -881,7 +895,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Successfully launch from the KSC. 
+			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -913,6 +927,7 @@ MissionPackage
 		
 		SubMissionGoal
 		{
+			description = Jettison all fuel aboard the vessel prior to flyby maneuver.
 			optional = true
 			reward = 20000
 			
@@ -948,7 +963,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Successfully launch from the KSC. 
+			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -988,7 +1003,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Successfully launch from the KSC. 
+			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -1037,7 +1052,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Successfully launch from the KSC. 
+			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -1080,6 +1095,8 @@ MissionPackage
 		
 		SubMissionGoal
 		{
+			description = Establish a stable orbit, rendezvous with the LM, and secure a solid docking connection.
+			
 			OrbitGoal
 			{
 				body = Mun
@@ -1113,7 +1130,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Successfully launch from the KSC. 
+			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -1154,10 +1171,13 @@ MissionPackage
 		
 		EVAGoal
 		{
+			description = Complete an EVA to collect material samples.
 		}
 		
 		SubMissionGoal
 		{
+			description = Establish a stable orbit, rendezvous with the LM, and secure a solid docking connection.
+			
 			OrbitGoal
 			{
 				body = Mun
@@ -1191,7 +1211,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Successfully launch from the KSC. 
+			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -1228,6 +1248,7 @@ MissionPackage
 		
 		EVAGoal
 		{
+			description = Complete an EVA to collect material samples.
 		}
 		
 		OrbitGoal
@@ -1256,7 +1277,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Successfully launch from the KSC. 
+			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -1288,6 +1309,7 @@ MissionPackage
 		
 		SubMissionGoal
 		{
+			description = Jettison all fuel aboard the vessel prior to flyby maneuver.
 			optional = true
 			reward = 20000
 			
@@ -1323,7 +1345,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Successfully launch from the KSC. 
+			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -1363,7 +1385,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Successfully launch from the KSC. 
+			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -1412,7 +1434,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Successfully launch from the KSC. 
+			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -1464,7 +1486,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Successfully launch from the KSC. 
+			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -1507,6 +1529,8 @@ MissionPackage
 		
 		SubMissionGoal
 		{
+			description = Establish a stable orbit, rendezvous with the LM, and secure a solid docking connection.
+			
 			OrbitGoal
 			{
 				body = Minmus
@@ -1540,7 +1564,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Successfully launch from the KSC. 
+			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -1581,10 +1605,13 @@ MissionPackage
 		
 		EVAGoal
 		{
+			description = Complete an EVA to collect material samples.
 		}
 		
 		SubMissionGoal
 		{
+			description = Establish a stable orbit, rendezvous with the LM, and secure a solid docking connection.
+			
 			OrbitGoal
 			{
 				body = Minmus
@@ -1618,7 +1645,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Successfully launch from the KSC. 
+			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -1655,6 +1682,7 @@ MissionPackage
 		
 		EVAGoal
 		{
+			description = Complete an EVA to collect material samples.
 		}
 		
 		OrbitGoal

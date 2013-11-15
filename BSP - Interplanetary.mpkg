@@ -59,12 +59,14 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Perform an aerobraking maneuver.
 			body = Duna
 			maxPeA = 41000
 		}
 		
 		OrbitGoal
 		{
+			description = Complete an aerocapture maneuver into a low eccentricity orbit.
 			optional = true
 			reward = 100000
 			body = Duna
@@ -76,6 +78,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Complete an aerobraking maneuver into a stable orbit.
 			body = Duna
 			minPeA = 42000
 			maxPeA = 100000
@@ -235,10 +238,13 @@ MissionPackage
 		
 		EVAGoal
 		{
+			description = Complete an EVA to collect material samples.
 		}
 		
 		SubMissionGoal
 		{
+			description = Establish a stable orbit, rendezvous with the LM, and secure a solid docking connection.
+			
 			OrbitGoal
 			{
 				body = Duna
@@ -308,6 +314,7 @@ MissionPackage
 		
 		EVAGoal
 		{
+			description = Complete an EVA to collect material samples.
 		}
 		
 		OrbitGoal
@@ -381,12 +388,14 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Perform an aerobraking maneuver.
 			body = Eve
 			maxPeA = 96000
 		}
 		
 		OrbitGoal
 		{
+			description = Complete an aerocapture maneuver into a low eccentricity orbit.
 			optional = true
 			reward = 100000
 			body = Eve
@@ -398,6 +407,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Complete an aerobraking maneuver into a stable orbit.
 			body = Eve
 			minPeA = 97000
 			maxPeA = 200000
@@ -557,10 +567,13 @@ MissionPackage
 		
 		EVAGoal
 		{
+			description = Complete an EVA to collect material samples.
 		}
 		
 		SubMissionGoal
 		{
+			description = Establish a stable orbit, rendezvous with the LM, and secure a solid docking connection.
+			
 			OrbitGoal
 			{
 				body = Eve
@@ -630,6 +643,7 @@ MissionPackage
 		
 		EVAGoal
 		{
+			description = Complete an EVA to collect material samples.
 		}
 		
 		OrbitGoal
@@ -703,12 +717,14 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Perform an aerobraking maneuver.
 			body = Jool
 			maxPeA = 137000
 		}
 		
 		OrbitGoal
 		{
+			description = Complete an aerocapture maneuver into a low eccentricity orbit.
 			optional = true
 			reward = 100000
 			body = Jool
@@ -720,6 +736,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Complete an aerobraking maneuver into a stable orbit.
 			body = Jool
 			minPeA = 139000
 			maxPeA = 200000
@@ -1021,10 +1038,13 @@ MissionPackage
 		
 		EVAGoal
 		{
+			description = Complete an EVA to collect material samples.
 		}
 		
 		SubMissionGoal
 		{
+			description = Establish a stable orbit, rendezvous with the LM, and secure a solid docking connection.
+			
 			OrbitGoal
 			{
 				body = Dres
@@ -1094,6 +1114,7 @@ MissionPackage
 		
 		EVAGoal
 		{
+			description = Complete an EVA to collect material samples.
 		}
 		
 		OrbitGoal
@@ -1326,10 +1347,13 @@ MissionPackage
 		
 		EVAGoal
 		{
+			description = Complete an EVA to collect material samples.
 		}
 		
 		SubMissionGoal
 		{
+			description = Establish a stable orbit, rendezvous with the LM, and secure a solid docking connection.
+			
 			OrbitGoal
 			{
 				body = Moho
@@ -1399,6 +1423,7 @@ MissionPackage
 		
 		EVAGoal
 		{
+			description = Complete an EVA to collect material samples.
 		}
 		
 		OrbitGoal
@@ -1631,10 +1656,13 @@ MissionPackage
 		
 		EVAGoal
 		{
+			description = Complete an EVA to collect material samples.
 		}
 		
 		SubMissionGoal
 		{
+			description = Establish a stable orbit, rendezvous with the LM, and secure a solid docking connection.
+			
 			OrbitGoal
 			{
 				body = Eeloo
@@ -1704,6 +1732,7 @@ MissionPackage
 		
 		EVAGoal
 		{
+			description = Complete an EVA to collect material samples.
 		}
 		
 		OrbitGoal
