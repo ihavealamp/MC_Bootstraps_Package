@@ -7,7 +7,7 @@ MissionPackage
 	Mission
 	{
 		name = Kares I
-		description = Launch an unmanned probe from the KSC, achieve a stable orbit, transfer to Duna, and crash into its surface. Observe atmospheric effects while on impact trajectory to determine atmosphere height for aerobraking/aerocapture in future missions.
+		description = Launch an unmanned probe from the Kerbal Space Center (KSC), achieve a stable orbit, transfer to Duna, and crash into its surface. Observe atmospheric effects while on impact trajectory to determine atmosphere height for aerobraking/aerocapture in future missions.
 		reward = 200000
 		category = PROBE, IMPACT
 		repeatable = true

@@ -7,7 +7,7 @@ MissionPackage
 	Mission
 	{
 		name = Kercury I
-		description = Launch from the Kerbin Space Center (KSC), climb high within Kerbin's atmosphere, and safely land. 
+		description = Launch from the Kerbal Space Center (KSC), climb high within Kerbin's atmosphere, and safely land. 
 		reward = 30000
 		category = MANNED, AVIATION
 		repeatable = true
