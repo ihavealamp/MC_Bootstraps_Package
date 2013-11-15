@@ -5,7 +5,12 @@ v0.1.0:
 v0.1.1:
 -Updated package names with BSP- naming convention
 -Cleaned up mission package names and descriptions
--Included test packages that remove mission completion requirement, allows easier testing deep into the chain
+-Included test packages that remove mission completion requirement, allows easy testing deeper into the chain
 
-v0.1.2:
--Updated readme.txt to include installation & usage instructions, titles and additional flavor text
+v0.2.0:
+-Added basic mission descriptions to all missions
+-Scattered goal descriptions
+-Removed EVA/crew transfer requirements in all CSM/LM missions
+-Added CSM/LM description in Kapollo II mission description
+-Added throttleDown = false qualifier to Kartemis IV mission (BSP-Kerbin SOI)
+-Updated readme.txt to include installation & usage instructions, section titles and additional flavor text
