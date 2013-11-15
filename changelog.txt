@@ -1,0 +1,8 @@
+v0.1.0:
+-Initial launch
+-Interplanetary and Kerbin SOI mission packages included
+
+v0.1.1:
+-Updated package names with BSP- naming convention
+-Cleaned up mission package names and descriptions
+-Included test packages that remove mission completion requirement, allows easier testing deep into the chain
