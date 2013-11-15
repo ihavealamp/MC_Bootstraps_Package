@@ -1,0 +1,1699 @@
+MissionPackage
+{
+	name = Bootstraps - Kerbin Sphere of Influence (SOI) Mission Package
+	description = This mission package focuses on programs within Kerbin's sphere of influence. The target audience is new players just learning the game and completionists who want to start from the beginning.
+	ownOrder = true
+	
+	Mission
+	{
+		name = Kercury I
+		description = Launch from the Kerbin Space Center (KSC), climb high within Kerbin's atmosphere, and safely land. 
+		reward = 30000
+		category = MANNED, AVIATION
+		repeatable = true
+		packageOrder = 1
+		
+		LaunchGoal
+		{
+			description = Successfully launch from the KSC. 
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			description = Reach an altitude between 10 and 60 kilometers. 
+			body = Kerbin
+			crewCount = 1
+			minAltitude = 10000
+			maxAltitude = 60000
+		}
+		
+		LandingGoal
+		{
+			description = Safely land the vessel. 
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kercury II
+		description = Launch from the KSC, escape Kerbin's atmosphere, and safely land. 
+		reward = 50000
+		category = MANNED, AVIATION
+		#requiresMission = Kercury I
+		repeatable = true
+		packageOrder = 2
+		
+		LaunchGoal
+		{
+			description = Successfully launch from the KSC. 
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 1
+			minAltitude = 70000
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kercury III
+		description = Launch from the KSC, achieve a stable orbit, and safely land. 
+		reward = 60000
+		category = MANNED, ORBIT
+		#requiresMission = Kercury II
+		repeatable = true
+		packageOrder = 3
+		
+		LaunchGoal
+		{
+			description = Successfully launch from the KSC. 
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 1
+			minPeA = 70000
+			maxPeA = 100000
+			minApA = 70000
+			maxApA = 100000
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kercury IV
+		description = Launch from the KSC equipped with comms hardware, achieve a stable orbit, and safely land. 
+		reward = 60000
+		category = MANNED, ORBIT
+		#requiresMission = Kercury III
+		repeatable = true
+		packageOrder = 4
+		
+		LaunchGoal
+		{
+			description = Successfully launch from the KSC. 
+			launchZone = Kerbin
+		}
+		
+		SubMissionGoal
+		{
+			OrbitGoal
+			{
+				body = Kerbin
+				crewCount = 1
+				minPeA = 120000
+				maxPeA = 150000
+				minApA = 120000
+				maxApA = 150000
+			}
+			
+			PartGoal
+            {
+                partName = longAntenna
+                partCount = 1
+            }	
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kemini I
+		description = Launch from the KSC, achieve a stable orbit, complete an EVA, and safely land. Optional goal of taking an extended spacewalk during EVA and returning to vessel.
+		reward = 65000
+		category = MANNED, ORBIT
+		repeatable = true
+		packageOrder = 5
+		
+		LaunchGoal
+		{
+			description = Successfully launch from the KSC. 
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+			{
+				body = Kerbin
+				crewCount = 1
+				minPeA = 80000
+				maxPeA = 85000
+				minApA = 80000
+				maxApA = 85000
+			}
+		
+		EVAGoal
+		{
+		}
+		
+		SubMissionGoal
+		{
+			optional = true
+			reward = 35000
+			
+			EVAGoal
+			{
+			}
+		
+			OrbitGoal
+			{
+				throttleDown = false
+				body = Kerbin
+				minAltitude = 86000
+			}
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kemini II
+		description = Launch from the KSC, achieve a high, stable orbit, complete an EVA, and safely land.
+		reward = 65000
+		category = MANNED, ORBIT
+		#requiresMission = Kemini I
+		repeatable = true
+		packageOrder = 6
+		
+		LaunchGoal
+		{
+			description = Successfully launch from the KSC. 
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 1
+			minPeA = 400000
+			maxPeA = 500000
+			minApA = 400000
+			maxApA = 500000
+		}
+		
+		EVAGoal
+		{
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+
+	Mission
+	{
+		name = Kemini III
+		description = Launch an unmanned vessel from the KSC - capable of transporting a single crew and landing safely - and establish a stable orbit.
+		reward = 60000
+		category = PROBE, ORBIT
+		#requiresMission = Kemini II
+		repeatable = true
+		packageOrder = 7
+		
+		LaunchGoal
+		{
+			description = Successfully launch from the KSC. 
+			launchZone = Kerbin
+			crewCount = 0
+		}
+		
+		SubMissionGoal
+		{
+			PartGoal
+			{
+				partName = mk1pod
+				partCount = 1
+			}
+			
+			PartGoal
+			{
+				partName = dockingPort3
+				partCount = 1
+			}
+			
+			PartGoal
+			{
+				partName = parachuteSingle
+				partCount = 1
+			}
+			
+			OrbitGoal
+			{
+				body = Kerbin
+				minPeA = 80000
+				maxPeA = 100000
+				minApA = 80000
+				maxApA = 100000
+			}
+		}
+	}
+	
+	Mission
+	{
+		name = Kemini IV
+		description = Launch from the KSC, rendezvous with the Kemini III unmanned vessel, dock, raise both vessels at once to a higher orbit, undock, and safely land.
+		reward = 80000
+		category = MANNED, DOCKING
+		#requiresMission = Kemini III
+		repeatable = true
+		packageOrder = 8
+		
+		LaunchGoal
+		{
+			description = Successfully launch from the KSC. 
+			launchZone = Kerbin
+		}
+		
+		SubMissionGoal
+		{
+			OrbitGoal
+			{
+				body = Kerbin
+				crewCount = 1
+				minPeA = 80000
+				maxPeA = 100000
+				minApA = 80000
+				maxApA = 100000
+			}
+			
+			DockingGoal
+			{
+			}
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			minPeA = 120000
+			maxPeA = 140000
+			minApA = 120000
+			maxApA = 140000
+		}
+		
+		UnDockingGoal
+		{
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kemini V
+		description = Launch from the KSC with a vessel incapable of landing safely, rendezvous with the Kemini III unmanned vessel, dock, complete an EVA and transfer to the Kemini III vessel, undock, and safely land.
+		reward = 80000
+		category = MANNED, DOCKING
+		#requiresMission = Kemini IV
+		repeatable = true
+		packageOrder = 9
+		
+		SubMissionGoal
+		{
+			LaunchGoal
+			{
+				description = Successfully launch from the KSC. 
+				launchZone = Kerbin
+			}
+		
+			PartGoal
+			{
+				partName = parachuteSingle
+				partCount = 0
+			}
+		}
+		
+		SubMissionGoal
+		{
+			OrbitGoal
+			{
+				body = Kerbin
+				crewCount = 1
+				minPeA = 120000
+				maxPeA = 140000
+				minApA = 120000
+				maxApA = 140000
+			}
+			
+			DockingGoal
+			{
+			}
+		}
+		
+		EVAGoal
+		{
+		}
+		
+		UnDockingGoal
+		{
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kemini VI
+		description = Launch from the KSC, achieve an extreme orbit, and safely land.
+		reward = 100000
+		category = MANNED, ORBIT
+		#requiresMission = Kemini V
+		repeatable = true
+		packageOrder = 10
+		
+		LaunchGoal
+		{
+			description = Successfully launch from the KSC. 
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 1
+			minPeA = 2500000
+			maxPeA = 3000000
+			minApA = 2500000
+			maxApA = 3000000
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kemini VII
+		description = Launch from the KSC, rendezvous with the unmanned Kemini V vessel, dock, and safely land both vessels.
+		reward = 110000
+		category = MANNED, DOCKING
+		#requiresMission = Kemini VI
+		repeatable = true
+		packageOrder = 11
+		
+		LaunchGoal
+		{
+			description = Successfully launch from the KSC. 
+			launchZone = Kerbin
+		}
+		
+		SubMissionGoal
+		{
+			OrbitGoal
+			{
+				body = Kerbin
+				crewCount = 1
+				minPeA = 120000
+				maxPeA = 140000
+				minApA = 120000
+				maxApA = 140000
+			}
+			
+			DockingGoal
+			{
+			}
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kastor I
+		description = Launch an unmanned probe from the KSC, achieve a stable orbit, transfer to the Mun and crash into its surface.
+		reward = 100000
+		category = PROBE, IMPACT
+		repeatable = true
+		packageOrder = 12
+		
+		LaunchGoal
+		{
+			description = Successfully launch from the KSC. 
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 0
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		CrashGoal
+		{
+			body = Mun
+		}
+	}
+	
+	Mission
+	{
+		name = Kastor II
+		description = Launch an unmanned probe from the KSC, achieve a stable Kerbin orbit, transfer to the Mun, and achieve a stable Mun orbit.
+		reward = 120000
+		category = PROBE, ORBIT
+		#requiresMission = Kastor I
+		repeatable = true
+		packageOrder = 13
+		
+		LaunchGoal
+		{
+			description = Successfully launch from the KSC. 
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 0
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Mun
+			minPeA = 30000
+			maxPeA = 60000
+			minApA = 30000
+			maxApA = 60000
+		}
+	}
+	
+	Mission
+	{
+		name = Kastor III
+		description = Launch an unmanned probe from the KSC, achieve a stable Kerbin orbit, transfer to the Mun, achieve a stable Mun orbit, transfer back to Kerbin, and safely land.
+		reward = 150000
+		category = PROBE, ORBIT
+		#requiresMission = Kastor II
+		repeatable = true
+		packageOrder = 14
+		
+		LaunchGoal
+		{
+			description = Successfully launch from the KSC. 
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 0
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Mun
+			minPeA = 30000
+			maxPeA = 60000
+			minApA = 30000
+			maxApA = 60000
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kastor IV
+		description = Launch an unmanned probe from the KSC, achieve a stable Kerbin orbit, transfer to the Mun and achieve a stable orbit, safely land on the Mun, launch and re-establish a stable orbit, transfer back to Kerbin, and safely land. Optional goal of undocking a small science vessel to remain on the surface of the Mun.
+		reward = 180000
+		category = PROBE, LANDING
+		#requiresMission = Kastor III
+		repeatable = true
+		packageOrder = 15
+		
+		LaunchGoal
+		{
+			description = Successfully launch from the KSC. 
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 0
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Mun
+			minPeA = 30000
+			maxPeA = 60000
+			minApA = 30000
+			maxApA = 60000
+		}
+		
+		LandingGoal
+		{
+			body = Mun
+		}
+		
+		UnDockingGoal
+		{
+			optional = true
+			reward = 60000
+		}
+		
+		OrbitGoal
+		{
+			body = Mun
+			minPeA = 30000
+			maxPeA = 60000
+			minApA = 30000
+			maxApA = 60000
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kollux I
+		description = Launch an unmanned probe from the KSC, achieve a stable orbit, transfer to Minmus, and crash into its surface.
+		reward = 100000
+		category = PROBE, IMPACT
+		repeatable = true
+		packageOrder = 16
+		
+		LaunchGoal
+		{
+			description = Successfully launch from the KSC. 
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 0
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		CrashGoal
+		{
+			body = Minmus
+		}
+	}
+	
+	Mission
+	{
+		name = Kollux II
+		description = Launch an unmanned probe from the KSC, achieve a stable Kerbin orbit, transfer to Minmus, and achieve a stable Minmus orbit.
+		reward = 120000
+		category = PROBE, ORBIT
+		#requiresMission = Kollux I
+		repeatable = true
+		packageOrder = 17
+		
+		LaunchGoal
+		{
+			description = Successfully launch from the KSC. 
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 0
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Minmus
+			minPeA = 30000
+			maxPeA = 60000
+			minApA = 30000
+			maxApA = 60000
+		}
+	}
+	
+	Mission
+	{
+		name = Kollux III
+		description = Launch an unmanned probe from the KSC, achieve a stable Kerbin orbit, transfer to Minmus, achieve a stable Minmus orbit, transfer back to Kerbin, and safely land.
+		reward = 150000
+		category = PROBE, ORBIT
+		#requiresMission = Kollux II
+		repeatable = true
+		packageOrder = 18
+		
+		LaunchGoal
+		{
+			description = Successfully launch from the KSC. 
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 0
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Minmus
+			minPeA = 30000
+			maxPeA = 60000
+			minApA = 30000
+			maxApA = 60000
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kollux IV
+		description = Launch an unmanned probe from the KSC, achieve a stable Kerbin orbit, transfer to Minmus and achieve a stable orbit, safely land on Minmus, launch and re-establish a stable orbit, transfer back to Kerbin, and safely land. Optional goal of undocking a small science vessel to remain on the surface of Minmus.
+		reward = 180000
+		category = PROBE, LANDING
+		#requiresMission = Kollux III
+		repeatable = true
+		packageOrder = 19
+		
+		LaunchGoal
+		{
+			description = Successfully launch from the KSC. 
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 0
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Minmus
+			minPeA = 30000
+			maxPeA = 60000
+			minApA = 30000
+			maxApA = 60000
+		}
+		
+		LandingGoal
+		{
+			body = Minmus
+		}
+		
+		UnDockingGoal
+		{
+			optional = true
+			reward = 60000
+		}
+		
+		OrbitGoal
+		{
+			body = Minmus
+			minPeA = 30000
+			maxPeA = 60000
+			minApA = 30000
+			maxApA = 60000
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kapollo I
+		description = Launch from the KSC with three crew, achieve a stable orbit, and safely land.
+		reward = 80000
+		category = MANNED, ORBIT
+		repeatable = true
+		packageOrder = 20
+		
+		LaunchGoal
+		{
+			description = Successfully launch from the KSC. 
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 3
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		EVAGoal
+		{
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kapollo II
+		description = Launch from the KSC with three crew in a CSM/LM design vessel, achieve an extreme orbit, undock the CSM from the LM, lower the CSM's orbit, rendezvous with the LM, dock both vessels together, and safely land.\n\nThe CSM/LM design - Command/Service Module (CSM) and Lunar Module (LM) is intended to have the CSM handle landing and ascent to a planetary body with two crew members, while the LM handles lunar orbit and transfer back to Kerbin, supporting one crew member. It is recommended that two crew members be housed in a Mk2 Lander-can and the third be housed in a Command Pod Mk1 (for the CSM/LM missions).
+		reward = 110000
+		category = MANNED, DOCKING
+		#requiresMission = Kapollo I
+		repeatable = true
+		packageOrder = 21
+		
+		LaunchGoal
+		{
+			description = Successfully launch from the KSC. 
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 3
+			minPeA = 2000000
+			maxPeA = 2500000
+			minApA = 2000000
+			maxApA = 2500000
+		}
+		
+		UnDockingGoal
+		{
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 2
+			minPeA = 1500000
+			maxPeA = 2000000
+			minApA = 1500000
+			maxApA = 2000000
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			minPeA = 2000000
+			maxPeA = 2500000
+			minApA = 2000000
+			maxApA = 2500000
+		}
+		
+		DockingGoal
+		{
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+			crewCount = 3
+		}
+	}
+	
+	Mission
+	{
+		name = Kapollo III
+		description = Launch from the KSC with three crew, achieve a stable orbit, attempt a free return trajectory - allow the vessel to be captured in the Mun's gravitational field, perform a flyby of the Mun at a reasonable range, pass out of the Mun's sphere of influence, returning to Kerbin - and safely land. Fuel may be expended to perform this maneuver, but there is an optional goal of ditching/expending all liquid fuel immediately after a transfer burn from Kerbin to the Mun is complete.
+		reward = 80000
+		category = MANNED, ORBIT
+		#requiresMission = Kapollo II
+		repeatable = true
+		packageOrder = 22
+		
+		LaunchGoal
+		{
+			description = Successfully launch from the KSC. 
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 3
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		ResourceGoal
+		{
+			optional = true
+			reward = 30000
+			name = LiquidFuel
+			maxAmount = 0
+		}
+		
+		OrbitGoal
+		{
+			body = Mun
+			minPeA = 10000
+			maxPeA = 200000
+			maxApA = 0
+		}
+		
+		SubMissionGoal
+		{
+			optional = true
+			reward = 20000
+			
+			OrbitGoal
+			{
+				body = Mun
+				minPeA = 10000
+				maxPeA = 200000
+				maxApA = 0
+			}
+			
+			ResourceGoal
+			{
+				name = LiquidFuel
+				maxAmount = 0
+			}
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kapollo IV
+		description = Launch from the KSC with three crew, achieve a stable Kerbin orbit, transfer to the Mun and achieve a stable orbit, transfer back to Kerbin, and safely land.
+		reward = 100000
+		category = MANNED, ORBIT
+		#requiresMission = Kapollo III
+		repeatable = true
+		packageOrder = 23
+		
+		LaunchGoal
+		{
+			description = Successfully launch from the KSC. 
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 3
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Mun
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kapollo V
+		description = Launch from the KSC with three crew, achieve a stable Kerbin orbit, transfer to the Mun and achieve a stable orbit, transfer back to Kerbin and re-establish a stable orbit, and safely land.
+		reward = 110000
+		category = MANNED, ORBIT
+		#requiresMission = Kapollo IV
+		repeatable = true
+		packageOrder = 24
+		
+		LaunchGoal
+		{
+			description = Successfully launch from the KSC. 
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 3
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Mun
+			minPeA = 30000
+			maxPeA = 60000
+			minApA = 30000
+			maxApA = 60000
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kapollo VI
+		description = Launch from the KSC with three crew in a CSM/LM design vessel, achieve a stable Kerbin orbit, transfer to the Mun and achieve a stable orbit, undock the CSM from the LM, lower the CSM's orbit, complete an EVA spacewalk, rendezvous with the LM, dock both vessels together, transfer back to Kerbin, and safely land.
+		reward = 120000
+		category = MANNED, DOCKING
+		#requiresMission = Kapollo V
+		repeatable = true
+		packageOrder = 25
+		
+		LaunchGoal
+		{
+			description = Successfully launch from the KSC. 
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 3
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Mun
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		UnDockingGoal
+		{
+		}
+		
+		OrbitGoal
+		{
+			body = Mun
+			crewCount = 2
+			minPeA = 10000
+			maxPeA = 20000
+			minApA = 10000
+			maxApA = 20000
+		}
+		
+		EVAGoal
+		{
+		}
+		
+		SubMissionGoal
+		{
+			OrbitGoal
+			{
+				body = Mun
+				minPeA = 80000
+				maxPeA = 120000
+				minApA = 80000
+				maxApA = 120000
+			}
+			
+			DockingGoal
+			{
+			}
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+			crewCount = 3
+		}
+	}
+	
+	Mission
+	{
+		name = Kapollo VII
+		description = Launch from the KSC with three crew in a CSM/LM design vessel, achieve a stable Kerbin orbit, transfer to the Mun and achieve a stable orbit, undock the CSM from the LM, land the CSM on the surface of the Mun, complete an EVA to collect material samples, launch from the surface to rendezvous with the LM, dock both vessels together, transfer back to Kerbin, and safely land. Optional goal of undocking a small science vessel to remain on the surface of the Mun.
+		reward = 200000
+		category = MANNED, LANDING
+		#requiresMission = Kapollo VI
+		repeatable = true
+		packageOrder = 26
+		
+		LaunchGoal
+		{
+			description = Successfully launch from the KSC. 
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 3
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Mun
+			minPeA = 10000
+			maxPeA = 20000
+			minApA = 10000
+			maxApA = 20000
+		}
+		
+		UnDockingGoal
+		{
+		}
+		
+		LandingGoal
+		{
+			body = Mun
+			crewCount = 2
+		}
+		
+		UnDockingGoal
+		{
+			optional = true
+			reward = 60000
+		}
+		
+		EVAGoal
+		{
+		}
+		
+		SubMissionGoal
+		{
+			OrbitGoal
+			{
+				body = Mun
+				minPeA = 10000
+				maxPeA = 20000
+				minApA = 10000
+				maxApA = 20000
+			}
+			
+			DockingGoal
+			{
+			}
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+			crewCount = 3
+		}
+	}
+	
+	Mission
+	{
+		name = Kapollo VIII
+		description = Launch from the KSC with three crew, achieve a stable Kerbin orbit, transfer to the Mun and achieve a stable orbit, land on the surface of the Mun, complete an EVA to collect material samples, launch from the surface and re-establish a stable Mun orbit, transfer back to Kerbin, and safely land. Optional goal of undocking a small science vessel to remain on the surface of the Mun.
+		reward = 200000
+		category = MANNED, LANDING
+		#requiresMission = Kapollo VII
+		repeatable = true
+		packageOrder = 27
+		
+		LaunchGoal
+		{
+			description = Successfully launch from the KSC. 
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 3
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Mun
+			minPeA = 10000
+			maxPeA = 20000
+			minApA = 10000
+			maxApA = 20000
+		}
+		
+		LandingGoal
+		{
+			body = Mun
+			crewCount = 3
+		}
+		
+		UnDockingGoal
+		{
+			optional = true
+			reward = 60000
+		}
+		
+		EVAGoal
+		{
+		}
+		
+		OrbitGoal
+		{
+			body = Mun
+			minPeA = 10000
+			maxPeA = 20000
+			minApA = 10000
+			maxApA = 20000
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+			crewCount = 3
+		}
+	}
+	
+	Mission
+	{
+		name = Kartemis I
+		description = Launch from the KSC with three crew, achieve a stable orbit, attempt a free return trajectory - allow the vessel to be captured in Minmus' gravitational field, perform a flyby of Minmus at a reasonable range, pass out of Minmus' sphere of influence, returning to Kerbin - and safely land. Fuel may be expended to perform this maneuver, but there is an optional goal of ditching/expending all liquid fuel immediately after a transfer burn from Kerbin to Minmus is complete.
+		reward = 100000
+		category = MANNED, ORBIT
+		repeatable = true
+		packageOrder = 28
+		
+		LaunchGoal
+		{
+			description = Successfully launch from the KSC. 
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 3
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		ResourceGoal
+		{
+			optional = true
+			reward = 30000
+			name = LiquidFuel
+			maxAmount = 0
+		}
+		
+		OrbitGoal
+		{
+			body = Minmus
+			minPeA = 10000
+			maxPeA = 200000
+			maxApA = 0
+		}
+		
+		SubMissionGoal
+		{
+			optional = true
+			reward = 20000
+			
+			OrbitGoal
+			{
+				body = Minmus
+				minPeA = 10000
+				maxPeA = 200000
+				maxApA = 0
+			}
+			
+			ResourceGoal
+			{
+				name = LiquidFuel
+				maxAmount = 0
+			}
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kartemis II
+		description = Launch from the KSC with three crew, achieve a stable Kerbin orbit, transfer to Minmus and achieve a stable orbit, transfer back to Kerbin, and safely land.
+		reward = 110000
+		category = MANNED, ORBIT
+		#requiresMission = Kartemis I
+		repeatable = true
+		packageOrder = 29
+		
+		LaunchGoal
+		{
+			description = Successfully launch from the KSC. 
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 3
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Minmus
+			minPeA = 50000
+			maxPeA = 80000
+			minApA = 50000
+			maxApA = 80000
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kartemis III
+		description = Launch from the KSC with three crew, achieve a stable Kerbin orbit, transfer to the Mun and achieve a stable orbit, transfer back to Kerbin and re-establish a stable orbit, and safely land.
+		reward = 120000
+		category = MANNED, ORBIT
+		#requiresMission = Kartemis II
+		repeatable = true
+		packageOrder = 30
+		
+		LaunchGoal
+		{
+			description = Successfully launch from the KSC. 
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 3
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Minmus
+			minPeA = 30000
+			maxPeA = 60000
+			minApA = 30000
+			maxApA = 60000
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kartemis IV
+		description = Launch from the KSC with three crew, achieve a stable Kerbin orbit, transfer to Minmus and achieve a low orbit, transfer back to Kerbin, and safely land. Optional goal of killing horizontal and vertical velocity to near zero at low altitude over Minmus.
+		reward = 140000
+		category = MANNED, ORBIT
+		#requiresMission = Kartemis III
+		repeatable = true
+		packageOrder = 31
+		
+		LaunchGoal
+		{
+			description = Successfully launch from the KSC. 
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 3
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Minmus
+			minPeA = 12000
+			maxPeA = 20000
+			minApA = 12000
+			maxApA = 20000
+		}
+		
+		OrbitGoal
+		{
+			optional = true
+			reward = 30000
+			throttleDown = false
+			body = Minmus
+			maxAltitude = 7000
+			minAltitude = 6000
+			maxSpeedOverGround = 5
+			maxVerticalSpeed = 5
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+		}
+	}
+	
+	Mission
+	{
+		name = Kartemis V
+		description = Launch from the KSC with three crew in a CSM/LM design vessel, achieve a stable Kerbin orbit, transfer to Minmus and achieve a stable orbit, undock the CSM from the LM, lower the CSM's orbit, complete an EVA spacewalk, rendezvous with the LM, dock both vessels together, transfer back to Kerbin, and safely land.
+		reward = 120000
+		category = MANNED, DOCKING
+		#requiresMission = Kartemis IV
+		repeatable = true
+		packageOrder = 32
+		
+		LaunchGoal
+		{
+			description = Successfully launch from the KSC. 
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 3
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Minmus
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		UnDockingGoal
+		{
+		}
+		
+		OrbitGoal
+		{
+			body = Minmus
+			crewCount = 2
+			minPeA = 10000
+			maxPeA = 20000
+			minApA = 10000
+			maxApA = 20000
+		}
+		
+		EVAGoal
+		{
+		}
+		
+		SubMissionGoal
+		{
+			OrbitGoal
+			{
+				body = Minmus
+				minPeA = 80000
+				maxPeA = 120000
+				minApA = 80000
+				maxApA = 120000
+			}
+			
+			DockingGoal
+			{
+			}
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+			crewCount = 3
+		}
+	}
+	
+	Mission
+	{
+		name = Kartemis VI
+		description = Launch from the KSC with three crew in a CSM/LM design vessel, achieve a stable Kerbin orbit, transfer to Minmus and achieve a stable orbit, undock the CSM from the LM, land the CSM on the surface of Minmus, complete an EVA to collect material samples, launch from the surface to rendezvous with the LM, dock both vessels together, transfer back to Kerbin, and safely land. Optional goal of undocking a small science vessel to remain on the surface of Minmus.
+		reward = 200000
+		category = MANNED, LANDING
+		#requiresMission = Kartemis V
+		repeatable = true
+		packageOrder = 33
+		
+		LaunchGoal
+		{
+			description = Successfully launch from the KSC. 
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 3
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Minmus
+			minPeA = 10000
+			maxPeA = 20000
+			minApA = 10000
+			maxApA = 20000
+		}
+		
+		UnDockingGoal
+		{
+		}
+		
+		LandingGoal
+		{
+			body = Minmus
+			crewCount = 2
+		}
+		
+		UnDockingGoal
+		{
+			optional = true
+			reward = 60000
+		}
+		
+		EVAGoal
+		{
+		}
+		
+		SubMissionGoal
+		{
+			OrbitGoal
+			{
+				body = Minmus
+				minPeA = 10000
+				maxPeA = 20000
+				minApA = 10000
+				maxApA = 20000
+			}
+			
+			DockingGoal
+			{
+			}
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+			crewCount = 3
+		}
+	}
+	
+	Mission
+	{
+		name = Kartemis VII
+		description = Launch from the KSC with three crew, achieve a stable Kerbin orbit, transfer to Minmus and achieve a stable orbit, land on the surface of Minmus, complete an EVA to collect material samples, launch from the surface and re-establish a stable Minmus orbit, transfer back to Kerbin, and safely land. Optional goal of undocking a small science vessel to remain on the surface of Minmus.
+		reward = 200000
+		category = MANNED, LANDING
+		#requiresMission = Kartemis V
+		repeatable = true
+		packageOrder = 34
+		
+		LaunchGoal
+		{
+			description = Successfully launch from the KSC. 
+			launchZone = Kerbin
+		}
+		
+		OrbitGoal
+		{
+			body = Kerbin
+			crewCount = 3
+			minPeA = 80000
+			maxPeA = 120000
+			minApA = 80000
+			maxApA = 120000
+		}
+		
+		OrbitGoal
+		{
+			body = Minmus
+			minPeA = 10000
+			maxPeA = 20000
+			minApA = 10000
+			maxApA = 20000
+		}
+		
+		LandingGoal
+		{
+			body = Minmus
+			crewCount = 3
+		}
+		
+		UnDockingGoal
+		{
+			optional = true
+			reward = 60000
+		}
+		
+		EVAGoal
+		{
+		}
+		
+		OrbitGoal
+		{
+			body = Minmus
+			minPeA = 10000
+			maxPeA = 20000
+			minApA = 10000
+			maxApA = 20000
+		}
+		
+		LandingGoal
+		{
+			body = Kerbin
+			crewCount = 3
+		}
+	}
+}
