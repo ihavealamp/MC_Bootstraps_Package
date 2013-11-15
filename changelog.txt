@@ -6,3 +6,6 @@ v0.1.1:
 -Updated package names with BSP- naming convention
 -Cleaned up mission package names and descriptions
 -Included test packages that remove mission completion requirement, allows easier testing deep into the chain
+
+v0.1.2:
+-Updated readme.txt to include installation & usage instructions, titles and additional flavor text

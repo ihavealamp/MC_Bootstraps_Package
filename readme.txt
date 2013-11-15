@@ -3,9 +3,15 @@ Author: Anthony Pendleton (apendleton AT gmail DOT com)
 
 -------------------------------------------------------
 
-This is a project to create a series of mission packages for the Mission Controller Extended (MC) mod in conjunction with Kerbal Space Program (KSP). The goal is to provide a pathway for new players to learn the game in a fashion similar to how real life space programs developed. Much of the inspiration for this project came from the NASA and Soviet programs, condensing things where I felt necessary and providing a clean flow.
+Description:
 
-The initial scope is two-fold - programs within Kerbal's sphere of influence (Kerbal SOI.mpkg) and interplanetary programs (Interplanetary.mpkg). Including a high level overview of the programs within each package below:
+This is a project to create a series of mission packages for the Mission Controller Extended (MC) mod in conjunction with Kerbal Space Program (KSP). The goal is to provide a pathway for new players to learn the game - picking themselves up by their bootstraps - similar to how real life space programs developed. Much of the inspiration for this project came from the NASA and Soviet programs, condensing things where I felt necessary and providing a clean flow.
+
+
+
+Scope:
+
+The current scope is limited to programs within Kerbal's sphere of influence (Kerbal SOI.mpkg) and interplanetary programs (Interplanetary.mpkg). Including a high level overview of the programs within each package below.
 
 Kerbal SOI, 34 missions
 
@@ -27,7 +33,30 @@ Interplanetary, 34 missions
 
 
 
-Prospective additions include:
+Installation/Usage:
+
+1. Make sure you have the latest version of the Mission Controller Extended mod installed: http://forum.kerbalspaceprogram.com/threads/43645-(KSP-22)-Mission-Controller-Extended-(Updated-Nov-6)-(BETA-36)
+
+2. Copy all *.mpkg files within the downloaded MC_Bootstraps_Package directory into your GameData\MissionController\Plugins\PluginData\MissionController directory.
+
+3. Launch the game.
+
+4. Open the Mission Controller plugin once you're at the Space Center.
+
+5. Select one of the "BSP" packages.
+
+6. Select a mission.
+
+
+7. Enjoy!
+
+8. Feel free to report any issues or submit enhancement requests via GitHub: https://github.com/ihavealamp/MC_Bootstraps_Package/issues/new
+
+
+
+Roadmap:
+
+Looking forward down the line, here are the prospective additions I have down so far.
 
 -Interlunatary (same scope as the Interplanetary package, but for all non-Kerbin moons)
 -K-Plane (based on historical X-Plane program)
