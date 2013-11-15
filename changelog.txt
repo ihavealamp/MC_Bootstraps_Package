@@ -16,3 +16,6 @@ v0.2.0:
 -Removed repeatable = true qualifier from most missions, kept on capstone missions
 -Updated readme.txt to include installation & usage instructions, section titles and additional flavor text
 -Corrected various typos in all mission packages
+
+v0.2.1:
+-Updated readme.txt to include better description information, website link
