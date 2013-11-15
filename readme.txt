@@ -38,25 +38,17 @@ Interplanetary, 34 missions
 Installation/Usage:
 
 1. Make sure you have the latest version of the Mission Controller Extended mod installed: http://forum.kerbalspaceprogram.com/threads/43645-(KSP-22)-Mission-Controller-Extended-(Updated-Nov-6)-(BETA-36)
-
 2. Copy all *.mpkg files within the downloaded MC_Bootstraps_Package directory into your GameData\MissionController\Plugins\PluginData\MissionController directory.
-
 3. Launch the game.
-
 4. Open the Mission Controller plugin once you're at the Space Center.
-
 5. Select one of the "BSP" packages.
-
 6. Select a mission.
-
-
 7. Enjoy!
-
 8. Feel free to report any issues or submit enhancement requests via GitHub: https://github.com/ihavealamp/MC_Bootstraps_Package/issues/new
 
 
 
-Roadmap:
+Future Mission Packages:
 
 Looking forward down the line, here are the prospective additions I have down so far.
 
@@ -67,3 +59,19 @@ Looking forward down the line, here are the prospective additions I have down so
 -Surface Infrastructure (surface stations, all planetary bodies)
 -Mining Operations (leverage Kethane mod for both mining and refueling operations)
 -Survival Mode (require Deadly Re-Entry and IonCross mods, disallow MechJeb mod)
+
+
+
+Roadmap/Schedule:
+
+Short-Term Focus
+-Test basic functionality for all missions
+-Add basic descriptions for all goals
+
+Mid-Term Focus
+-Add full descriptions for all missions and goals
+-Build additional mission packages
+
+Long-Term Focus
+-Gather feedback on mission rewards and fine-tune
+-Transition mission rewards from mission completion to goal completion
