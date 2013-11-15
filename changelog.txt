@@ -19,3 +19,4 @@ v0.2.0:
 
 v0.2.1:
 -Updated readme.txt to include better description information, website link
+-Wrapped the OrbitGoal and DockingGoal for the Kapollo mission into a SubMissionGoal
