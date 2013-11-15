@@ -1,0 +1,55 @@
+#Notes:
+#Free return mission flyby goals will be updated improperly
+#Aerobrake mission goals will be updated improperly
+#Atmo orbit goals (Kercury I/II) will be updated improperly
+#Transfers back to Kerbin without capture orbits will be updated improperly
+---
+		LaunchGoal
+		{
+			description = Launch from the surface. 
+			launchZone
+---
+		LandingGoal
+		{
+			description = Land the vessel on the surface.
+			body
+---
+		OrbitGoal
+		{
+			description = Establish a stable orbit.
+			body
+---
+		EVAGoal
+		{
+			description = Complete an EVA with at least one crew member.
+		}
+---
+		UnDockingGoal
+		{
+			description = Undock from the connected vessel.
+		}
+---
+		CrashGoal
+		{
+			description = Crash the vessel into the surface.
+			body
+---
+		UnDockingGoal
+		{
+			description = Undock a small science vessel to remain on the surface.
+			optional = true
+			reward
+---
+		DockingGoal
+		{
+			description = Dock 
+		}
+---
+		ResourceGoal
+		{
+			description = Jettison all fuel aboard the vessel.
+			optional = true
+			reward = 30000
+			name = LiquidFuel
+			maxAmount = 0
+		}
