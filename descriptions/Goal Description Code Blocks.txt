@@ -1,8 +1,9 @@
 #Notes:
-#Free return mission flyby goals will be updated improperly
-#Aerobrake mission goals will be updated improperly
-#Atmo orbit goals (Kercury I/II) will be updated improperly
-#Transfers back to Kerbin without capture orbits will be updated improperly
+#Free return mission flyby goals will be updated improperly - mitigated
+#Aerobrake mission goals will be updated improperly - mitigated
+#Atmo orbit goals (Kercury I/II) will be updated improperly - mitigated
+#All transfers back to Kerbin will be updated improperly - mitigated
+#Crash missions will be updated improperly - mitigated
 ---
 		LaunchGoal
 		{
@@ -31,7 +32,7 @@
 ---
 		CrashGoal
 		{
-			description = Crash the vessel into the surface.
+			description = Crash the vessel onto the surface.
 			body
 ---
 		UnDockingGoal
