@@ -1,7 +1,7 @@
 MissionPackage
 {
-	name = Kercury, Kemini, Kastor, Kollux, Kapollo, Kartemis
-	description = Placeholder.
+	name = Bootstraps - Kerbin Sphere of Influence (SOI) Mission Package
+	description = Kercury, Kemini, Kastor, Kollux, Kapollo, Kartemis
 	ownOrder = true
 	
 	Mission

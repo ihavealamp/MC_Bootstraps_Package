@@ -1,7 +1,7 @@
 MissionPackage
 {
-	name = Interplanetary: Kephaestus-Moho, Kaphrodite-Eve, Kares-Duna, Kera-Jool, Kades-Eeloo, Kermes-Dres
-	description = Placeholder.
+	name = Bootstraps - Interplanetary Mission Package
+	description = Kephaestus-Moho, Kaphrodite-Eve, Kares-Duna, Kera-Jool, Kades-Eeloo, Kermes-Dres
 	ownOrder = true
 	
 	Mission
