@@ -8,9 +8,11 @@ v0.1.1:
 -Included test packages that remove mission completion requirement, allows easy testing deeper into the chain
 
 v0.2.0:
--Added basic mission descriptions to all missions
+-Added basic mission descriptions to all missions (BSP-Kerbin SOI & BSP-Interplanetary packages)
 -Scattered goal descriptions
 -Removed EVA/crew transfer requirements in all CSM/LM missions
 -Added CSM/LM description in Kapollo II mission description
 -Added throttleDown = false qualifier to Kartemis IV mission (BSP-Kerbin SOI)
+-Removed repeatable = true qualifier from most missions, kept on capstone missions
 -Updated readme.txt to include installation & usage instructions, section titles and additional flavor text
+-Corrected various typos in all mission packages
