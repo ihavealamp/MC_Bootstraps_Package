@@ -480,6 +480,7 @@ MissionPackage
 		
 		CrashGoal
 		{
+			description = Transfer to the Mun and crash the vessel onto the surface.
 			body = Mun
 		}
 	}
@@ -555,6 +556,7 @@ MissionPackage
 		
 		LandingGoal
 		{
+			description = Transfer back to Kerbin and land on the surface.
 			body = Kerbin
 		}
 	}
@@ -616,6 +618,7 @@ MissionPackage
 		
 		LandingGoal
 		{
+			description = Transfer back to Kerbin and land on the surface.
 			body = Kerbin
 		}
 	}
@@ -646,6 +649,7 @@ MissionPackage
 		
 		CrashGoal
 		{
+			description = Transfer to Minmus and crash the vessel onto the surface.
 			body = Minmus
 		}
 	}
@@ -721,6 +725,7 @@ MissionPackage
 		
 		LandingGoal
 		{
+			description = Transfer back to Kerbin and land on the surface.
 			body = Kerbin
 		}
 	}
@@ -782,6 +787,7 @@ MissionPackage
 		
 		LandingGoal
 		{
+			description = Transfer back to Kerbin and land on the surface.
 			body = Kerbin
 		}
 	}
@@ -948,6 +954,7 @@ MissionPackage
 		
 		LandingGoal
 		{
+			description = Transfer back to Kerbin and land on the surface.
 			body = Kerbin
 		}
 	}
@@ -988,6 +995,7 @@ MissionPackage
 		
 		LandingGoal
 		{
+			description = Transfer back to Kerbin and land on the surface.
 			body = Kerbin
 		}
 	}
@@ -1028,6 +1036,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Transfer back to Kerbin and establish a stable orbit.
 			body = Kerbin
 			minPeA = 80000
 			maxPeA = 120000
@@ -1113,6 +1122,7 @@ MissionPackage
 		
 		LandingGoal
 		{
+			description = Transfer back to Kerbin and land on the surface.
 			body = Kerbin
 			crewCount = 3
 		}
@@ -1194,6 +1204,7 @@ MissionPackage
 		
 		LandingGoal
 		{
+			description = Transfer back to Kerbin and land on the surface.
 			body = Kerbin
 			crewCount = 3
 		}
@@ -1262,6 +1273,7 @@ MissionPackage
 		
 		LandingGoal
 		{
+			description = Transfer back to Kerbin and land on the surface.
 			body = Kerbin
 			crewCount = 3
 		}
@@ -1330,6 +1342,7 @@ MissionPackage
 		
 		LandingGoal
 		{
+			description = Transfer back to Kerbin and land on the surface.
 			body = Kerbin
 		}
 	}
@@ -1370,6 +1383,7 @@ MissionPackage
 		
 		LandingGoal
 		{
+			description = Transfer back to Kerbin and land on the surface.
 			body = Kerbin
 		}
 	}
@@ -1410,6 +1424,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Transfer back to Kerbin and establish a stable orbit.
 			body = Kerbin
 			minPeA = 80000
 			maxPeA = 120000
@@ -1471,6 +1486,7 @@ MissionPackage
 		
 		LandingGoal
 		{
+			description = Transfer back to Kerbin and land on the surface.
 			body = Kerbin
 		}
 	}
@@ -1547,6 +1563,7 @@ MissionPackage
 		
 		LandingGoal
 		{
+			description = Transfer back to Kerbin and land on the surface.
 			body = Kerbin
 			crewCount = 3
 		}
@@ -1628,6 +1645,7 @@ MissionPackage
 		
 		LandingGoal
 		{
+			description = Transfer back to Kerbin and land on the surface.
 			body = Kerbin
 			crewCount = 3
 		}
@@ -1696,6 +1714,7 @@ MissionPackage
 		
 		LandingGoal
 		{
+			description = Transfer back to Kerbin and land on the surface.
 			body = Kerbin
 			crewCount = 3
 		}
