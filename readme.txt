@@ -1,9 +1,12 @@
-Project: Bootstraps - Mission Controller, Mission Package Series
+Project: Bootstraps 
+Descrption: Mission Package Series for the Mission Controller Extended mod (Kerbal Space Program)
 Author: Anthony Pendleton (apendleton AT gmail DOT com)
+Website: http://ihavealamp.github.io/MC_Bootstraps_Package/
+GitHub: https://github.com/ihavealamp/MC_Bootstraps_Package
 
 -------------------------------------------------------
 
-Description:
+Overview:
 
 This is a project to create a series of mission packages for the Mission Controller Extended (MC) mod in conjunction with Kerbal Space Program (KSP). The goal is to provide a pathway for new players to learn the game - picking themselves up by their bootstraps - similar to how real life space programs developed. Much of the inspiration for this project came from the NASA and Soviet programs, condensing things where I felt necessary and providing a clean flow.
 
