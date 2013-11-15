@@ -10,7 +10,6 @@ MissionPackage
 		description = Launch from the Kerbal Space Center (KSC), climb high within Kerbin's atmosphere, and safely land. 
 		reward = 30000
 		category = MANNED, AVIATION
-		repeatable = true
 		packageOrder = 1
 		
 		LaunchGoal
@@ -42,7 +41,6 @@ MissionPackage
 		reward = 50000
 		category = MANNED, AVIATION
 		#requiresMission = Kercury I
-		repeatable = true
 		packageOrder = 2
 		
 		LaunchGoal
@@ -71,7 +69,6 @@ MissionPackage
 		reward = 60000
 		category = MANNED, ORBIT
 		#requiresMission = Kercury II
-		repeatable = true
 		packageOrder = 3
 		
 		LaunchGoal
@@ -103,7 +100,6 @@ MissionPackage
 		reward = 60000
 		category = MANNED, ORBIT
 		#requiresMission = Kercury III
-		repeatable = true
 		packageOrder = 4
 		
 		LaunchGoal
@@ -143,7 +139,6 @@ MissionPackage
 		description = Launch from the KSC, achieve a stable orbit, complete an EVA, and safely land. Optional goal of taking an extended spacewalk during EVA and returning to vessel.
 		reward = 65000
 		category = MANNED, ORBIT
-		repeatable = true
 		packageOrder = 5
 		
 		LaunchGoal
@@ -196,7 +191,6 @@ MissionPackage
 		reward = 65000
 		category = MANNED, ORBIT
 		#requiresMission = Kemini I
-		repeatable = true
 		packageOrder = 6
 		
 		LaunchGoal
@@ -280,7 +274,6 @@ MissionPackage
 		reward = 80000
 		category = MANNED, DOCKING
 		#requiresMission = Kemini III
-		repeatable = true
 		packageOrder = 8
 		
 		LaunchGoal
@@ -332,7 +325,6 @@ MissionPackage
 		reward = 80000
 		category = MANNED, DOCKING
 		#requiresMission = Kemini IV
-		repeatable = true
 		packageOrder = 9
 		
 		SubMissionGoal
@@ -388,7 +380,6 @@ MissionPackage
 		reward = 100000
 		category = MANNED, ORBIT
 		#requiresMission = Kemini V
-		repeatable = true
 		packageOrder = 10
 		
 		LaunchGoal
@@ -420,7 +411,6 @@ MissionPackage
 		reward = 110000
 		category = MANNED, DOCKING
 		#requiresMission = Kemini VI
-		repeatable = true
 		packageOrder = 11
 		
 		LaunchGoal
@@ -458,7 +448,6 @@ MissionPackage
 		description = Launch an unmanned probe from the KSC, achieve a stable orbit, transfer to the Mun and crash into its surface.
 		reward = 100000
 		category = PROBE, IMPACT
-		repeatable = true
 		packageOrder = 12
 		
 		LaunchGoal
@@ -490,7 +479,6 @@ MissionPackage
 		reward = 120000
 		category = PROBE, ORBIT
 		#requiresMission = Kastor I
-		repeatable = true
 		packageOrder = 13
 		
 		LaunchGoal
@@ -526,7 +514,6 @@ MissionPackage
 		reward = 150000
 		category = PROBE, ORBIT
 		#requiresMission = Kastor II
-		repeatable = true
 		packageOrder = 14
 		
 		LaunchGoal
@@ -627,7 +614,6 @@ MissionPackage
 		description = Launch an unmanned probe from the KSC, achieve a stable orbit, transfer to Minmus, and crash into its surface.
 		reward = 100000
 		category = PROBE, IMPACT
-		repeatable = true
 		packageOrder = 16
 		
 		LaunchGoal
@@ -659,7 +645,6 @@ MissionPackage
 		reward = 120000
 		category = PROBE, ORBIT
 		#requiresMission = Kollux I
-		repeatable = true
 		packageOrder = 17
 		
 		LaunchGoal
@@ -695,7 +680,6 @@ MissionPackage
 		reward = 150000
 		category = PROBE, ORBIT
 		#requiresMission = Kollux II
-		repeatable = true
 		packageOrder = 18
 		
 		LaunchGoal
@@ -796,7 +780,6 @@ MissionPackage
 		description = Launch from the KSC with three crew, achieve a stable orbit, and safely land.
 		reward = 80000
 		category = MANNED, ORBIT
-		repeatable = true
 		packageOrder = 20
 		
 		LaunchGoal
@@ -832,7 +815,6 @@ MissionPackage
 		reward = 110000
 		category = MANNED, DOCKING
 		#requiresMission = Kapollo I
-		repeatable = true
 		packageOrder = 21
 		
 		LaunchGoal
@@ -892,7 +874,6 @@ MissionPackage
 		reward = 80000
 		category = MANNED, ORBIT
 		#requiresMission = Kapollo II
-		repeatable = true
 		packageOrder = 22
 		
 		LaunchGoal
@@ -960,7 +941,6 @@ MissionPackage
 		reward = 100000
 		category = MANNED, ORBIT
 		#requiresMission = Kapollo III
-		repeatable = true
 		packageOrder = 23
 		
 		LaunchGoal
@@ -1001,7 +981,6 @@ MissionPackage
 		reward = 110000
 		category = MANNED, ORBIT
 		#requiresMission = Kapollo IV
-		repeatable = true
 		packageOrder = 24
 		
 		LaunchGoal
@@ -1051,7 +1030,6 @@ MissionPackage
 		reward = 120000
 		category = MANNED, DOCKING
 		#requiresMission = Kapollo V
-		repeatable = true
 		packageOrder = 25
 		
 		LaunchGoal
@@ -1271,7 +1249,6 @@ MissionPackage
 		description = Launch from the KSC with three crew, achieve a stable orbit, attempt a free return trajectory - allow the vessel to be captured in Minmus' gravitational field, perform a flyby of Minmus at a reasonable range, pass out of Minmus' sphere of influence, returning to Kerbin - and safely land. Fuel may be expended to perform this maneuver, but there is an optional goal of ditching/expending all liquid fuel immediately after a transfer burn from Kerbin to Minmus is complete.
 		reward = 100000
 		category = MANNED, ORBIT
-		repeatable = true
 		packageOrder = 28
 		
 		LaunchGoal
@@ -1339,7 +1316,6 @@ MissionPackage
 		reward = 110000
 		category = MANNED, ORBIT
 		#requiresMission = Kartemis I
-		repeatable = true
 		packageOrder = 29
 		
 		LaunchGoal
@@ -1380,7 +1356,6 @@ MissionPackage
 		reward = 120000
 		category = MANNED, ORBIT
 		#requiresMission = Kartemis II
-		repeatable = true
 		packageOrder = 30
 		
 		LaunchGoal
@@ -1430,7 +1405,6 @@ MissionPackage
 		reward = 140000
 		category = MANNED, ORBIT
 		#requiresMission = Kartemis III
-		repeatable = true
 		packageOrder = 31
 		
 		LaunchGoal
@@ -1483,7 +1457,6 @@ MissionPackage
 		reward = 120000
 		category = MANNED, DOCKING
 		#requiresMission = Kartemis IV
-		repeatable = true
 		packageOrder = 32
 		
 		LaunchGoal

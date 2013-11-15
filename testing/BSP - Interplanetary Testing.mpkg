@@ -10,7 +10,6 @@ MissionPackage
 		description = Launch an unmanned probe from the Kerbal Space Center (KSC), achieve a stable orbit, transfer to Duna, and crash into its surface. Observe atmospheric effects while on impact trajectory to determine atmosphere height for aerobraking/aerocapture in future missions.
 		reward = 200000
 		category = PROBE, IMPACT
-		repeatable = true
 		packageOrder = 1
 		
 		LaunchGoal
@@ -41,7 +40,6 @@ MissionPackage
 		reward = 250000
 		category = PROBE, ORBIT
 		#requiresMission = Kares I
-		repeatable = true
 		packageOrder = 2
 		
 		LaunchGoal
@@ -93,7 +91,6 @@ MissionPackage
 		reward = 300000
 		category = PROBE, ORBIT
 		#requiresMission = Kares II
-		repeatable = true
 		packageOrder = 3
 		
 		LaunchGoal
@@ -335,7 +332,6 @@ MissionPackage
 		description = Launch an unmanned probe from the KSC, achieve a stable orbit, transfer to Eve, and crash into its surface. Observe atmospheric effects while on impact trajectory to determine atmosphere height for aerobraking/aerocapture in future missions.
 		reward = 200000
 		category = PROBE, IMPACT
-		repeatable = true
 		packageOrder = 7
 		
 		LaunchGoal
@@ -366,7 +362,6 @@ MissionPackage
 		reward = 250000
 		category = PROBE, ORBIT
 		#requiresMission = Kaphrodite I
-		repeatable = true
 		packageOrder = 8
 		
 		LaunchGoal
@@ -418,7 +413,6 @@ MissionPackage
 		reward = 300000
 		category = PROBE, ORBIT
 		#requiresMission = Kaphrodite II
-		repeatable = true
 		packageOrder = 9
 		
 		LaunchGoal
@@ -660,7 +654,6 @@ MissionPackage
 		description = Launch an unmanned probe from the KSC, achieve a stable orbit, transfer to Jool, and crash into its surface. Observe atmospheric effects while on impact trajectory to determine atmosphere height for aerobraking/aerocapture in future missions.
 		reward = 200000
 		category = PROBE, IMPACT
-		repeatable = true
 		packageOrder = 13
 		
 		LaunchGoal
@@ -691,7 +684,6 @@ MissionPackage
 		reward = 250000
 		category = PROBE, ORBIT
 		#requiresMission = Kera I
-		repeatable = true
 		packageOrder = 14
 		
 		LaunchGoal
@@ -783,7 +775,6 @@ MissionPackage
 		reward = 400000
 		category = PROBE, ORBIT
 		#requiresMission = Kera III
-		repeatable = true
 		packageOrder = 16
 		
 		LaunchGoal
@@ -822,7 +813,6 @@ MissionPackage
 		description = Launch an unmanned probe from the KSC, achieve a stable orbit, transfer to Dres, and crash into its surface.
 		reward = 300000
 		category = PROBE, IMPACT
-		repeatable = true
 		packageOrder = 17
 		
 		LaunchGoal
@@ -853,7 +843,6 @@ MissionPackage
 		reward = 350000
 		category = PROBE, ORBIT
 		#requiresMission = Kermes I
-		repeatable = true
 		packageOrder = 18
 		
 		LaunchGoal
@@ -888,7 +877,6 @@ MissionPackage
 		reward = 450000
 		category = PROBE, ORBIT
 		#requiresMission = Kermes II
-		repeatable = true
 		packageOrder = 19
 		
 		LaunchGoal
@@ -1130,7 +1118,6 @@ MissionPackage
 		description = Launch an unmanned probe from the KSC, achieve a stable orbit, transfer to Moho, and crash into its surface.
 		reward = 300000
 		category = PROBE, IMPACT
-		repeatable = true
 		packageOrder = 23
 		
 		LaunchGoal
@@ -1161,7 +1148,6 @@ MissionPackage
 		reward = 350000
 		category = PROBE, ORBIT
 		#requiresMission = Kephaestus I
-		repeatable = true
 		packageOrder = 24
 		
 		LaunchGoal
@@ -1196,7 +1182,6 @@ MissionPackage
 		reward = 450000
 		category = PROBE, ORBIT
 		#requiresMission = Kephaestus II
-		repeatable = true
 		packageOrder = 25
 		
 		LaunchGoal
@@ -1438,7 +1423,6 @@ MissionPackage
 		description = Launch an unmanned probe from the KSC, achieve a stable orbit, transfer to Eeloo, and crash into its surface.
 		reward = 350000
 		category = PROBE, IMPACT
-		repeatable = true
 		packageOrder = 29
 		
 		LaunchGoal
@@ -1469,7 +1453,6 @@ MissionPackage
 		reward = 400000
 		category = PROBE, ORBIT
 		#requiresMission = Kades I
-		repeatable = true
 		packageOrder = 30
 		
 		LaunchGoal
@@ -1504,7 +1487,6 @@ MissionPackage
 		reward = 500000
 		category = PROBE, ORBIT
 		#requiresMission = Kades II
-		repeatable = true
 		packageOrder = 31
 		
 		LaunchGoal
