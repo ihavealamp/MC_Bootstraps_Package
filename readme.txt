@@ -49,6 +49,9 @@ Installation/Usage:
 7. Enjoy!
 8. Feel free to report any issues or submit enhancement requests via GitHub: https://github.com/ihavealamp/MC_Bootstraps_Package/issues/new
 
+Important: Remember to click "Hide Finished Goal" after completing each mission goal to ensure they stay completed after moving to the next step. Failure to do so may result in overall mission failure! This may be either a MC mod limitation or an issue with how I'm writing the mission goals - uncertain at this point, but calling it out in an attempt to avoid user frustration.
+
+
 
 
 Future Mission Packages:

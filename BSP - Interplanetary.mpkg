@@ -1,7 +1,7 @@
 MissionPackage
 {
 	name = Bootstraps - Interplanetary Mission Package
-	description = This mission package focuses on programs involving other planetary bodies - not moons - outside of Kerbin's sphere of influence. The target audience is intermediate to experienced players who have completed the Kerbin SOI mission package or have the requisite skills to do so.
+	description = This mission package focuses on programs involving other planetary bodies - not moons - outside of Kerbin's sphere of influence. The target audience is intermediate to experienced players who have completed the Kerbin SOI mission package or have the requisite skills to do so.\n\nImportant: Remember to click "Hide Finished Goal" after completing each mission goal to ensure they stay completed after moving to the next step. Failure to do so may result in overall mission failure!
 	ownOrder = true
 	
 	Mission
