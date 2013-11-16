@@ -19,4 +19,5 @@ v0.2.0:
 
 v0.2.1:
 -Updated readme.txt to include better description information, website link
+-Updated mission packages and readme.txt to include requirement of hiding completed goals - possible MC mod limitation, uncertain at this point
 -Wrapped the OrbitGoal and DockingGoal for the Kapollo mission into a SubMissionGoal
