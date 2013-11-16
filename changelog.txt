@@ -18,6 +18,8 @@ v0.2.0:
 -Corrected various typos in all mission packages
 
 v0.2.1:
+-Added mission goal descriptions for the non-scripted adds
+-Changed mission program names to Kerbal versions of Roman gods and Greek heroes.
 -Updated readme.txt to include better description information, website link
 -Updated mission packages and readme.txt to include requirement of hiding completed goals - possible MC mod limitation, uncertain at this point
 -Wrapped the OrbitGoal and DockingGoal for the Kapollo mission into a SubMissionGoal
