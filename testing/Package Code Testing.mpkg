@@ -1,0 +1,100 @@
+MissionPackage
+{
+	name = testing package
+		
+	Mission
+	{
+		name = orbit test
+		description = orbit goal without body specified
+		category = ORBIT
+		
+		OrbitGoal
+		{
+			maxEccentricity = 0.05
+		}
+		
+		EVAGoal
+		{
+		}
+		
+		OrbitGoal
+		{
+			maxEccentricity = 0.05
+		}
+	}
+	
+	Mission
+	{
+		name = module test 1
+		description = undock module in orbit, testing combo part req and undock goal together
+		repeatable = true
+		
+		OrbitGoal
+		{
+			crewCount = 1
+			maxEccentricity = 0.02
+		}
+		
+		SubMissionGoal
+		{
+			optional = true
+			reward = 10000
+			
+			PartGoal
+			{
+				partName = fuelTank3-2
+				partCount = 1
+			}
+			
+			PartGoal
+			{
+				partName = dockingPort2
+				partCount = 1
+			}
+		}
+		
+		SubMissionGoal
+		{
+			optional = true
+			reward = 10000
+			
+			PartGoal
+			{
+				partName = solarPanels5
+				partCount = 2
+			}
+			
+			PartGoal
+			{
+				partName = dockingPort2
+				partCount = 1
+			}
+		}
+		
+		SubMissionGoal
+		{
+			optional = true
+			reward = 10000
+			
+			PartGoal
+			{
+				partName = RCSTank1-2
+				partCount = 2
+			}
+			
+			PartGoal
+			{
+				partName = dockingPort2
+				partCount = 1
+			}
+		}
+		
+		UnDockingGoal
+		{
+		}
+		
+		EVAGoal
+		{
+		}
+	}
+}
