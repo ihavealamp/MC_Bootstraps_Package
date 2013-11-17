@@ -10,6 +10,7 @@ MissionPackage
 		description = Surface launch from Kerbin to refuel a surface base with large stores of liquid fuel or monopropellant.
 		reward = 250000
 		category = LANDING, SATELLITE
+		repeatable = true
 		packageOrder = 1
 		
 		LaunchGoal
@@ -68,6 +69,7 @@ MissionPackage
 		description = Transfer crew members from a surface base back home to Kerbin for some well deserved R&R.
 		reward = 250000
 		category = LANDING, SATELLITE
+		repeatable = true
 		packageOrder = 2
 		
 		DockingGoal
@@ -95,6 +97,7 @@ MissionPackage
 		description = Transfer crew members from Kerbin to a surface base.
 		reward = 250000
 		category = LANDING, SATELLITE
+		repeatable = true
 		packageOrder = 3
 		
 		LaunchGoal
