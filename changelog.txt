@@ -35,3 +35,6 @@ v0.3.2:
 
 v0.3.3:
 -Updated readme.txt with changed program names (Greek --> Roman)
+
+v0.3.4:
+-Fixed typos in readme.txt

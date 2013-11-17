@@ -57,7 +57,7 @@ Lunar Orbitals, 30 missions
 -Orbital Core Modules, 9 missions (All moons, repeatable)
 -Orbital Auxiliary Modules, 9 missions (All moons, repeatable)
 
-Lunar Orbitals, 30 missions
+Lunar Bases, 30 missions
 
 -Fuel & Crew Support, 3 missions (Location indifferent, repeatable)
 -Surface Command Module, 9 missions (All moons)
