@@ -16,7 +16,7 @@ Also be aware that the mission goals are written with a procedural-heavy focus, 
 
 Scope:
 
-The current scope is limited to programs within Kerbal's sphere of influence (Kerbal SOI.mpkg) and interplanetary programs (Interplanetary.mpkg). Including a high level overview of the programs within each package below.
+The current scope is limited to programs within Kerbal's sphere of influence (BSP-Kerbal SOI.mpkg), interplanetary programs (BSP-Interplanetary.mpkg), planetary/lunar orbital stations (BSP-Planet Orbitals.mpkg & BSP-Lunar Orbitals.mpkg), and planetary/lunar surface bases (BSP-Planet Bases.mpkg & BSP-Lunar Bases.mpkg). Including a high level overview of the programs within each package below.
 
 Kerbal SOI, 34 missions
 
@@ -35,6 +35,36 @@ Interplanetary, 34 missions
 -Kermes, 6 missions (Unmanned and manned Dres orbiting, landing and returning)
 -Kephaestus, 6 missions (Unmanned and manned Moho orbiting, landing and returning)
 -Kades, 6 missions (Unmanned and manned Eeloo orbiting, landing and returning)
+
+Planet Orbitals, 24 missions
+
+-Fuel & Crew Support, 3 missions (Location indifferent, repeatable)
+-Orbital Command Module, 7 missions (All planets)
+-Orbital Core Modules, 7 missions (All planets, repeatable)
+-Orbital Auxiliary Modules, 7 missions (All planets, repeatable)
+
+Planet Bases, 24 missions
+
+-Fuel & Crew Support, 3 missions (Location indifferent, repeatable)
+-Surface Command Module, 7 missions (All planets)
+-Surface Core Modules, 7 missions (All planets, repeatable)
+-Surface Auxiliary Modules, 7 missions (All planets, repeatable)
+
+Lunar Orbitals, 30 missions
+
+-Fuel & Crew Support, 3 missions (Location indifferent, repeatable)
+-Orbital Command Module, 9 missions (All moons)
+-Orbital Core Modules, 9 missions (All moons, repeatable)
+-Orbital Auxiliary Modules, 9 missions (All moons, repeatable)
+
+Lunar Orbitals, 30 missions
+
+-Fuel & Crew Support, 3 missions (Location indifferent, repeatable)
+-Surface Command Module, 9 missions (All moons)
+-Surface Core Modules, 9 missions (All moons, repeatable)
+-Surface Auxiliary Modules, 9 missions (All moons, repeatable)
+
+Grand Total, 176 missions
 
 
 

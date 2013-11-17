@@ -17,5 +17,7 @@ v0.2.0:
 -Updated readme.txt to include installation & usage instructions, section titles and additional flavor text
 -Corrected various typos in all mission packages
 
-v0.2.1:
--Updated readme.txt to include better description information, website link
+v0.3.0:
+-Planet Orbitals, Planet Bases, Lunar Orbitals and Lunar Bases mission packages released
+-All new mission packages have basic mission and goal descriptions included
+-Updated readme.txt to include new packages, better description information, website link
