@@ -16,7 +16,9 @@ Also be aware that the mission goals are written with a procedural-heavy focus, 
 
 Scope:
 
-The current scope is limited to programs within Kerbal's sphere of influence (BSP-Kerbal SOI.mpkg), interplanetary programs (BSP-Interplanetary.mpkg), planetary/lunar orbital stations (BSP-Planet Orbitals.mpkg & BSP-Lunar Orbitals.mpkg), and planetary/lunar surface bases (BSP-Planet Bases.mpkg & BSP-Lunar Bases.mpkg). Including a high level overview of the programs within each package below.
+The current scope is limited to programs within Kerbal's sphere of influence (BSP-Kerbal SOI.mpkg), interplanetary programs (BSP-Interplanetary.mpkg), planetary/lunar orbital stations (BSP-Planet Orbitals.mpkg & BSP-Lunar Orbitals.mpkg), and planetary/lunar surface bases (BSP-Planet Bases.mpkg & BSP-Lunar Bases.mpkg). While the initial two mission packages - Kerbin SOI and Interplanetary - focus on incremental progression for fledgling space programs, the Orbitals and Bases mission packages highlight end-goal delivery with much less procedure.
+
+Including a high level overview of the programs within each package below.
 
 Kerbal SOI, 34 missions
 
