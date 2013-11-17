@@ -29,3 +29,4 @@ v0.3.0:
 
 v0.3.1:
 -Removed work files, clutter
+-Updated readme.txt to include new package release information, future packages and roadmap changes
