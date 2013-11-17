@@ -21,5 +21,11 @@ v0.3.0:
 -Planet Orbitals, Planet Bases, Lunar Orbitals and Lunar Bases mission packages released
 -All new mission packages have basic mission and goal descriptions included
 -Added remaining goal descriptions to Kerbin SOI and Interplanetary mission packages
+-Changed mission program names to Kerbal versions of Roman gods and Greek heroes.
 -Updated readme.txt to include new packages, better description information, website link
+-Updated mission packages and readme.txt to include requirement of hiding completed goals - possible MC mod limitation, uncertain at this point
+-Wrapped the OrbitGoal and DockingGoal for the Keres mission into a SubMissionGoal
 -Removed testing files
+
+v0.3.1:
+-Removed work files, clutter
