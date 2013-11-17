@@ -59,6 +59,7 @@ MissionPackage
 		
 		LandingGoal
 		{
+			description = Land the vessel on the surface.
 			body = Kerbin
 		}
 	}
@@ -80,6 +81,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Kerbin.
 			body = Kerbin
 			crewCount = 1
 			minPeA = 70000
@@ -90,6 +92,7 @@ MissionPackage
 		
 		LandingGoal
 		{
+			description = Land the vessel on the surface.
 			body = Kerbin
 		}
 	}
@@ -132,6 +135,7 @@ MissionPackage
 		
 		LandingGoal
 		{
+			description = Land the vessel on the surface.
 			body = Kerbin
 		}
 	}
@@ -162,6 +166,7 @@ MissionPackage
 		
 		EVAGoal
 		{
+			description = Complete an EVA with at least one crew member.
 		}
 		
 		SubMissionGoal
@@ -184,6 +189,7 @@ MissionPackage
 		
 		LandingGoal
 		{
+			description = Land the vessel on the surface.
 			body = Kerbin
 		}
 	}
@@ -205,6 +211,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Kerbin.
 			body = Kerbin
 			crewCount = 1
 			minPeA = 400000
@@ -215,10 +222,12 @@ MissionPackage
 		
 		EVAGoal
 		{
+			description = Complete an EVA with at least one crew member.
 		}
 		
 		LandingGoal
 		{
+			description = Land the vessel on the surface.
 			body = Kerbin
 		}
 	}
@@ -309,6 +318,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Kerbin.
 			body = Kerbin
 			minPeA = 120000
 			maxPeA = 140000
@@ -318,10 +328,12 @@ MissionPackage
 		
 		UnDockingGoal
 		{
+			description = Undock from the connected vessel.
 		}
 		
 		LandingGoal
 		{
+			description = Land the vessel on the surface.
 			body = Kerbin
 		}
 	}
@@ -375,10 +387,12 @@ MissionPackage
 		
 		UnDockingGoal
 		{
+			description = Undock from the connected vessel.
 		}
 		
 		LandingGoal
 		{
+			description = Land the vessel on the surface.
 			body = Kerbin
 		}
 	}
@@ -400,6 +414,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Kerbin.
 			body = Kerbin
 			crewCount = 1
 			minPeA = 2500000
@@ -410,6 +425,7 @@ MissionPackage
 		
 		LandingGoal
 		{
+			description = Land the vessel on the surface.
 			body = Kerbin
 		}
 	}
@@ -450,6 +466,7 @@ MissionPackage
 		
 		LandingGoal
 		{
+			description = Land the vessel on the surface.
 			body = Kerbin
 		}
 	}
@@ -470,6 +487,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Kerbin.
 			body = Kerbin
 			crewCount = 0
 			minPeA = 80000
@@ -502,6 +520,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Kerbin.
 			body = Kerbin
 			crewCount = 0
 			minPeA = 80000
@@ -512,6 +531,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around the Mun.
 			body = Mun
 			minPeA = 30000
 			maxPeA = 60000
@@ -537,6 +557,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Kerbin.
 			body = Kerbin
 			crewCount = 0
 			minPeA = 80000
@@ -547,6 +568,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around the Mun.
 			body = Mun
 			minPeA = 30000
 			maxPeA = 60000
@@ -579,6 +601,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Kerbin.
 			body = Kerbin
 			crewCount = 0
 			minPeA = 80000
@@ -589,6 +612,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around the Mun.
 			body = Mun
 			minPeA = 30000
 			maxPeA = 60000
@@ -598,17 +622,20 @@ MissionPackage
 		
 		LandingGoal
 		{
+			description = Land the vessel on the surface.
 			body = Mun
 		}
 		
 		UnDockingGoal
 		{
+			description = Undock a small science vessel to remain on the surface.
 			optional = true
 			reward = 60000
 		}
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around the Mun.
 			body = Mun
 			minPeA = 30000
 			maxPeA = 60000
@@ -639,6 +666,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Kerbin.
 			body = Kerbin
 			crewCount = 0
 			minPeA = 80000
@@ -671,6 +699,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Kerbin.
 			body = Kerbin
 			crewCount = 0
 			minPeA = 80000
@@ -681,6 +710,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Minmus.
 			body = Minmus
 			minPeA = 30000
 			maxPeA = 60000
@@ -706,6 +736,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Kerbin.
 			body = Kerbin
 			crewCount = 0
 			minPeA = 80000
@@ -716,6 +747,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Minmus.
 			body = Minmus
 			minPeA = 30000
 			maxPeA = 60000
@@ -748,6 +780,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Kerbin.
 			body = Kerbin
 			crewCount = 0
 			minPeA = 80000
@@ -758,6 +791,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Minmus.
 			body = Minmus
 			minPeA = 30000
 			maxPeA = 60000
@@ -767,17 +801,20 @@ MissionPackage
 		
 		LandingGoal
 		{
+			description = Land the vessel on the surface.
 			body = Minmus
 		}
 		
 		UnDockingGoal
 		{
+			description = Undock a small science vessel to remain on the surface.
 			optional = true
 			reward = 60000
 		}
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Minmus.
 			body = Minmus
 			minPeA = 30000
 			maxPeA = 60000
@@ -808,6 +845,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Kerbin.
 			body = Kerbin
 			crewCount = 3
 			minPeA = 80000
@@ -818,10 +856,12 @@ MissionPackage
 		
 		EVAGoal
 		{
+			description = Complete an EVA with at least one crew member.
 		}
 		
 		LandingGoal
 		{
+			description = Land the vessel on the surface.
 			body = Kerbin
 		}
 	}
@@ -843,6 +883,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Kerbin.
 			body = Kerbin
 			crewCount = 3
 			minPeA = 2000000
@@ -853,10 +894,12 @@ MissionPackage
 		
 		UnDockingGoal
 		{
+			description = Undock from the connected vessel.
 		}
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Kerbin.
 			body = Kerbin
 			crewCount = 2
 			minPeA = 1500000
@@ -885,6 +928,7 @@ MissionPackage
 		
 		LandingGoal
 		{
+			description = Land the vessel on the surface.
 			body = Kerbin
 			crewCount = 3
 		}
@@ -907,6 +951,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Kerbin.
 			body = Kerbin
 			crewCount = 3
 			minPeA = 80000
@@ -917,6 +962,7 @@ MissionPackage
 		
 		ResourceGoal
 		{
+			description = Jettison all fuel aboard the vessel.
 			optional = true
 			reward = 30000
 			name = LiquidFuel
@@ -925,6 +971,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around the Mun.
 			body = Mun
 			minPeA = 10000
 			maxPeA = 200000
@@ -976,6 +1023,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Kerbin.
 			body = Kerbin
 			crewCount = 3
 			minPeA = 80000
@@ -986,6 +1034,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around the Mun.
 			body = Mun
 			minPeA = 80000
 			maxPeA = 120000
@@ -1017,6 +1066,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Kerbin.
 			body = Kerbin
 			crewCount = 3
 			minPeA = 80000
@@ -1027,6 +1077,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around the Mun.
 			body = Mun
 			minPeA = 30000
 			maxPeA = 60000
@@ -1046,6 +1097,7 @@ MissionPackage
 		
 		LandingGoal
 		{
+			description = Land the vessel on the surface.
 			body = Kerbin
 		}
 	}
@@ -1067,6 +1119,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Kerbin.
 			body = Kerbin
 			crewCount = 3
 			minPeA = 80000
@@ -1077,6 +1130,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around the Mun.
 			body = Mun
 			minPeA = 80000
 			maxPeA = 120000
@@ -1086,10 +1140,12 @@ MissionPackage
 		
 		UnDockingGoal
 		{
+			description = Undock from the connected vessel.
 		}
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around the Mun.
 			body = Mun
 			crewCount = 2
 			minPeA = 10000
@@ -1100,6 +1156,7 @@ MissionPackage
 		
 		EVAGoal
 		{
+			description = Complete an EVA with at least one crew member.
 		}
 		
 		SubMissionGoal
@@ -1146,6 +1203,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Kerbin.
 			body = Kerbin
 			crewCount = 3
 			minPeA = 80000
@@ -1156,6 +1214,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around the Mun.
 			body = Mun
 			minPeA = 10000
 			maxPeA = 20000
@@ -1165,16 +1224,19 @@ MissionPackage
 		
 		UnDockingGoal
 		{
+			description = Undock from the connected vessel.
 		}
 		
 		LandingGoal
 		{
+			description = Land the vessel on the surface.
 			body = Mun
 			crewCount = 2
 		}
 		
 		UnDockingGoal
 		{
+			description = Undock a small science vessel to remain on the surface.
 			optional = true
 			reward = 60000
 		}
@@ -1228,6 +1290,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Kerbin.
 			body = Kerbin
 			crewCount = 3
 			minPeA = 80000
@@ -1238,6 +1301,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around the Mun.
 			body = Mun
 			minPeA = 10000
 			maxPeA = 20000
@@ -1247,12 +1311,14 @@ MissionPackage
 		
 		LandingGoal
 		{
+			description = Land the vessel on the surface.
 			body = Mun
 			crewCount = 3
 		}
 		
 		UnDockingGoal
 		{
+			description = Undock a small science vessel to remain on the surface.
 			optional = true
 			reward = 60000
 		}
@@ -1264,6 +1330,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around the Mun.
 			body = Mun
 			minPeA = 10000
 			maxPeA = 20000
@@ -1295,6 +1362,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Kerbin.
 			body = Kerbin
 			crewCount = 3
 			minPeA = 80000
@@ -1305,6 +1373,7 @@ MissionPackage
 		
 		ResourceGoal
 		{
+			description = Jettison all fuel aboard the vessel.
 			optional = true
 			reward = 30000
 			name = LiquidFuel
@@ -1313,6 +1382,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Minmus.
 			body = Minmus
 			minPeA = 10000
 			maxPeA = 200000
@@ -1364,6 +1434,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Kerbin.
 			body = Kerbin
 			crewCount = 3
 			minPeA = 80000
@@ -1374,6 +1445,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Minmus.
 			body = Minmus
 			minPeA = 50000
 			maxPeA = 80000
@@ -1405,6 +1477,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Kerbin.
 			body = Kerbin
 			crewCount = 3
 			minPeA = 80000
@@ -1415,6 +1488,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Minmus.
 			body = Minmus
 			minPeA = 30000
 			maxPeA = 60000
@@ -1434,6 +1508,7 @@ MissionPackage
 		
 		LandingGoal
 		{
+			description = Land the vessel on the surface.
 			body = Kerbin
 		}
 	}
@@ -1455,6 +1530,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Kerbin.
 			body = Kerbin
 			crewCount = 3
 			minPeA = 80000
@@ -1465,6 +1541,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Minmus.
 			body = Minmus
 			minPeA = 12000
 			maxPeA = 20000
@@ -1508,6 +1585,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Kerbin.
 			body = Kerbin
 			crewCount = 3
 			minPeA = 80000
@@ -1518,6 +1596,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Minmus.
 			body = Minmus
 			minPeA = 80000
 			maxPeA = 120000
@@ -1527,10 +1606,12 @@ MissionPackage
 		
 		UnDockingGoal
 		{
+			description = Undock from the connected vessel.
 		}
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Minmus.
 			body = Minmus
 			crewCount = 2
 			minPeA = 10000
@@ -1541,6 +1622,7 @@ MissionPackage
 		
 		EVAGoal
 		{
+			description = Complete an EVA with at least one crew member.
 		}
 		
 		SubMissionGoal
@@ -1587,6 +1669,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Kerbin.
 			body = Kerbin
 			crewCount = 3
 			minPeA = 80000
@@ -1597,6 +1680,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Minmus.
 			body = Minmus
 			minPeA = 10000
 			maxPeA = 20000
@@ -1606,16 +1690,19 @@ MissionPackage
 		
 		UnDockingGoal
 		{
+			description = Undock from the connected vessel.
 		}
 		
 		LandingGoal
 		{
+			description = Land the vessel on the surface.
 			body = Minmus
 			crewCount = 2
 		}
 		
 		UnDockingGoal
 		{
+			description = Undock a small science vessel to remain on the surface.
 			optional = true
 			reward = 60000
 		}
@@ -1669,6 +1756,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Kerbin.
 			body = Kerbin
 			crewCount = 3
 			minPeA = 80000
@@ -1679,6 +1767,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Minmus.
 			body = Minmus
 			minPeA = 10000
 			maxPeA = 20000
@@ -1688,12 +1777,14 @@ MissionPackage
 		
 		LandingGoal
 		{
+			description = Land the vessel on the surface.
 			body = Minmus
 			crewCount = 3
 		}
 		
 		UnDockingGoal
 		{
+			description = Undock a small science vessel to remain on the surface.
 			optional = true
 			reward = 60000
 		}
@@ -1705,6 +1796,7 @@ MissionPackage
 		
 		OrbitGoal
 		{
+			description = Establish a stable orbit around Minmus.
 			body = Minmus
 			minPeA = 10000
 			maxPeA = 20000
