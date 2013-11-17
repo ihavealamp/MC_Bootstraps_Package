@@ -8,7 +8,7 @@ GitHub: https://github.com/ihavealamp/MC_Bootstraps_Package
 
 Overview:
 
-This is a project to create a series of mission packages for the Mission Controller Extended (MC) mod in conjunction with Kerbal Space Program (KSP). The goal is to provide a pathway for new players to learn the game - picking themselves up by their bootstraps - similar to how real life space programs developed. Much of the inspiration for this project came from the NASA and Soviet programs, condensing things where I felt necessary and providing a clean flow.
+This is a project to create a series of mission packages (currently up to 176 missions) for the Mission Controller Extended (MC) mod in conjunction with Kerbal Space Program (KSP). The goal is to provide a pathway for new players to learn the game - picking themselves up by their bootstraps - similar to how real life space programs developed. Much of the inspiration for this project came from the NASA and Soviet programs, condensing things where I felt necessary and providing a clean flow.
 
 Also be aware that the mission goals are written with a procedural-heavy focus, calling out and requiring each individual step to be met for success. It will not be uncommon to come across missions with 10+ goals. Just a heads up in case that's not your thing.
 
