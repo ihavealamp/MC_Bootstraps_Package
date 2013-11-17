@@ -5,52 +5,37 @@
 #All transfers back to Kerbin will be updated improperly - mitigated
 #Crash missions will be updated improperly - mitigated
 ---
-		LaunchGoal
-		{
-			description = Launch from the surface. 
-			launchZone
+\t\tLaunchGoal\r\n\t\t{\r\n\t\t\tdescription = Launch from the surface. \r\n\t\t\tlaunchZone
 ---
-		LandingGoal
-		{
-			description = Land the vessel on the surface.
-			body
+\t\tOrbitGoal\r\n\t\t{\r\n\t\t\tdescription = Establish a stable orbit.\r\n\t\t\tbody
 ---
-		OrbitGoal
-		{
-			description = Establish a stable orbit.
-			body
+\t\tEVAGoal\r\n\t\t{\r\n\t\t\tdescription = Complete an EVA with at least one crew member.\r\n\t\t}
 ---
-		EVAGoal
-		{
-			description = Complete an EVA with at least one crew member.
-		}
+\t\tUnDockingGoal\r\n\t\t{\r\n\t\t\tdescription = Undock from the connected vessel.\r\n\t\t}
 ---
-		UnDockingGoal
-		{
-			description = Undock from the connected vessel.
-		}
+\t\tCrashGoal\r\n\t\t{\r\n\t\t\tdescription = Crash the vessel onto the surface.\r\n\t\t\tbody
 ---
-		CrashGoal
-		{
-			description = Crash the vessel onto the surface.
-			body
+\t\tUnDockingGoal\r\n\t\t{\r\n\t\t\tdescription = Undock a small science vessel to remain on the surface.\r\n\t\t\toptional = true\r\n\t\t\treward
 ---
-		UnDockingGoal
-		{
-			description = Undock a small science vessel to remain on the surface.
-			optional = true
-			reward
+\t\tDockingGoal\r\n\t\t{\r\n\t\t\tdescription = Dock with the vessel and confirm solid seal.\r\n\t\t}
 ---
-		DockingGoal
-		{
-			description = Dock 
-		}
+\t\tResourceGoal\r\n\t\t{\r\n\t\t\tdescription = Jettison all fuel aboard the vessel.\r\n\t\t\toptional = true\r\n\t\t\treward = 30000\r\n\t\t\tname = LiquidFuel\r\n\t\t\tmaxAmount = 0\r\n\t\t}
 ---
-		ResourceGoal
-		{
-			description = Jettison all fuel aboard the vessel.
-			optional = true
-			reward = 30000
-			name = LiquidFuel
-			maxAmount = 0
-		}
+\t\tOrbitGoal\r\n\t\t{\r\n\t\t\tdescription = Establish a stable orbit around Kerbin.\r\n\t\t\tbody = Kerbin
+---
+\t\tOrbitGoal\r\n\t\t{\r\n\t\t\tdescription = Establish a stable orbit around the Mun.\r\n\t\t\tbody = Mun
+---
+\t\tOrbitGoal\r\n\t\t{\r\n\t\t\tdescription = Establish a stable orbit around Minmus.\r\n\t\t\tbody = Minmus
+---
+\t\tOrbitGoal\r\n\t\t{\r\n\t\t\tdescription = Establish a stable orbit around Duna.\r\n\t\t\tbody = Duna
+---
+\t\tOrbitGoal\r\n\t\t{\r\n\t\t\tdescription = Establish a stable orbit around Jool.\r\n\t\t\tbody = Jool
+---
+\t\tOrbitGoal\r\n\t\t{\r\n\t\t\tdescription = Establish a stable orbit around Eve.\r\n\t\t\tbody = Eve
+---
+\t\tOrbitGoal\r\n\t\t{\r\n\t\t\tdescription = Establish a stable orbit around Dres.\r\n\t\t\tbody = Dres
+---
+\t\tOrbitGoal\r\n\t\t{\r\n\t\t\tdescription = Establish a stable orbit around Moho.\r\n\t\t\tbody = Moho
+---
+\t\tOrbitGoal\r\n\t\t{\r\n\t\t\tdescription = Establish a stable orbit around Eeloo.\r\n\t\t\tbody = Eeloo
+---
