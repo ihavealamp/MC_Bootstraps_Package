@@ -88,8 +88,6 @@ Looking forward down the line, here are the prospective additions I have down so
 -Interlunatary (same scope as the Interplanetary package, but for all non-Kerbin moons)
 -K-Plane (based on historical X-Plane program)
 -Reusable Launch Platform (based on historical shuttle program)
--Orbital Infrastructure (space stations, all planetary bodies)
--Surface Infrastructure (surface stations, all planetary bodies)
 -Mining Operations (leverage Kethane mod for both mining and refueling operations)
 -Survival Mode (require Deadly Re-Entry and IonCross mods, disallow MechJeb mod)
 
@@ -99,12 +97,10 @@ Roadmap/Schedule:
 
 Short-Term Focus
 -Test basic functionality for all missions
--Add basic descriptions for all goals
+-Fix reported issues
 
 Mid-Term Focus
--Add full descriptions for all missions and goals
--Build additional mission packages
+-Gather feedback on mission rewards and fine-tune
 
 Long-Term Focus
--Gather feedback on mission rewards and fine-tune
--Transition mission rewards from mission completion to goal completion
+-Build additional mission packages
