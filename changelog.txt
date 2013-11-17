@@ -20,5 +20,6 @@ v0.2.0:
 v0.3.0:
 -Planet Orbitals, Planet Bases, Lunar Orbitals and Lunar Bases mission packages released
 -All new mission packages have basic mission and goal descriptions included
+-Added remaining goal descriptions to Kerbin SOI and Interplanetary mission packages
 -Updated readme.txt to include new packages, better description information, website link
 -Removed testing files
