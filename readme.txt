@@ -20,21 +20,21 @@ The current scope is limited to programs within Kerbal's sphere of influence (BS
 
 Kerbal SOI, 34 missions
 
--Kercury, 4 missions (Basic launching, orbiting and landing)
--Kemini, 7 missions (Orbiting, EVA, rendezvous and docking)
+-Kerra, 4 missions (Basic launching, orbiting and landing)
+-Katurn, 7 missions (Orbiting, EVA, rendezvous and docking)
 -Kastor, 4 missions (Unmanned Mun orbiting, landing and returning)
 -Kollux, 4 missions (Unmanned Minmus orbiting, landing and returning)
--Kapollo, 8 missions (Manned Mun orbiting, landing and returning)
--Kartemis, 7 missions (Manned Minmus orbiting, landing and returning)
+-Keres, 8 missions (Manned Mun orbiting, landing and returning)
+-Kiana, 7 missions (Manned Minmus orbiting, landing and returning)
 
 Interplanetary, 34 missions
 
--Kares, 6 missions (Unmanned and manned Duna orbiting, landing and returning)
--Kaphrodite, 6 missions (Unmanned and manned Eve orbiting, landing and returning)
--Kera, 4 missions (Unmanned and manned Jool orbiting, landing and returning)
--Kermes, 6 missions (Unmanned and manned Dres orbiting, landing and returning)
--Kephaestus, 6 missions (Unmanned and manned Moho orbiting, landing and returning)
--Kades, 6 missions (Unmanned and manned Eeloo orbiting, landing and returning)
+-Kars, 6 missions (Unmanned and manned Duna orbiting, landing and returning)
+-Kenus, 6 missions (Unmanned and manned Eve orbiting, landing and returning)
+-Kuno, 4 missions (Unmanned and manned Jool orbiting, landing and returning)
+-Kesta, 6 missions (Unmanned and manned Dres orbiting, landing and returning)
+-Kulcan, 6 missions (Unmanned and manned Moho orbiting, landing and returning)
+-Kluto, 6 missions (Unmanned and manned Eeloo orbiting, landing and returning)
 
 Planet Orbitals, 24 missions
 
@@ -71,7 +71,7 @@ Grand Total, 176 missions
 Installation/Usage:
 
 1. Make sure you have the latest version of the Mission Controller Extended mod installed: http://forum.kerbalspaceprogram.com/threads/43645-(KSP-22)-Mission-Controller-Extended-(Updated-Nov-6)-(BETA-36)
-2. Copy all *.mpkg files within the downloaded MC_Bootstraps_Package directory into your GameData\MissionController\Plugins\PluginData\MissionController directory.
+2. Copy all .mpkg files within the downloaded MC_Bootstraps_Package directory into your GameData\MissionController\Plugins\PluginData\MissionController directory.
 3. Launch the game.
 4. Open the Mission Controller plugin once you're at the Space Center.
 5. Select one of the "BSP" packages.
@@ -90,6 +90,8 @@ Looking forward down the line, here are the prospective additions I have down so
 -Reusable Launch Platform (based on historical shuttle program)
 -Mining Operations (leverage Kethane mod for both mining and refueling operations)
 -Survival Mode (require Deadly Re-Entry and IonCross mods, disallow MechJeb mod)
+-Challenges (large collection from Reddit, YouTube, forums, etc.)
+-Achievements (major goal accomplishments)
 
 
 
