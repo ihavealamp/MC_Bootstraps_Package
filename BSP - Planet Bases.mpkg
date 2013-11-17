@@ -181,7 +181,7 @@ MissionPackage
 		description = Expand upon the existing surface base by launching one (or more) of many core modules.\n\nImportant: Check the mission goal requirements to confirm your design has the requisite parts before launching.
 		reward = 50000
 		category = LANDING, SATELLITE
-		requiredMission = Kerbin Surface - Command Module
+		requiresMission = Kerbin Surface - Command Module
 		repeatable = true
 		packageOrder = 5
 		
@@ -289,7 +289,7 @@ MissionPackage
 		description = Continue expanding upon the existing surface base by launching one (or more) of many non-essential, auxiliary modules.\n\nImportant: Check the mission goal requirements to confirm your design has the requisite parts before launching.
 		reward = 50000
 		category = LANDING, SATELLITE
-		requiredMission = Kerbin surface base - Command Module
+		requiresMission = Kerbin surface base - Command Module
 		repeatable = true
 		packageOrder = 6
 		
@@ -475,7 +475,7 @@ MissionPackage
 		description = Expand upon the existing surface base by launching one (or more) of many core modules.\n\nImportant: Check the mission goal requirements to confirm your design has the requisite parts before launching.
 		reward = 50000
 		category = LANDING, SATELLITE
-		requiredMission = Duna Surface - Command Module
+		requiresMission = Duna Surface - Command Module
 		repeatable = true
 		packageOrder = 8
 		
@@ -583,7 +583,7 @@ MissionPackage
 		description = Continue expanding upon the existing surface base by launching one (or more) of many non-essential, auxiliary modules.\n\nImportant: Check the mission goal requirements to confirm your design has the requisite parts before launching.
 		reward = 50000
 		category = LANDING, SATELLITE
-		requiredMission = Duna surface base - Command Module
+		requiresMission = Duna surface base - Command Module
 		repeatable = true
 		packageOrder = 9
 		
@@ -769,7 +769,7 @@ MissionPackage
 		description = Expand upon the existing surface base by launching one (or more) of many core modules.\n\nImportant: Check the mission goal requirements to confirm your design has the requisite parts before launching.
 		reward = 50000
 		category = LANDING, SATELLITE
-		requiredMission = Jool Surface - Command Module
+		requiresMission = Jool Surface - Command Module
 		repeatable = true
 		packageOrder = 11
 		
@@ -877,7 +877,7 @@ MissionPackage
 		description = Continue expanding upon the existing surface base by launching one (or more) of many non-essential, auxiliary modules.\n\nImportant: Check the mission goal requirements to confirm your design has the requisite parts before launching.
 		reward = 50000
 		category = LANDING, SATELLITE
-		requiredMission = Jool surface base - Command Module
+		requiresMission = Jool surface base - Command Module
 		repeatable = true
 		packageOrder = 12
 		
@@ -1063,7 +1063,7 @@ MissionPackage
 		description = Expand upon the existing surface base by launching one (or more) of many core modules.\n\nImportant: Check the mission goal requirements to confirm your design has the requisite parts before launching.
 		reward = 50000
 		category = LANDING, SATELLITE
-		requiredMission = Eve Surface - Command Module
+		requiresMission = Eve Surface - Command Module
 		repeatable = true
 		packageOrder = 14
 		
@@ -1171,7 +1171,7 @@ MissionPackage
 		description = Continue expanding upon the existing surface base by launching one (or more) of many non-essential, auxiliary modules.\n\nImportant: Check the mission goal requirements to confirm your design has the requisite parts before launching.
 		reward = 50000
 		category = LANDING, SATELLITE
-		requiredMission = Eve surface base - Command Module
+		requiresMission = Eve surface base - Command Module
 		repeatable = true
 		packageOrder = 15
 		
@@ -1357,7 +1357,7 @@ MissionPackage
 		description = Expand upon the existing surface base by launching one (or more) of many core modules.\n\nImportant: Check the mission goal requirements to confirm your design has the requisite parts before launching.
 		reward = 50000
 		category = LANDING, SATELLITE
-		requiredMission = Dres Surface - Command Module
+		requiresMission = Dres Surface - Command Module
 		repeatable = true
 		packageOrder = 17
 		
@@ -1465,7 +1465,7 @@ MissionPackage
 		description = Continue expanding upon the existing surface base by launching one (or more) of many non-essential, auxiliary modules.\n\nImportant: Check the mission goal requirements to confirm your design has the requisite parts before launching.
 		reward = 50000
 		category = LANDING, SATELLITE
-		requiredMission = Dres surface base - Command Module
+		requiresMission = Dres surface base - Command Module
 		repeatable = true
 		packageOrder = 18
 		
@@ -1651,7 +1651,7 @@ MissionPackage
 		description = Expand upon the existing surface base by launching one (or more) of many core modules.\n\nImportant: Check the mission goal requirements to confirm your design has the requisite parts before launching.
 		reward = 50000
 		category = LANDING, SATELLITE
-		requiredMission = Moho Surface - Command Module
+		requiresMission = Moho Surface - Command Module
 		repeatable = true
 		packageOrder = 20
 		
@@ -1759,7 +1759,7 @@ MissionPackage
 		description = Continue expanding upon the existing surface base by launching one (or more) of many non-essential, auxiliary modules.\n\nImportant: Check the mission goal requirements to confirm your design has the requisite parts before launching.
 		reward = 50000
 		category = LANDING, SATELLITE
-		requiredMission = Moho surface base - Command Module
+		requiresMission = Moho surface base - Command Module
 		repeatable = true
 		packageOrder = 21
 		
@@ -1945,7 +1945,7 @@ MissionPackage
 		description = Expand upon the existing surface base by launching one (or more) of many core modules.\n\nImportant: Check the mission goal requirements to confirm your design has the requisite parts before launching.
 		reward = 50000
 		category = LANDING, SATELLITE
-		requiredMission = Eeloo Surface - Command Module
+		requiresMission = Eeloo Surface - Command Module
 		repeatable = true
 		packageOrder = 23
 		
@@ -2053,7 +2053,7 @@ MissionPackage
 		description = Continue expanding upon the existing surface base by launching one (or more) of many non-essential, auxiliary modules.\n\nImportant: Check the mission goal requirements to confirm your design has the requisite parts before launching.
 		reward = 50000
 		category = LANDING, SATELLITE
-		requiredMission = Eeloo surface base - Command Module
+		requiresMission = Eeloo surface base - Command Module
 		repeatable = true
 		packageOrder = 24
 		

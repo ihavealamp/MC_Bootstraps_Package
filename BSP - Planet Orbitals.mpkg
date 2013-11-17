@@ -182,7 +182,7 @@ MissionPackage
 		description = Expand upon the existing orbital station by launching one (or more) of many core modules.\n\nImportant: Check the mission goal requirements to confirm your design has the requisite parts before launching.
 		reward = 50000
 		category = ORBIT, SATELLITE
-		requiredMission = Kerbin Orbital - Command Module
+		requiresMission = Kerbin Orbital - Command Module
 		repeatable = true
 		packageOrder = 5
 		
@@ -291,7 +291,7 @@ MissionPackage
 		description = Continue expanding upon the existing orbital station by launching one (or more) of many non-essential, auxiliary modules.\n\nImportant: Check the mission goal requirements to confirm your design has the requisite parts before launching.
 		reward = 50000
 		category = ORBIT, SATELLITE
-		requiredMission = Kerbin Orbital Station - Command Module
+		requiresMission = Kerbin Orbital Station - Command Module
 		repeatable = true
 		packageOrder = 6
 		
@@ -479,7 +479,7 @@ MissionPackage
 		description = Expand upon the existing orbital station by launching one (or more) of many core modules.\n\nImportant: Check the mission goal requirements to confirm your design has the requisite parts before launching.
 		reward = 50000
 		category = ORBIT, SATELLITE
-		requiredMission = Duna Orbital - Command Module
+		requiresMission = Duna Orbital - Command Module
 		repeatable = true
 		packageOrder = 8
 		
@@ -588,7 +588,7 @@ MissionPackage
 		description = Continue expanding upon the existing orbital station by launching one (or more) of many non-essential, auxiliary modules.\n\nImportant: Check the mission goal requirements to confirm your design has the requisite parts before launching.
 		reward = 50000
 		category = ORBIT, SATELLITE
-		requiredMission = Duna Orbital Station - Command Module
+		requiresMission = Duna Orbital Station - Command Module
 		repeatable = true
 		packageOrder = 9
 		
@@ -776,7 +776,7 @@ MissionPackage
 		description = Expand upon the existing orbital station by launching one (or more) of many core modules.\n\nImportant: Check the mission goal requirements to confirm your design has the requisite parts before launching.
 		reward = 50000
 		category = ORBIT, SATELLITE
-		requiredMission = Jool Orbital - Command Module
+		requiresMission = Jool Orbital - Command Module
 		repeatable = true
 		packageOrder = 11
 		
@@ -885,7 +885,7 @@ MissionPackage
 		description = Continue expanding upon the existing orbital station by launching one (or more) of many non-essential, auxiliary modules.\n\nImportant: Check the mission goal requirements to confirm your design has the requisite parts before launching.
 		reward = 50000
 		category = ORBIT, SATELLITE
-		requiredMission = Jool Orbital Station - Command Module
+		requiresMission = Jool Orbital Station - Command Module
 		repeatable = true
 		packageOrder = 12
 		
@@ -1073,7 +1073,7 @@ MissionPackage
 		description = Expand upon the existing orbital station by launching one (or more) of many core modules.\n\nImportant: Check the mission goal requirements to confirm your design has the requisite parts before launching.
 		reward = 50000
 		category = ORBIT, SATELLITE
-		requiredMission = Eve Orbital - Command Module
+		requiresMission = Eve Orbital - Command Module
 		repeatable = true
 		packageOrder = 14
 		
@@ -1182,7 +1182,7 @@ MissionPackage
 		description = Continue expanding upon the existing orbital station by launching one (or more) of many non-essential, auxiliary modules.\n\nImportant: Check the mission goal requirements to confirm your design has the requisite parts before launching.
 		reward = 50000
 		category = ORBIT, SATELLITE
-		requiredMission = Eve Orbital Station - Command Module
+		requiresMission = Eve Orbital Station - Command Module
 		repeatable = true
 		packageOrder = 15
 		
@@ -1370,7 +1370,7 @@ MissionPackage
 		description = Expand upon the existing orbital station by launching one (or more) of many core modules.\n\nImportant: Check the mission goal requirements to confirm your design has the requisite parts before launching.
 		reward = 50000
 		category = ORBIT, SATELLITE
-		requiredMission = Dres Orbital - Command Module
+		requiresMission = Dres Orbital - Command Module
 		repeatable = true
 		packageOrder = 17
 		
@@ -1479,7 +1479,7 @@ MissionPackage
 		description = Continue expanding upon the existing orbital station by launching one (or more) of many non-essential, auxiliary modules.\n\nImportant: Check the mission goal requirements to confirm your design has the requisite parts before launching.
 		reward = 50000
 		category = ORBIT, SATELLITE
-		requiredMission = Dres Orbital Station - Command Module
+		requiresMission = Dres Orbital Station - Command Module
 		repeatable = true
 		packageOrder = 18
 		
@@ -1667,7 +1667,7 @@ MissionPackage
 		description = Expand upon the existing orbital station by launching one (or more) of many core modules.\n\nImportant: Check the mission goal requirements to confirm your design has the requisite parts before launching.
 		reward = 50000
 		category = ORBIT, SATELLITE
-		requiredMission = Moho Orbital - Command Module
+		requiresMission = Moho Orbital - Command Module
 		repeatable = true
 		packageOrder = 20
 		
@@ -1776,7 +1776,7 @@ MissionPackage
 		description = Continue expanding upon the existing orbital station by launching one (or more) of many non-essential, auxiliary modules.\n\nImportant: Check the mission goal requirements to confirm your design has the requisite parts before launching.
 		reward = 50000
 		category = ORBIT, SATELLITE
-		requiredMission = Moho Orbital Station - Command Module
+		requiresMission = Moho Orbital Station - Command Module
 		repeatable = true
 		packageOrder = 21
 		
@@ -1964,7 +1964,7 @@ MissionPackage
 		description = Expand upon the existing orbital station by launching one (or more) of many core modules.\n\nImportant: Check the mission goal requirements to confirm your design has the requisite parts before launching.
 		reward = 50000
 		category = ORBIT, SATELLITE
-		requiredMission = Eeloo Orbital - Command Module
+		requiresMission = Eeloo Orbital - Command Module
 		repeatable = true
 		packageOrder = 23
 		
@@ -2073,7 +2073,7 @@ MissionPackage
 		description = Continue expanding upon the existing orbital station by launching one (or more) of many non-essential, auxiliary modules.\n\nImportant: Check the mission goal requirements to confirm your design has the requisite parts before launching.
 		reward = 50000
 		category = ORBIT, SATELLITE
-		requiredMission = Eeloo Orbital Station - Command Module
+		requiresMission = Eeloo Orbital Station - Command Module
 		repeatable = true
 		packageOrder = 24
 		
