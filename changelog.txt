@@ -38,3 +38,7 @@ v0.3.3:
 
 v0.3.4:
 -Fixed typos in readme.txt
+
+v0.4.0:
+-Interlunatary mission package released
+-Fixed crash mission descriptions in the Interplanetary mission package
