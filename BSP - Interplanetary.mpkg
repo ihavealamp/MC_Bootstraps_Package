@@ -31,7 +31,7 @@ MissionPackage
 		
 		CrashGoal
 		{
-			description = Transfer to Minmus and crash the vessel onto the surface.
+			description = Transfer to Duna and crash the vessel onto the surface.
 			body = Duna
 		}
 	}
@@ -390,7 +390,7 @@ MissionPackage
 		
 		CrashGoal
 		{
-			description = Transfer to Minmus and crash the vessel onto the surface.
+			description = Transfer to Eve and crash the vessel onto the surface.
 			body = Eve
 		}
 	}
@@ -924,7 +924,7 @@ MissionPackage
 		
 		CrashGoal
 		{
-			description = Transfer to Minmus and crash the vessel onto the surface.
+			description = Transfer to Dres and crash the vessel onto the surface.
 			body = Dres
 		}
 	}
