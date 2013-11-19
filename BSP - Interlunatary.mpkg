@@ -746,7 +746,7 @@ MissionPackage
 		{
 			description = Perform an aerobraking maneuver.
 			body = Laythe
-			maxPeA = 41000
+			maxPeA = 54000
 		}
 		
 		OrbitGoal
@@ -755,9 +755,9 @@ MissionPackage
 			optional = true
 			reward = 100000
 			body = Laythe
-			minPeA = 42000
+			minPeA = 57000
 			maxPeA = 100000
-			minApA = 42000
+			minApA = 57000
 			maxApA = 300000
 		}
 		
@@ -765,9 +765,9 @@ MissionPackage
 		{
 			description = Complete an aerobraking maneuver into a stable orbit.
 			body = Laythe
-			minPeA = 42000
+			minPeA = 57000
 			maxPeA = 100000
-			minApA = 42000
+			minApA = 57000
 			maxApA = 5000000
 		}
 	}
@@ -802,9 +802,9 @@ MissionPackage
 		{
 			description = Establish a stable orbit around Laythe.
 			body = Laythe
-			minPeA = 50000
+			minPeA = 60000
 			maxPeA = 100000
-			minApA = 50000
+			minApA = 60000
 			maxApA = 100000
 		}
 		
@@ -846,9 +846,9 @@ MissionPackage
 		{
 			description = Establish a stable orbit around Laythe.
 			body = Laythe
-			minPeA = 50000
+			minPeA = 60000
 			maxPeA = 100000
-			minApA = 50000
+			minApA = 60000
 			maxApA = 100000
 		}
 		
@@ -869,9 +869,9 @@ MissionPackage
 		{
 			description = Establish a stable orbit around Laythe.
 			body = Laythe
-			minPeA = 50000
+			minPeA = 60000
 			maxPeA = 100000
-			minApA = 50000
+			minApA = 60000
 			maxApA = 100000
 		}
 		
@@ -913,9 +913,9 @@ MissionPackage
 		{
 			description = Establish a stable orbit around Laythe.
 			body = Laythe
-			minPeA = 50000
+			minPeA = 60000
 			maxPeA = 100000
-			minApA = 50000
+			minApA = 60000
 			maxApA = 100000
 		}
 		
@@ -950,9 +950,9 @@ MissionPackage
 			OrbitGoal
 			{
 				body = Laythe
-				minPeA = 50000
+				minPeA = 60000
 				maxPeA = 100000
-				minApA = 50000
+				minApA = 60000
 				maxApA = 100000
 			}
 			
@@ -1000,9 +1000,9 @@ MissionPackage
 		{
 			description = Establish a stable orbit around Laythe.
 			body = Laythe
-			minPeA = 50000
+			minPeA = 60000
 			maxPeA = 100000
-			minApA = 50000
+			minApA = 60000
 			maxApA = 100000
 		}
 		
@@ -1029,9 +1029,9 @@ MissionPackage
 		{
 			description = Establish a stable orbit around Laythe.
 			body = Laythe
-			minPeA = 50000
+			minPeA = 60000
 			maxPeA = 100000
-			minApA = 50000
+			minApA = 60000
 			maxApA = 100000
 		}
 		
