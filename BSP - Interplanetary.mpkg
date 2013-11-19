@@ -14,7 +14,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -47,7 +46,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -103,7 +101,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -147,7 +144,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -214,7 +210,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -301,7 +296,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -373,7 +367,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -406,7 +399,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -462,7 +454,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -506,7 +497,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -573,7 +563,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -660,7 +649,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -732,7 +720,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -765,7 +752,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -822,7 +808,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -865,7 +850,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -907,7 +891,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -940,7 +923,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -977,7 +959,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -1021,7 +1002,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -1088,7 +1068,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -1175,7 +1154,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -1247,7 +1225,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -1280,7 +1257,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -1317,7 +1293,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -1361,7 +1336,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -1428,7 +1402,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -1515,7 +1488,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -1587,7 +1559,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -1620,7 +1591,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -1657,7 +1627,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -1701,7 +1670,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -1768,7 +1736,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
@@ -1855,7 +1822,6 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			description = Launch from the surface. 
 			launchZone = Kerbin
 		}
 		
