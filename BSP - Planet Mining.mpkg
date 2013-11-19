@@ -1,0 +1,10 @@
+MissionPackage
+{
+	name = Bootstraps - Planetary Mining Mission Package
+	description = This mission package focuses on programs involving the setup of mining operations on all planetary bodies (not moons). The target audience is experienced players who have completed the Kerbin SOI mission package (in the case of the Kerbin missions herein), the Interplanetary mission package (in the case of the non-Kerbin missions herein), or have the requisite skills to do so.
+	ownOrder = true
+	
+	Mission
+	{
+		
+}
