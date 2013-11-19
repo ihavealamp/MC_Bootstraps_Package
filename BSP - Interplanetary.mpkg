@@ -14,7 +14,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
@@ -46,7 +46,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
@@ -101,7 +101,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
@@ -144,7 +144,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
@@ -210,7 +210,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
@@ -296,7 +296,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
@@ -367,7 +367,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
@@ -399,7 +399,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
@@ -454,7 +454,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
@@ -497,7 +497,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
@@ -563,7 +563,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
@@ -649,7 +649,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
@@ -720,7 +720,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
@@ -752,7 +752,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
@@ -808,7 +808,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
@@ -850,7 +850,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
@@ -891,7 +891,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
@@ -923,7 +923,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
@@ -959,7 +959,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
@@ -1002,7 +1002,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
@@ -1068,7 +1068,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
@@ -1154,7 +1154,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
@@ -1225,7 +1225,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
@@ -1257,7 +1257,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
@@ -1293,7 +1293,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
@@ -1336,7 +1336,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
@@ -1402,7 +1402,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
@@ -1488,7 +1488,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
@@ -1559,7 +1559,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
@@ -1591,7 +1591,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
@@ -1627,7 +1627,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
@@ -1670,7 +1670,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
@@ -1736,7 +1736,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
@@ -1822,7 +1822,7 @@ MissionPackage
 		
 		LaunchGoal
 		{
-			launchZone = Kerbin
+			description = Launch from the surface.
 		}
 		
 		OrbitGoal
