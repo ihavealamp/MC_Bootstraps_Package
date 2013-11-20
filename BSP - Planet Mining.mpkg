@@ -6,5 +6,203 @@ MissionPackage
 	
 	Mission
 	{
+		name = Kerbal Prospecting - Phase 1
+		description = Launch an unmanned kethane probe from the KSC, achieve a stable polar orbit, and activate the kethane scanning equipment. Allow the scanner to run until the presence of kethane is detected.
+		reward = 70000
+		category = PROBE, MINING
+		packageOrder = 1
 		
+		LaunchGoal
+		{
+			description = Launch from the surface.
+		}
+		
+		OrMissionGoal
+		{
+			description = Confirm that the kethane scanner is attached and secure.
+			
+			PartGoal
+			{
+				partName = kethane_sensor_1m
+				partCount = 1
+			}
+			
+			PartGoal
+			{
+				partName = kethane_highGain
+				partCount = 1
+			}
+		}
+		
+		OrbitGoal
+		{
+			description = Establish a stable orbit around Kerbin and activate the scanner, allowing it to run until the presence of kethane is detected.
+			body = Kerbin
+			crewCount = 0
+			minPeA = 100000
+			maxPeA = 500000
+			minApA = 100000
+			maxApA = 500000
+			minInclination = 80
+			maxInclination = 100
+		}
+	}
+	
+	Mission
+	{
+		name = Kerbal Prospecting - Phase 2
+		description = Launch a small kethane testing unit, land at a confirmed resource location (provided by the prior mission's scans), drill for a sample amount of kethane, and then process it into a usable fuel source.\n\nImportant: Be sure to bring sufficient equipment to perform light kethane drilling, storage and conversion.
+		reward = 100000
+		category = LANDING, MINING
+		packageOrder = 1
+		
+		LaunchGoal
+		{
+			description = Launch from the surface.
+		}
+		
+		LandingGoal
+		{
+			description = Land on the surface of Kerbin, atop a confirmed, kethane resource location.
+			body = Kerbin
+		}
+		
+		ResourceGoal
+		{
+			description = Confirm the kethane storage tanks are empty, appropriately connected to the drill, and ready for operation.
+			name = Kethane
+			maxAmount = 0
+		}
+		
+		ResourceGoal
+		{
+			description = Activate the kethane drilling rig until a small amount of the resource has been collected.
+			name = Kethane
+			minAmount = 150
+		}
+		
+		ResourceGoal
+		{
+			description = Deactivate the drilling rig, activate the conversion process, and allow it to run until all kethane stores have been depleted.
+			name = Kethane
+			maxAmount = 0
+		}
+	}
+	
+	Mission
+	{
+		name = Kerbal Excavation - Phase 1
+		description = Launch a large kethane excavation unit, land at a confirmed resource location (provided by the prior mission's scans), drill for a large amount of kethane, and then process it into a usable fuel source.\n\nImportant: Be sure to bring sufficient equipment to perform heavy kethane drilling, storage and conversion.
+		reward = 150000
+		category = LANDING, MINING
+		packageOrder = 1
+		
+		LaunchGoal
+		{
+			description = Launch from the surface.
+		}
+		
+		LandingGoal
+		{
+			description = Land on the surface of Kerbin, atop a confirmed, kethane resource location.
+			body = Kerbin
+		}
+		
+		ResourceGoal
+		{
+			description = Confirm the kethane storage tanks are empty, appropriately connected to the drill, and ready for operation.
+			name = Kethane
+			maxAmount = 0
+		}
+		
+		ResourceGoal
+		{
+			description = Activate the kethane drilling rig until a small amount of the resource has been collected.
+			name = Kethane
+			minAmount = 8000
+		}
+		
+		ResourceGoal
+		{
+			description = Deactivate the drilling rig, activate the conversion process, and allow it to run until all kethane stores have been depleted.
+			name = Kethane
+			maxAmount = 0
+		}
+	}
+	
+	Mission
+	{
+		name = Kerbal Excavation - Phase 2
+		description = Leveraging a major drilling platform that is already in place atop a surface kethane deposit, excavate a significant amount of the resource in a limited timeframe. Additional funds will be awarded for varying stages of product volume.\n\nImportant: This will require some dedicated drilling hardware and may take some time to setup.
+		reward = 0
+		category = TIME, MINING
+		packageOrder = 1
+		lifetime = TIME(1h)
+		
+		ResourceGoal
+		{
+			description = Confirm the kethane storage tanks are empty, appropriately connected to the drill, and ready for operation.
+			name = Kethane
+			maxAmount = 0
+		}
+		
+		ResourceGoal
+		{
+			description = Activate the kethane drilling rig until 20,000 units of the resource have been collected.
+			optional = true
+			reward = 20000
+			name = Kethane
+			minAmount = 20000
+		}
+		
+		ResourceGoal
+		{
+			description = Activate the kethane drilling rig until 40,000 units of the resource have been collected.
+			optional = true
+			reward = 40000
+			name = Kethane
+			minAmount = 40000
+		}
+		
+		ResourceGoal
+		{
+			description = Activate the kethane drilling rig until 80,000 units of the resource have been collected.
+			optional = true
+			reward = 80000
+			name = Kethane
+			minAmount = 80000
+		}
+		
+		ResourceGoal
+		{
+			description = Activate the kethane drilling rig until 160,000 units of the resource have been collected.
+			optional = true
+			reward = 160000
+			name = Kethane
+			minAmount = 160000
+		}
+		
+		ResourceGoal
+		{
+			description = Activate the kethane drilling rig until 320,000 units of the resource have been collected.
+			optional = true
+			reward = 320000
+			name = Kethane
+			minAmount = 320000
+		}
+		
+		ResourceGoal
+		{
+			description = Activate the kethane drilling rig until 640,000 units of the resource have been collected.
+			optional = true
+			reward = 640000
+			name = Kethane
+			minAmount = 640000
+		}
+		
+		EVAGoal
+		{
+			description = Deactivate the drilling rig and confirm that the kethane storage tanks are properly sealed.
+		}
+	}
 }
