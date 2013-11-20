@@ -1,25 +1,31 @@
 MissionPackage
 {
 	name = Bootstraps - Kerbin Sphere of Influence (SOI) Mission Package
-	description = This mission package focuses on programs within Kerbin's sphere of influence. The target audience is new players just learning the game and completionists who want to start from the beginning.\n\nImportant: Remember to click "Hide Finished Goal" after completing each mission goal to ensure they stay completed after moving to the next step. Failure to do so may result in overall mission failure!
+	description = This mission package focuses on programs within Kerbin's sphere of influence. The target audience is new players just learning the game and completionists who want to start from the beginning.\n\n IMPORTANT:\n\nThe initial Kerra program missions are extremely important to complete, as they both set the player up with start-up capital to get underway immediately, along with a short-term (one month only!) source of regular income to keep them going. Once you progress into the Katurn program, the immediate payouts will decrease significantly. After the Katurn program - and heading into all other missions, across all Bootstraps mission packages - there are no immediate payouts, only a time-limited daily income.\n\nPlayers *must* keep this in mind as they progress through their career as, in the long term, they'll have to maintain a stable income/budget... or risk going bankrupt and closing shop. YOU HAVE BEEN WARNED. 
 	ownOrder = true
 	
 	Mission
 	{
 		name = Kerra I
 		description = Launch from the Kerbal Space Center (KSC), climb high within Kerbin's atmosphere, and safely land. 
-		reward = 30000
+		reward = 50000
+		passiveMission = true
+		passiveReward = 3500
+		clientControlled = true
+		lifetime = TIME(30d)
 		category = MANNED, AVIATION
 		packageOrder = 1
 		
 		LaunchGoal
 		{
 			description = Launch from the surface.
+			reward = 25000
 		}
 		
 		OrbitGoal
 		{
-			description = Reach an altitude between 10 and 60 kilometers. 
+			description = Reach an altitude between 10 and 60 kilometers.
+			reward = 25000
 			body = Kerbin
 			crewCount = 1
 			minAltitude = 10000
@@ -37,7 +43,11 @@ MissionPackage
 	{
 		name = Kerra II
 		description = Launch from the KSC, escape Kerbin's atmosphere, and safely land. 
-		reward = 50000
+		reward = 60000
+		passiveMission = true
+		passiveReward = 3500
+		clientControlled = true
+		lifetime = TIME(30d)
 		category = MANNED, AVIATION
 		requiresMission = Kerra I
 		packageOrder = 2
@@ -50,6 +60,7 @@ MissionPackage
 		OrbitGoal
 		{
 			description = Reach an altitude over 70 kilometers.
+			reward = 60000
 			body = Kerbin
 			crewCount = 1
 			minAltitude = 70000
@@ -66,7 +77,11 @@ MissionPackage
 	{
 		name = Kerra III
 		description = Launch from the KSC, achieve a stable orbit, and safely land. 
-		reward = 60000
+		reward = 70000
+		passiveMission = true
+		passiveReward = 3500
+		clientControlled = true
+		lifetime = TIME(30d)
 		category = MANNED, ORBIT
 		requiresMission = Kerra II
 		packageOrder = 3
@@ -79,6 +94,7 @@ MissionPackage
 		OrbitGoal
 		{
 			description = Establish a stable orbit around Kerbin.
+			reward = 70000
 			body = Kerbin
 			crewCount = 1
 			minPeA = 70000
@@ -98,7 +114,11 @@ MissionPackage
 	{
 		name = Kerra IV
 		description = Launch from the KSC equipped with communications hardware, achieve a stable orbit, and safely land. 
-		reward = 60000
+		reward = 80000
+		passiveMission = true
+		passiveReward = 3500
+		clientControlled = true
+		lifetime = TIME(30d)
 		category = MANNED, ORBIT
 		requiresMission = Kerra III
 		packageOrder = 4
@@ -111,6 +131,7 @@ MissionPackage
 		SubMissionGoal
 		{
 			description = Establish a stable orbit and extend the communications antenna.
+			reward = 80000
 			
 			OrbitGoal
 			{
