@@ -54,7 +54,8 @@ MissionPackage
 		description = Launch a small kethane testing unit, land at a confirmed resource location (provided by the prior mission's scans), drill for a sample amount of kethane, and then process it into a usable fuel source.\n\nImportant: Be sure to bring sufficient equipment to perform light kethane drilling, storage and conversion.
 		reward = 100000
 		category = LANDING, MINING
-		packageOrder = 1
+		requiresMission = Kerbal Prospecting - Phase 1
+		packageOrder = 2
 		
 		LaunchGoal
 		{
@@ -95,7 +96,8 @@ MissionPackage
 		description = Launch a large kethane excavation unit, land at a confirmed resource location (provided by the prior mission's scans), drill for a large amount of kethane, and then process it into a usable fuel source.\n\nImportant: Be sure to bring sufficient equipment to perform heavy kethane drilling, storage and conversion.
 		reward = 150000
 		category = LANDING, MINING
-		packageOrder = 1
+		requiresMission = Kerbal Prospecting - Phase 2
+		packageOrder = 3
 		
 		LaunchGoal
 		{
@@ -132,12 +134,20 @@ MissionPackage
 	
 	Mission
 	{
-		name = Kerbal Excavation - Phase 2
+		name = Kerbin Excavation - Phase 2
 		description = Leveraging a major drilling platform that is already in place atop a surface kethane deposit, excavate a significant amount of the resource in a limited timeframe. Additional funds will be awarded for varying stages of product volume.\n\nImportant: This will require some dedicated drilling hardware and may take some time to setup.
 		reward = 0
 		category = TIME, MINING
-		packageOrder = 1
+		requiresMission = Kerbal Excavation - Phase 1
+		repeatable = true
+		repeatableSameVessel = true
+		packageOrder = 4
 		lifetime = TIME(1h)
+		
+		OrbitGoal
+		{
+			body = Kerbin
+		}
 		
 		ResourceGoal
 		{
@@ -206,4 +216,90 @@ MissionPackage
 		}
 	}
 	
+	Mission
+	{
+		name = Kerbin Processing - Phase 1
+		description = Leveraging a major processing platform that is already in place on Kerbin, convert a significant amount of kethane in a limited timeframe. Additional funds will be awarded for varying stages of product volume.\n\nImportant: This will require some dedicated converting hardware and may take some time to setup.
+		reward = 0
+		category = TIME, MINING
+		requiresMission = Kerbal Excavation - Phase 2
+		repeatable = true
+		repeatableSameVessel = true
+		packageOrder = 5
+		lifetime = TIME(1h)
+		
+		OrbitGoal
+		{
+			body = Kerbin
+		}
+		
+		SubMissionGoal
+		{
+			ResourceGoal
+			{
+				description = Activate the kethane processing plant until 640,000 units of the resource have been converted.
+				optional = true
+				reward = 640000
+				name = Kethane
+				minAmount = 640000
+			}
+			
+			ResourceGoal
+			{
+				description = Activate the kethane processing plant until 320,000 units of the resource have been converted.
+				optional = true
+				reward = 320000
+				name = Kethane
+				minAmount = 320000
+			}
+			
+			ResourceGoal
+			{
+				description = Activate the kethane processing plant until 160,000 units of the resource have been converted.
+				optional = true
+				reward = 160000
+				name = Kethane
+				minAmount = 160000
+			}
+			
+			ResourceGoal
+			{
+				description = Activate the kethane processing plant until 80,000 units of the resource have been converted.
+				optional = true
+				reward = 80000
+				name = Kethane
+				minAmount = 80000
+			}
+			
+			ResourceGoal
+			{
+				description = Activate the kethane processing plant until 40,000 units of the resource have been converted.
+				optional = true
+				reward = 40000
+				name = Kethane
+				minAmount = 40000
+			}
+			
+			ResourceGoal
+			{
+				description = Activate the kethane processing plant until 20,000 units of the resource have been converted.
+				optional = true
+				reward = 20000
+				name = Kethane
+				minAmount = 20000
+			}
+			
+			ResourceGoal
+			{
+				description = Confirm that the kethane storage tanks are now empty, its contents completely converted to fuel.
+				name = Kethane
+				maxAmount = 0
+			}
+		}
+			
+		EVAGoal
+		{
+			description = Deactivate the processing plant and confirm that the kethane storage tanks are properly sealed.
+		}
+	}
 }
