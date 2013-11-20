@@ -205,4 +205,5 @@ MissionPackage
 			description = Deactivate the drilling rig and confirm that the kethane storage tanks are properly sealed.
 		}
 	}
+	
 }
