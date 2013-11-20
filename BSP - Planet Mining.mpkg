@@ -219,7 +219,7 @@ MissionPackage
 	Mission
 	{
 		name = Kerbin Processing - Phase 1
-		description = Leveraging a major processing platform that is already in place on Kerbin, convert a significant amount of kethane in a limited timeframe. Additional funds will be awarded for varying stages of product volume.\n\nImportant: This will require some dedicated converting hardware and may take some time to setup.
+		description = Leveraging a major processing platform that is already in place on or above Kerbin, convert a significant amount of kethane in a limited timeframe. Additional funds will be awarded for varying stages of product volume.\n\nImportant: This will require some dedicated converting hardware and may take some time to setup.
 		reward = 0
 		category = TIME, MINING
 		requiresMission = Kerbal Excavation - Phase 2
