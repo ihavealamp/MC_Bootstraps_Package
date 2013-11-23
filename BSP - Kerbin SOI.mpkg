@@ -11,7 +11,7 @@ MissionPackage
 		reward = 50000
 		passiveMission = true
 		passiveReward = 3500
-		clientControlled = true
+		clientControlled = false
 		lifetime = TIME(30d)
 		category = MANNED, AVIATION
 		packageOrder = 1
@@ -46,7 +46,7 @@ MissionPackage
 		reward = 60000
 		passiveMission = true
 		passiveReward = 3500
-		clientControlled = true
+		clientControlled = false
 		lifetime = TIME(30d)
 		category = MANNED, AVIATION
 		requiresMission = Kerra I
@@ -80,7 +80,7 @@ MissionPackage
 		reward = 70000
 		passiveMission = true
 		passiveReward = 3500
-		clientControlled = true
+		clientControlled = false
 		lifetime = TIME(30d)
 		category = MANNED, ORBIT
 		requiresMission = Kerra II
@@ -117,7 +117,7 @@ MissionPackage
 		reward = 80000
 		passiveMission = true
 		passiveReward = 3500
-		clientControlled = true
+		clientControlled = false
 		lifetime = TIME(30d)
 		category = MANNED, ORBIT
 		requiresMission = Kerra III
@@ -161,7 +161,11 @@ MissionPackage
 	{
 		name = Katurn I
 		description = Launch from the KSC, achieve a stable orbit, complete an EVA, and safely land. Optional goal of taking an extended spacewalk during EVA and returning to vessel.
-		reward = 65000
+		reward = 30000
+		passiveMission = true
+		passiveReward = 2200
+		clientControlled = false
+		lifetime = TIME(30d)
 		category = MANNED, ORBIT
 		packageOrder = 5
 		
@@ -214,7 +218,11 @@ MissionPackage
 	{
 		name = Katurn II
 		description = Launch from the KSC, achieve a high, stable orbit, complete an EVA, and safely land.
-		reward = 65000
+		reward = 30000
+		passiveMission = true
+		passiveReward = 2200
+		clientControlled = false
+		lifetime = TIME(30d)
 		category = MANNED, ORBIT
 		requiresMission = Katurn I
 		packageOrder = 6
@@ -251,7 +259,11 @@ MissionPackage
 	{
 		name = Katurn III
 		description = Launch an unmanned vessel from the KSC - capable of transporting a single crew and landing safely - and establish a stable orbit. \n\nImportant: Also ensure that the vessel is equipped with a Command Pod Mk 1, Clamp-o-Tron Jr. Docking Port, and a Mk-16 Parachute for use in later missions.
-		reward = 60000
+		reward = 30000
+		passiveMission = true
+		passiveReward = 2200
+		clientControlled = false
+		lifetime = TIME(30d)
 		category = PROBE, ORBIT
 		requiresMission = Katurn II
 		repeatable = true
@@ -300,7 +312,11 @@ MissionPackage
 	{
 		name = Katurn IV
 		description = Launch from the KSC, rendezvous with the Katurn III unmanned vessel, dock, raise both vessels at once to a higher orbit, undock, and safely land.
-		reward = 80000
+		reward = 40000
+		passiveMission = true
+		passiveReward = 2700
+		clientControlled = false
+		lifetime = TIME(30d)
 		category = MANNED, DOCKING
 		requiresMission = Katurn III
 		packageOrder = 8
@@ -355,7 +371,11 @@ MissionPackage
 	{
 		name = Katurn V
 		description = Launch from the KSC with a vessel incapable of landing safely, rendezvous with the Katurn III unmanned vessel, dock, complete an EVA and transfer to the Katurn III vessel, undock, and safely land.\n\nImportant: Also ensure that the vessel is not equipped with any parachutes - this is taken into account during the course of the mission, do not be concerned.
-		reward = 80000
+		reward = 40000
+		passiveMission = true
+		passiveReward = 2700
+		clientControlled = false
+		lifetime = TIME(30d)
 		category = MANNED, DOCKING
 		requiresMission = Katurn IV
 		packageOrder = 9
@@ -414,7 +434,11 @@ MissionPackage
 	{
 		name = Katurn VI
 		description = Launch from the KSC, achieve an extreme orbit, and safely land.
-		reward = 100000
+		reward = 50000
+		passiveMission = true
+		passiveReward = 3400
+		clientControlled = false
+		lifetime = TIME(30d)
 		category = MANNED, ORBIT
 		requiresMission = Katurn V
 		packageOrder = 10
@@ -446,7 +470,11 @@ MissionPackage
 	{
 		name = Katurn VII
 		description = Launch from the KSC, rendezvous with the unmanned Katurn V vessel, dock, and safely land both vessels.
-		reward = 110000
+		reward = 55000
+		passiveMission = true
+		passiveReward = 3700
+		clientControlled = false
+		lifetime = TIME(30d)
 		category = MANNED, DOCKING
 		requiresMission = Katurn VI
 		packageOrder = 11
@@ -486,7 +514,11 @@ MissionPackage
 	{
 		name = Kastor I
 		description = Launch an unmanned probe from the KSC, achieve a stable orbit, transfer to the Mun and crash into its surface.
-		reward = 100000
+		reward = 50000
+		passiveMission = true
+		passiveReward = 3400
+		clientControlled = false
+		lifetime = TIME(30d)
 		category = PROBE, IMPACT
 		packageOrder = 12
 		
