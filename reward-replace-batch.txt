@@ -1,0 +1,3 @@
+\t\treward = 100000
+
+\t\treward = 50000\r\n\t\tpassiveMission = true\r\n\t\tpassiveReward = 3400\r\n\t\tclientControlled = false\r\n\t\tlifetime = TIME(30d)
