@@ -1,12 +1,12 @@
 MissionPackage
 {
 	name = Bootstraps - Planetary Mining Mission Package
-	description = This mission package focuses on programs involving the setup of mining operations on all planetary bodies (not moons). The target audience is experienced players who have completed the Kerbin SOI mission package (in the case of the Kerbin missions herein), the Interplanetary mission package (in the case of the non-Kerbin missions herein), or have the requisite skills to do so.
+	description = This mission package focuses on programs involving the setup of mining operations leveraging the Kethane mod for KSP. The target audience is experienced players who have completed the Kerbin SOI & Interplanetary mission packages, or have the requisite skills to do so.
 	ownOrder = true
 	
 	Mission
 	{
-		name = Kerbal Prospecting - Phase 1
+		name = Kethane Prospecting - Phase 1
 		description = Launch an unmanned kethane probe from the KSC, achieve a stable polar orbit, and activate the kethane scanning equipment. Allow the scanner to run until the presence of kethane is detected.
 		reward = 70000
 		category = PROBE, MINING
@@ -36,13 +36,11 @@ MissionPackage
 		
 		OrbitGoal
 		{
-			description = Establish a stable orbit around Kerbin and activate the scanner, allowing it to run until the presence of kethane is detected.
+			description = Establish a stable polar orbit around Kerbin and activate the scanner, allowing it to run until the presence of kethane is detected.
 			body = Kerbin
 			crewCount = 0
 			minPeA = 100000
-			maxPeA = 500000
 			minApA = 100000
-			maxApA = 500000
 			minInclination = 80
 			maxInclination = 100
 		}
@@ -50,11 +48,12 @@ MissionPackage
 	
 	Mission
 	{
-		name = Kerbal Prospecting - Phase 2
-		description = Launch a small kethane testing unit, land at a confirmed resource location (provided by the prior mission's scans), drill for a sample amount of kethane, and then process it into a usable fuel source.\n\nImportant: Be sure to bring sufficient equipment to perform light kethane drilling, storage and conversion.
-		reward = 100000
-		category = LANDING, MINING
-		requiresMission = Kerbal Prospecting - Phase 1
+		name = Kethane Prospecting - Phase 1.5
+		description = Launch an unmanned kethane probe from the KSC, achieve a stable polar orbit around another planetary body, and activate the kethane scanning equipment. Allow the scanner to run until the presence of kethane is detected.
+		reward = 80000
+		category = PROBE, MINING
+		requiresMission = Kethane Prospecting - Phase 1
+		repeatable = true
 		packageOrder = 2
 		
 		LaunchGoal
@@ -62,15 +61,54 @@ MissionPackage
 			description = Launch from the surface.
 		}
 		
-		LandingGoal
+		OrMissionGoal
 		{
-			description = Land on the surface of Kerbin, atop a confirmed, kethane resource location.
-			body = Kerbin
+			description = Confirm that the kethane scanner is attached and secure.
+			
+			PartGoal
+			{
+				partName = kethane_sensor_1m
+				partCount = 1
+			}
+			
+			PartGoal
+			{
+				partName = kethane_highGain
+				partCount = 1
+			}
+		}
+		
+		NorMissionGoal
+		{
+			OrbitGoal
+			{
+			}
+			
+			OrbitGoal
+			{
+				body = Sun
+			}
+		}
+	}
+	
+	Mission
+	{
+		name = Kethane Prospecting - Phase 2
+		description = Launch a small kethane testing unit, land at a confirmed resource location (provided by the prior mission's scans), drill for a sample amount of kethane, and then process it into a usable fuel source.\n\nImportant: Be sure to bring sufficient equipment to perform light kethane drilling, storage and conversion.
+		reward = 100000
+		category = LANDING, MINING
+		requiresMission = Kethane Prospecting - Phase 1
+		repeatable = true
+		packageOrder = 3
+		
+		LaunchGoal
+		{
+			description = Launch from the surface.
 		}
 		
 		ResourceGoal
 		{
-			description = Confirm the kethane storage tanks are empty, appropriately connected to the drill, and ready for operation.
+			description = Land atop a confirmed, kethane resource location. Confirm the kethane storage tanks are empty, appropriately connected to the drill, and ready for operation.
 			name = Kethane
 			maxAmount = 0
 		}
@@ -92,27 +130,22 @@ MissionPackage
 	
 	Mission
 	{
-		name = Kerbal Excavation - Phase 1
+		name = Kethane Excavation - Phase 1
 		description = Launch a large kethane excavation unit, land at a confirmed resource location (provided by the prior mission's scans), drill for a large amount of kethane, and then process it into a usable fuel source.\n\nImportant: Be sure to bring sufficient equipment to perform heavy kethane drilling, storage and conversion.
 		reward = 150000
 		category = LANDING, MINING
-		requiresMission = Kerbal Prospecting - Phase 2
-		packageOrder = 3
+		requiresMission = Kethane Prospecting - Phase 2
+		repeatable = true
+		packageOrder = 4
 		
 		LaunchGoal
 		{
 			description = Launch from the surface.
 		}
 		
-		LandingGoal
-		{
-			description = Land on the surface of Kerbin, atop a confirmed, kethane resource location.
-			body = Kerbin
-		}
-		
 		ResourceGoal
 		{
-			description = Confirm the kethane storage tanks are empty, appropriately connected to the drill, and ready for operation.
+			description = Land atop a confirmed, kethane resource location. Confirm the kethane storage tanks are empty, appropriately connected to the drill, and ready for operation.
 			name = Kethane
 			maxAmount = 0
 		}
@@ -134,20 +167,14 @@ MissionPackage
 	
 	Mission
 	{
-		name = Kerbin Excavation - Phase 2
+		name = Kethane Excavation - Phase 2
 		description = Leveraging a major drilling platform that is already in place atop a surface kethane deposit, excavate a significant amount of the resource in a limited timeframe. Additional funds will be awarded for varying stages of product volume.\n\nImportant: This will require some dedicated drilling hardware and may take some time to setup.
 		reward = 0
-		category = TIME, MINING
-		requiresMission = Kerbal Excavation - Phase 1
+		category = LANDING, MINING
+		requiresMission = Kethane Excavation - Phase 1
 		repeatable = true
 		repeatableSameVessel = true
-		packageOrder = 4
-		lifetime = TIME(1h)
-		
-		OrbitGoal
-		{
-			body = Kerbin
-		}
+		packageOrder = 5
 		
 		ResourceGoal
 		{
@@ -218,15 +245,14 @@ MissionPackage
 	
 	Mission
 	{
-		name = Kerbin Processing - Phase 1
+		name = Kethane Processing - Phase 1
 		description = Leveraging a major processing platform that is already in place on or above Kerbin, convert a significant amount of kethane in a limited timeframe. Additional funds will be awarded for varying stages of product volume.\n\nImportant: This will require some dedicated converting hardware and may take some time to setup.
 		reward = 0
-		category = TIME, MINING
-		requiresMission = Kerbal Excavation - Phase 2
+		category = LANDING, MINING
+		requiresMission = Kethane Excavation - Phase 2
 		repeatable = true
 		repeatableSameVessel = true
-		packageOrder = 5
-		lifetime = TIME(1h)
+		packageOrder = 6
 		
 		OrbitGoal
 		{
