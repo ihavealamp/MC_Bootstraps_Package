@@ -40,7 +40,7 @@ v0.3.4:
 -Fixed typos in readme.txt
 
 v0.4.0:
--Interlunatary mission package released
--Removed body tag on LaunchGoal mission goals in the Kerbin SOI and Interplanetary mission packages. This standardizes the launch code across all mission packages and makes it very easy to release matching, stand-alone "Hardcore" mission packages (life support, heat shielding, no MechJeb, etc.).
+-Interlunatary and Kethane Mining mission packages released
+-Removed body tag on LaunchGoal mission goals in the Kerbin SOI and Interplanetary mission packages. This standardizes the launch code across all mission packages and makes it easier to release matching, stand-alone "Hardcore" mission packages (life support, heat shielding, no MechJeb, etc.).
 -Changed the orbit distances for the Keres II mission, entirely too high up.
 -Fixed crash mission descriptions in the Interplanetary mission package
